@@ -2,27 +2,27 @@
 
 @font-face {
     font-family: 'Monosans-Medium';
-    src: url(/fonts/MonaSans-Medium.ttf);
+    src: url(fonts/MonaSans-Medium.ttf);
   }
 
   @font-face {
     font-family: 'Monosans-SemiBold';
-    src: url(/fonts/MonaSans-SemiBold.ttf);
+    src: url(fonts/MonaSans-SemiBold.ttf);
   }
 
   @font-face {
     font-family: 'Monosans-Light';
-    src: url(/fonts/MonaSans-Light.ttf);
+    src: url(fonts/MonaSans-Light.ttf);
   }
 
   @font-face {
     font-family: 'Monosans-LightItalic';
-    src: url(/fonts/MonaSans-LightItalic.ttf);
+    src: url(fonts/MonaSans-LightItalic.ttf);
   }
 
 body {
     background-color: rgb(232, 232, 232);
-    background-image: url(/img/background.png);
+    background-image: url(img/background.png);
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
