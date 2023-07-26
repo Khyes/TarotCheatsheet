@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">La Maison de Dieu</h1>
+                    <h2 class="h2-page">The Tower</h2>
+                    <p class="p-header">
+                        Lorsque la carte de la Maison de Dieu apparaît dans une lecture du Tarot, attendez-vous à un changement massif et inattendu, à un bouleversement, à la destruction et au chaos. Il peut s'agir d'un divorce, de la mort d'un être cher, d'un échec financier, de problèmes de santé, d'une catastrophe naturelle, d'une perte d'emploi ou de tout autre événement qui vous ébranle au plus profond de vous-même, vous affectant spirituellement, mentalement et physiquement. Il est impossible d'y échapper.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Changement, transformation, régénération, reconstruction, remise en question...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Crise, échec, rupture, bouleversement, illusion...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">NON</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    À court terme, la Maison Dieu est volontiers associée à l’idée de bouleversement. Certains événements ou certaines personnes pourraient ainsi venir remettre en question tout l’édifice que vous avez bâti. Ne luttez pas contre ce changement, la vie étant par nature cyclique et imprévisible. Comme le printemps suit toujours l’hiver, il vous permettra de reconstruire sur de nouvelles fondations.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, l’arcane de la Maison Dieu vous permettra de prendre une certaine forme de recul sur la vie et ses événements. Après tout, si tout est une question de choix, aucun n’est vraiment meilleur qu’un autre. La situation est donc propice si vous souhaitez apprendre à relativiser et ne plus être autant touché par ces petites situations anxiogènes du quotidien.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE LA MAISON DE DIEU TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsqu’elle est tirée à l’endroit, la Maison Dieu implique un principe de destruction et renvoie à la notion d’irréparable. Elle indique qu’un point de non-retour a été franchi. Face à cette influence lourde de sens, il est donc parfaitement normal que le consultant se sente décontenancé, voire profondément angoissé, devant les perspectives induites par la carte. L’effroi est cependant parfaitement inutile, la Maison Dieu étant en réalité une lame bénéfique à celui qui réussira à en entendre les enseignements. Elle nous permet en effet de remettre en question les certitudes dans lesquelles nous nous étions enfermés et de sortir de ce cocon confortable, mais totalement sclérosant, que constitue notre routine. Sa fonction n’est pas de tout bouleverser par simple principe, mais de déconstruire pour nous offrir l’opportunité de reconstruire sur des bases plus solides, et peut-être plus proches de nos véritables valeurs. La Maison Dieu exige de nous de ne plus nous voiler la face, de regarder notre vie telle qu’elle est réellement, avec ses avantages bien entendu, mais également dans ses défauts les plus apparents. Si cette prise de conscience peut être initialement vécue de façon douloureuse, elle sera nécessaire à quiconque souhaiterait reprendre en main les rênes de sa destinée ! Gardons à l’esprit que la reconstruction fait toujours suite à l’ébranlement de fondations que l’on croyait éternelles.
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DE LA MAISON DE DIEU TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Tiré à l’envers, l’arcane de la Maison Dieu devient un outil précieux dont il s’agira d’exploiter l’enseignement. Il mettra le consultant en face de ses nœuds et de ses blocages, mais sans l’exposer directement à des situations trop drastiques. En l’avertissant des dangers potentiels vers lesquels il se dirige, la carte endosse le rôle de conseiller. Pour évoluer sur le chemin de la vie, il sera important d’écouter son message et d’infléchir son cap avant qu’il ne soit trop tard.
+                            </p>
+
+                            <p class="p-header">
+                                Dans certaines situations, la Maison Dieu inversée traduit les difficultés éprouvées par le consultant face aux changements. S’il est parfois naturel d’être effrayé à l’idée de sortir de son cocon, persister dans des erreurs manifestes est un comportement particulièrement périlleux. C’est alors la peur de la douleur qui prend le dessus et pousse le consultant à rester dans une inaction totale. Cette situation n’est en rien pérenne, elle ne fait que repousser l’échéance. Mieux vaut donc une fois pour toute regarder ses vérités bien en face et embrasser le changement, ces derniers se révélant souvent bénéfiques.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

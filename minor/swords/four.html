@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Quatre d'Épée</h1>
+                    <h2 class="h2-page">Four of Sword</h2>
+                    <p class="p-header">
+                        Prenez le temps de respirer et de vous ressourcer. Rafraîchissez votre esprit par la méditation et des espaces calmes.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">calme, accalmie, repos, régénération, intellect...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">fuite en avant, difficultés, fatigue, burnout, évitement...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">PEUT-ÊTRE</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Quatre d’Épée suggère que vous profitez actuellement d’une période de calme auprès de vos proches. Ces derniers mois ont été particulièrement éprouvants, et vous avez récemment éprouvé le besoin de vous éloigner un peu de ce chahut qui vous épuisez tant. Reprenez autant de force que possible avant de repartir une nouvelle fois sur le chemin de la vie.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Quatre d’Épée vous incite à trouver un équilibre pérenne entre la pensée et l’action. Votre intelligence cartésienne est un atout précieux pour résoudre les problèmes et définir les causes que vous souhaitez endosser. Elle doit néanmoins toujours engendrer des résultats concrets et se projeter sur le monde. Avec l’expérience, vous parviendrez à cette harmonie tant recherchée.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU QUATRE D'ÉPÉE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Dans son interprétation la plus fréquente, le Quatre d’Épée annonce une période d’accalmie après une phase particulièrement agitée. Pour le consultant, le tirage est une invitation à se ressourcer dans son monde intérieur, une démarche qui lui permettra de faire le point sur sa vie et de reprendre ses forces. Le destin d’un homme est par nature cyclique. Si certains optent volontiers pour la fuite en avant, il est en réalité beaucoup plus sage de s’accorder parfois de longs moments de répit.
+                            </p>
+
+                            <p class="p-header">
+                                Quand il renvoie à un archétype de personnalité, le Quatre d’Épée témoigne d’un esprit rationnel, d’une intelligence pratique s’incarnant dans le monde. Cette pensée cartésienne constitue d’ailleurs un formidable atout pour celui qui souhaiterait mieux appréhender les enjeux d’une situation et se projeter sereinement dans l’avenir. L’intellect nous permet de trouver plus rapidement les solutions aux problèmes qui se dressent devant nous et de nous rapprocher des causes qui nous sont chères.
+                            </p>
+
+                            <p class="p-header">
+                                Avec le Quatre de Coupe, il s’agira néanmoins d’éviter toute forme d’enfermement. L’arcane a en effet tendance à nous éloigner du monde sensible et de nos émotions, qui doivent elles aussi participer à notre mise en mouvement. Se reposer exclusivement sur ses idées, c’est prendre le risque de tourner en circuit fermé, en excluant de fait la richesse de l’inconscient et la beauté mystérieuse de la spiritualité. Comme toujours, c’est vers un équilibre qu’il conviendra de tendre.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU QUATRE D'ÉPÉE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Si le Quatre d’Épée est apparu dans votre tirage, cela signifie que vous profitez actuellement d’une période d’accalmie, aussi bien dans votre vie sentimentale que dans votre quotidien professionnel. Vous avez récemment traversé de grandes perturbations, qui ont durablement impacté votre humeur et votre niveau d’énergie. Pour ne pas risquer de burnout, vous avez sagement choisi de vous accorder un peu de répit, de façon à recharger les batteries et à faire un point complet sur votre vie. Nous ne pouvons que vous féliciter pour cette démarche pleine de sagesse !
+                            </p>
+
+                            <p class="p-header">
+                                La présence du Quatre d’Épée dans votre tirage témoigne de la vivacité de votre intelligence et de cet esprit lucide qui vous caractérise si bien depuis de nombreuses années. Ces qualités sont essentielles à votre épanouissement. Elles vous permettent de comprendre rapidement les enjeux d’une situation et de définir des plans d’action particulièrement bien ficelés. Grâce à elles, vous serez en mesure d’atteindre sans difficulté tous ces objectifs qui vous tiennent à cœur. Vous avez cependant parfois tendance à trop vous reposer sur vos facultés intellectuelles. N’oubliez pas d’ouvrir également la porte à votre moi sensible et à vos émotions, des facettes précieuses de votre personnalité.
+                            </p>
+
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

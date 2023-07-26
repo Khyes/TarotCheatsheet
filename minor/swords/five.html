@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Cinq d'Épée</h1>
+                    <h2 class="h2-page">Five of Sword</h2>
+                    <p class="p-header">
+                        Choisissez vos batailles avec sagesse et réfléchissez avant d'agir. Le Cinq d'Épée est synonyme de tensions et de désaccords avec les autres. Même si vous avez gagné la bataille, vous avez peut-être perdu en blessant les autres.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">supériorité, conflit, égaux, conquête...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">compromis, réconciliation, diplomatie, raison...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">NON</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Cinq d’Épée témoigne de l’existence d’un conflit ouvert, qui pourra avoir lieu dans votre vie sentimentale, mais également dans le domaine professionnel. Soucieux de répondre à vos objectifs, vous n’hésiterez pas à rentrer d’un pas décidé dans la bataille, quitte à faire fi des conséquences de votre action. Prenez plutôt le temps de soupeser le pour et le contre avant de vous engager pleinement.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Cinq d’Épée vous enseigne l’importance du retour d’expérience. Il ne sert souvent à rien de déployer son énergie dans des choses aussi futiles que les conflits. Loin de vous permettre de vous rapprocher de vos buts, ces derniers ont davantage tendance à ralentir votre évolution et à vous attirer les foudres de vos semblables. Choisissez donc mieux les causes que vous souhaitez défendre !
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU CINQ D'ÉPÉE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Il existe un bellicisme inhérent au Cinq d’Épée, l’arcane mettant en lumière les tensions unissant les desseins propres à chaque homme et la complexité de leur matérialisation au sein du monde physique.
+                            </p>
+
+                            <p class="p-header">
+                                L’influence la plus manifeste de l’arcane se traduit par l’existence de conflits majeurs dans la vie du consultant, qui peuvent aussi bien avoir trait à l’univers professionnel qu’aux sphères sentimentales et amicales. En raison des qualités de réflexion propres à l’enseigne, le Cinq d’Épée l’encouragera probablement à avancer ses pions et à façonner des arguments percutants, l’engageant de fait de plein pied dans une bataille dont il sortira souvent vainqueur.
+                            </p>
+
+                            <p class="p-header">
+                                Malgré cette résolution d’apparence bénéfique, le consultant ressentira comme un goût amer dans sa bouche. Les conséquences du conflit s’avéreront en effet plus douloureuses que jamais et certains doutent s’accapareront de son esprit. L’énergie extraordinaire déployée à vaincre son opposition n’aurait-elle pas pu être déployée à meilleur escient, non par simple plaisir de dominer mais dans une optique plus constructive ?
+                            </p>
+
+                            <p class="p-header">
+                                Obsédé par la victoire, le consultant n’a en fait pas hésité à blesser ses interlocuteurs au cours de la bataille. Si son triomphe lui a apporté une satisfaction de courte durée, les conséquences de son action sur le long terme sont dangereuses. Les blessures engendrées risquent bien de l’isoler des autres. Le jeu en valait-il donc la chandelle ?
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU CINQ D'ÉPÉE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Contrairement à ce que l’on pourrait instinctivement penser, le Cinq d’Épée inversé est généralement considéré comme un arcane résolument positif, susceptible de faire prendre conscience au consultant de son excès d’agressivité.
+                            </p>
+
+                            <p class="p-header">
+                                Quand il apparaît à l’envers, le Cinq d’Épée témoigne ainsi d’une certaine forme de maturité. Ayant su tirer les enseignements de son passé, le consultant reconnaît aujourd’hui les dangers du conflit et ne cherche plus comme avant à faire part de ses points de vue en dépit de tout bon sens. Quand un désaccord survient, il lui est désormais plus facile de prendre en compte l’avis de son interlocuteur, qu’il ne considère plus comme une véritable menace. Le consultant sort alors des méandres de son monde intérieur pour accepter pleinement la place qui est la sienne au sein de la société. Il fait désormais partie d’un tout.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Cavalier de Bâton</h1>
+                    <h2 class="h2-page">Knight of Wands</h2>
+                    <p class="p-header">
+                        Le charmant Cavalier de Bâton fait bouger les choses. Il est passionné, ambitieux et orienté vers l'action, et n'a pas peur d'essayer de nouvelles choses. Soyez enthousiaste à l'égard de vos nouveaux projets et entreprises, mais veillez à ne pas agir de manière trop impulsive.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">énergie, volonté, détermination, action, réussite...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">impulsivité, retards, manipulation, agressivité, matérialisme...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Cavalier de Bâton annonce l’arrivée d’une personne influente dans votre vie ou la mise en place d’une action susceptible d’infléchir le cours de votre destin. Le personnage est donc associé à l’idée de changement et d’évolution.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Cavalier de Bâton vous enseigne les vertus de l’action et de l’abnégation, deux qualités essentielles si vous souhaitez atteindre à terme les objectifs que vous vous êtes fixés. Avec lui, pas de place pour l’ennui ou la routine, son énergie hors norme favorisant la mise en mouvement et les découvertes en tout genre.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU CAVALIER DE Bâton TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Comme tous les autres chevaliers du tarot divinatoire, le Cavalier de Bâton est associé à une action en train d’être mise en place ou en cours de réalisation. Dans d’autres situations, il suggère l’arrivée d’une personne susceptible de jouer un rôle prépondérant dans la vie du consultant. Il renvoie enfin quelque fois à certains traits de caractère spécifiques du consultant ou à ceux de l’un de ses proches.
+                            </p>
+
+                            <p class="p-header">
+                                D’un point de vue général, le Cavalier de Bâton est un symbole puissant de force et d’abnégation. Représentant le monde de l’énergie, ce jeune homme plein de détermination est bien décidé à atteindre rapidement ses objectifs, sans guère se soucier des conséquences de ses actions. Si ce comportement quelque peu impulsif peut parfois laissait des traces, il est également idéal pour tout ceux souhaitant vivre leur rêves et matérialiser leur vision. Avec lui, les obstacles ne sont jamais considérés comme des problèmes, mais sont perçus comme de simples contretemps, la vitalité extraordinaire du personnage permettant de les surmonter sans difficulté.
+                            </p>
+
+                            <p class="p-header">
+                                Dans sa vie sociale, le Cavalier de Bâton est parfois difficile à suivre, tant son énergie peut surprendre les personnes davantage habituées à se satisfaire d’une vie routinière. Cette qualité est cependant un atout indéniable. Elle facilite en effet grandement la prise de décision et repousse l’ennui le plus loin possible.
+                            </p>
+
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU CAVALIER DE Bâton TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il est tiré à l’envers, le Cavalier de Bâton peut renvoyer à deux situations distinctes. Pour mieux appréhender son message, il s’agira donc de prendre contact avec un professionnel et d’analyser l’arcane en fonction des autres cartes du tirage.
+                            </p>
+
+                            <p class="p-header">
+                                Dans le premier cas de figure, le Cavalier de Bâton inversé laisse supposer un manque flagrant d’action de la part du consultant. Paralysé par les conséquences possibles de ses décisions, ce dernier s’enferme facilement dans les affres de la réflexion, sans qu’elle ne débouche jamais sur une mise en mouvement. Une certaine forme de désemparement apparaîtra donc forcement tôt ou tard chez le consultant s’il n’apprend pas à considérer à leur juste valeur les vertus de l’action.
+                            </p>
+
+                            <p class="p-header">
+                                Dans le second cas de figure, le Cavalier de Bâton inversé traduit l’existence d’obstacles d’importance, ralentissant momentanément l’évolution du personnage. Indépendantes de sa volonté et difficilement contrôlables, ces embûches sont une source majeure de frustration. Pour qu’elle ne se transforme pas en colère, il s’agira de prendre un peu de hauteur face à cette situation et d’accepter pour une fois de perdre un peu de temps. Les objectifs à long terme ne sont de toute façon pas remis en question.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

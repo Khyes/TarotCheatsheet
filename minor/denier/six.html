@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Six de Denier</h1>
+                    <h2 class="h2-page">Six of Pentacles</h2>
+                    <p class="p-header">
+                        Carte de l'harmonie financière, de la générosité et du partage. Vous pouvez être soit celui qui donne joyeusement, soit celui qui reçoit gracieusement. Dans tous les cas, il s'agit d'une relation fondée sur la bonne foi. N'oubliez cependant pas qu'il est important de pouvoir prendre soin de vous.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">réussite sociale, don, charité, stabilité financière, équilibre...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">dette, mauvaise gestion financière, déséquilibre, égoïsme, irresponsabilité...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Six de Denier vous encourage à profiter de votre situation financière particulièrement intéressante. Vos qualités vous ont permis d’accumuler de la richesse. Ne tombez pas dans le piège de l’accumulation et de la cupidité. Apprenez à vivre votre vie au jour le jour et cessez pour un temps de vous projeter dans l’avenir.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Six de Denier vous enseigne les vertus du partage et de la charité. Vous êtes désormais à l’abri du besoin et il ne sert plus à rien d’accumuler par simple peur de manquer. Prenez conscience de la chance qui est la vôtre et tournez-vous vers ceux qui sont dans le besoin.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU SIX DE DENIER TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il apparaît à l’endroit dans un tirage de tarot de Marseille, le Six de Denier véhicule l’idée d’épanouissement personnel et d’harmonie financière. Dans un monde régi par l’argent, le consultant a rapidement compris l’importance de la planification et du labeur acharné. Ces qualités cartésiennes lui ont permis au fil du temps d’assurer la pérennité de ses finances et de se mettre durablement à l’abri du besoin.
+                            </p>
+
+                            <p class="p-header">
+                                Le Six de Denier n’évoque cependant pas simplement une quête d’accumulation de richesses. L’arcane parle également de partage et d’empathie. Reconnaissant la chance qui est la sienne, le consultant ne cherche pas à s’enrichir par simple cupidité, il désire avant tout en faire profiter ceux qu’il aime. Quand l’occasion se présente, il n’hésite ainsi pas à distribuer une partie de son argent à ceux qui seraient dans le besoin. Cette démarche pleine d’humanité doit être saluée !
+                            </p>
+
+                            <p class="p-header">
+                                Dans certaines configurations de tirage, le Six de Denier peut également être perçu sous l’angle de celui qui reçoit. Traversant une période difficile, le consultant sollicitera alors l’aide financière d’une personne mieux nantie. Il s’agira alors pour lui de faire preuve de gratitude, mais également de prendre garde à ne pas tomber dans une situation de dépendance vis-à-vis du donateur.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU SIX DE DENIER TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Le Six de Denier inversé renvoie le plus souvent à l’idée opposée. Dans ce cas de figure, le partage ne se fait ainsi que dans un sens, et l’argent prêté par le consultant sera perdu à jamais. Pour ce dernier, il conviendra ainsi à l’avenir de faire particulièrement attention à qui il souhaite rendre service, particulièrement s’il se trouve lui-même dans une situation financière délicate.
+                            </p>
+
+                            <p class="p-header">
+                                Dans d’autres configurations de tirage, le Six de Denier inversé traduit la propension du consultant à dépenser plus qu’il ne possède. Rien ne sert de se voiler la face, ce déséquilibre financier deviendra tôt ou tard apparent et entraînera des conséquences parfois désastreuses. Pour le consultant, il est donc important d’apprendre à mieux gérer son argent, en ne prenant pas uniquement compte de ses besoins du moment, mais en acceptant de se projeter dans l’avenir.
+                            </p>
+
+                            <p class="p-header">
+                                Cette démarche responsable lui permettra à terme d’équilibrer ses finances.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

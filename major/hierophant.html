@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Le Pape</h1>
+                    <h2 class="h2-page">The Hierophant</h2>
+                    <p class="p-header">
+                        La carte du Pape représente un ensemble établi de valeurs et de croyances spirituelles et est souvent liée à la religion et à d'autres doctrines formelles. Avant de pouvoir
+                        découvrir vos propres systèmes de croyances et faire vos propres choix, le Pape vous encourage à apprendre les principes fondamentaux auprès d'une source fiable.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Spiritualité, conseil, clairvoyance, sagesse, vertu...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Stagnation, rigidité, manque d’assurance...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">PEUT-ÊTRE</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">L’influence de la carte du Pape à court terme se traduit souvent par l’apparition – ou la reconnaissance – d’une personne de confiance dans votre entourage proche. Si son apport ne se fait pas immédiatement sentir, elle posera les fondations à partir desquelles vous pourrez envisager l’avenir plus sereinement, à travers la confiance qu’elle vous transmet. Cette force tranquille ne pourra qu’être extrêmement positive pour votre évolution prochaine.
+
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">Sur le long terme, le Pape vous apprendra à mieux comprendre ce qui vous a construit, c’est à dire votre héritage psychologique, vos racines familiales et vos croyances religieuses. Il vous invite à vous épanouir en suivant un chemin tout tracé, celui qu’a déjà emprunté beaucoup de vos ancêtres. Cette acceptation de la règle vous apportera à terme une meilleure appréhension de votre destinée et cette harmonie que vous recherchiez depuis longtemps.
+
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU PAPE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">Pendant masculin de la Papesse, le Pape est sans aucun doute possible l’autorité spirituelle la plus éminente du tarot de Marseille. S’il règne sur le monde des Hommes, il tient avant tout son pouvoir d’instances supérieures, dont il se chargera de dévoiler les mystères à quiconque le demanderait. Pour réussir à faire passer son message, le personnage a su développer des facultés verbales hors norme, qui lui permettent d’être un médiateur particulièrement efficace. En homme mature et empli d’empathie, le Pape connaît parfaitement les difficultés d’une vie humaine et apportera une protection bienveillante. Il est ce personnage sage et charismatique sur lequel il fait bon de se reposer, cet homme plein d’humanité qui aime partager ses conseils et ses expériences. Certains n’hésiteraient d’ailleurs pas à comparer sa fonction à celle qu’endossent par exemple les psychologues ou les psychanalystes actuels. Grâce à lui, il est en fait toujours possible de trouver un refuge, même dans les périodes les plus complexes, et le chemin de la paix n’est jamais bien loin. Comme l’Empereur, le Pape s’inscrit volontiers dans la tradition et est particulièrement attaché à la conservation de la règle. Son rôle est ainsi précieux pour quiconque souhaiterait mieux appréhender son héritage familial ou ses racines.
+
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DU PAPE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">L’analyse de l’influence de la carte du Pape sur la destinée du consultant dépend peut être davantage que d’autres arcanes du tirage complet. Il peut à ce titre être difficile d’appréhender clairement la signification de l’arcane lorsqu’il est tiré à l’envers. C’est d’autant plus vrai que le personnage aime cultiver le mystère ! Ce tirage renvoie cependant volontiers à une rigidité psychologique ou comportementale trop grande, qui peut dans certaines situations empêcher le consultant d’atteindre ses objectifs. L’adaptabilité et la compréhension des spécificités de chacun sont des qualités essentielles pour quiconque souhaiterait avancer sereinement sur le chemin de la vie. Lorsqu’il est tiré à l’envers, le Pape peut ainsi rapidement devenir intolérant, susceptible, voire médisant envers les personnes qu’il ne comprend pas. Il traduit alors également un certain penchant pour le conformisme, ce qui peut fausser son analyse du monde contemporain. Cette position peut s’avérer dangereuse et contribuer à isoler le consultant de ses semblables.
+
+                            </p>
+
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

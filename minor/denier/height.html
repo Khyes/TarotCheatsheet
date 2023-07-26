@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Huit de Denier</h1>
+                    <h2 class="h2-page">Height of Pentacles</h2>
+                    <p class="p-header">
+                        Une carte de travail acharné, de diligence et d'apprentissage de nouvelles compétences. Il se peut que vous subissiez des changements dans votre travail ou votre éducation, tout cela dans le but d'améliorer votre situation.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">engagement, prise de conscience, changement, travail, apprentissage...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">blocage, perfectionnisme, retard, obsession, stagnation...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Huit de Denier témoigne de ces changements majeurs que vous traversez actuellement. Conscient de l’imperfection de votre vie, vous souhaitez aujourd’hui modifier certaines de vos habitudes et revoir vos objectifs. Vous êtes prêt à questionner vos certitudes les plus ancrées pour évoluer sereinement. Cette démarche courageuse sera à terme récompensée.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Huit de Denier traduit votre besoin d’évolution. Une fois vos nouveaux objectifs de vie fixés, vous ferez preuve d’une abnégation sans faille pour les atteindre le plus rapidement possible. Vous pourrez d’ailleurs toujours compter dans votre quête sur votre soif de connaissances et votre flexibilité.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU HUIT DE DENIER TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsque le Huit de Denier apparaît à l’endroit dans un tirage de tarot divinatoire, cela témoigne souvent de cette période de transformation que traverse actuellement le consultant. Conscient de l’imperfection de son quotidien, ce dernier acceptera alors entièrement de remettre en question certaines de ses convictions les plus ancrées pour évoluer d’un pas plus rapide sur le chemin de la vie. Le vent du changement souffle aujourd’hui puissamment derrière son dos, et le consultant appréhende désormais très bien les vertus de ce bouleversement.
+                            </p>
+
+                            <p class="p-header">
+                                Pour atteindre ses objectifs, il sera d’ailleurs prêt à s’engager intensément dans cette nouvelle voie. Son implication sans retenue et sa capacité à acquérir rapidement des connaissances seront à ce titre des alliés précieux. L’enseigne des deniers parlant toujours d’argent, de carrière ou d’études, ce sont bien entendu sur ces domaines que le Huit de Denier est susceptible d’agir le plus visiblement. Mais l’arcane délivre volontiers un message plus universel, qui favorise la mise en mouvement du consultant et son implication dans le domaine qu’il jugera le plus opportun.
+                            </p>
+
+                            <p class="p-header">
+                                Le changement de cap qu’accepte aujourd’hui le consultant ne résulte aucunement d’un événement extérieur ou du hasard. Il est le résultat d’une prise de conscience profonde des choses qui pourraient être améliorées. C’est d’ailleurs pour cela que ce renouveau est pérenne.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU HUIT DE DENIER TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Il est toujours difficile d’analyser précisément le message d’un arcane inversé sans prendre en considération les autres cartes présentes dans le tirage. D’un point de vue général, lorsqu’il apparaît à l’envers, le Huit de Denier traduit un certain nombre de blocages chez le consultant, qui l’empêchent pour le moment d’avancer aussi rapidement qu’envisagé.
+                            </p>
+
+                            <p class="p-header">
+                                Les qualités cartésiennes propres à l’enseigne des deniers constituent dans la plupart des situations un atout formidable. Parfois, un perfectionnisme trop marqué est cependant susceptible de ralentir l’évolution du consultant. Souhaitant par dessus tout atteindre les objectifs qu’il s’est fixés, ce dernier a alors tendance à se focaliser sur les détails, en oubliant par la même occasion le sens de sa démarche. La perfection est difficile à atteindre et lorsqu’un obstacle survient, il est souvent plus efficace d’emprunter un chemin de traverse que de perdre son temps sur une solution qui n’existe peut-être pas. Cette attitude raisonnable lui évitera en outre de gaspiller inutilement son énergie, qui pourra dans le futur être utilisée à meilleur escient.
+                            </p>
+
+                            <p class="p-header">
+                                Pour le consultant, il sera en fait primordial de faire preuve d’un peu plus de flexibilité et d’accepter que des changements interviennent dans sa vie.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

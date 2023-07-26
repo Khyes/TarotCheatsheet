@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Valet d'Épée</h1>
+                    <h2 class="h2-page">Page of Sword</h2>
+                    <p class="p-header">
+                        Cette carte représente une nouvelle énergie, de nouveaux projets et de nouvelles entreprises. Il se peut que vous soyez confronté à des conflits, mais votre capacité à raisonner, votre sens de la communication et votre intuition vous guideront tout au long du chemin.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">curiosité, motivation, communication, confiance, dynamisme...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">arrogance, précipitation, manipulation, conflit, immoralité...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Lorsqu’on analyse les influences du Valet d’Épée à court terme, c’est l’urgence d’agir qui apparaît immédiatement. Vous êtes aujourd’hui traversé par une créativité sans pareille et un besoin de changement s’est emparé de vous. N’ayez pas peur de bouleverser votre quotidien et n’hésitez pas à évoluer si toutes les conditions sont réunies.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Valet d’Épée vous enseigne les vertus de la constance. Il ne suffit en effet pas de commencer l’action. Pour mener à bien vos projets, vous devrez également apprendre à agir dans la durée, de façon à concrétiser de façon palpable votre vision. Essayez donc de ne pas vous éparpiller et développez votre sens de la rigueur. Cette qualité vous sera d’une aide précieuse dans votre quête d’épanouissement.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU VALET D'ÉPÉE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Avant de nous attarder plus spécifiquement sur le message transmis par le Valet d’Épée, il nous semblait judicieux de rappeler le rôle joué par la suite des valets dans le cadre d’un tirage de tarot de Marseille. Ces 4 personnages doivent avant tout être considérés comme des porteurs de message. Ils représentent cette étincelle qui surgit entre la pensée et l’action. Ils sont ce feu vert qui nous autorise à nous mettre en mouvement.
+                            </p>
+
+                            <p class="p-header">
+                                Dans l’univers de la cartomancie, aucun personnage ne présente peut-être un si bel équilibre entre capacité de réflexion et action que les figures d’épée. Le valet de cette suite ne déroge bien entendu pas à la règle ! Le Valet d’Épée apprécie le fourmillement d’idées, dans lequel il ne se perd jamais. Lorsque sa décision sera prise, il n’hésitera pas à faire part de ses projets à ses proches et saura réunir les ingrédients nécessaires à leur concrétisation.
+                            </p>
+
+                            <p class="p-header">
+                                Plein d’énergie, le jeune homme agit en fonction des valeurs qui lui semblent justes, en tout cas lorsqu’elles s’accordent avec ses émotions. L’adéquation entre corps et esprit est ici idéale. Le Valet d’Épée n’est guère effrayé par les embûches et les difficultés, qu’il se fera un plaisir de surmonter. Sûr de ses forces, il a d’ailleurs la capacité de franchir les plus hauts sommets.
+                            </p>
+
+                            <p class="p-header">
+                                Le jeune valet est un être profondément sociable qui n’agit que rarement tout seul. Avec lui, le travail d’équipe et la communication sont donc foncièrement favorisés. Si le personnage souffre parfois d’une tension intérieure trop forte, c’est qu’il est entièrement impliqué dans sa tâche. Il comprend d’ailleurs difficilement les personnes n’agissant pas de la sorte, une attitude pouvant parfois causer des conflits. Il s’agira pour lui de trouver un moyen d’évacuer toute cette agitation s’il souhaite réellement inscrire son action dans la durée.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU VALET D'ÉPÉE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Deux cas de figure peuvent se présenter lorsque l’arcane du Valet d’Épée inversé apparaît dans un tirage. Dans le premier cas, le consultant pourra faire preuve d’une belle énergie, mais celle-ci aura tendance à s’éparpiller dans toutes les directions. Ce comportement est parfaitement contre-productif, ne permettant pas de concrétiser les objectifs sur le long terme. Il s’agira alors de prendre du temps pour soi et de bien définir ses projets.
+                            </p>
+
+                            <p class="p-header">
+                                Dans le second cas de figure, le Valet d’Épée inversé indique un blocage entravant la marche en avant du consultant. Les mots ne sont alors jamais suivis d’action. Le consultant apparaît alors davantage comme un beau parleur que comme une personne déterminée à vivre en accord avec sa pensée. Le plus important sera alors de comprendre les raisons de cette inaction et d’essayer de résoudre ces nœuds psychologiques.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">La Justice</h1>
+                    <h2 class="h2-page">The Justice</h2>
+                    <p class="p-header">
+                        La carte Justice représente la justice, l'équité, la vérité et la loi. On vous demande de rendre compte de vos actions et vous serez jugé en conséquence. Si vous avez agi en accord avec votre Moi supérieur et pour le plus grand bien des autres, vous n'avez pas à vous inquiéter. En revanche, si vous n'avez pas agi de la sorte, vous serez interpellé et vous devrez assumer vos actes.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Maîtrise, équilibre, droiture, vérité, ordre...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Jugement, condamnation, absolutisme, incertitude, rigidité...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">PEUT-ÊTRE</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Comme l’Amoureux, la Justice ne fait dans un premier temps que semer les graines de son enseignement. Elle vous fait comprendre que chacune de vos décisions est susceptible d’influencer activement votre vie et celle des autres. Il s’agit donc toujours d’agir en fonction de vos besoins profonds, dans le parfait respect des valeurs morales que vous souhaitez endosser.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, la Justice vous enseigne les bienfaits de l’abnégation. Il ne suffit en fait pas d’agir sporadiquement en accord avec vous-même, il convient de maintenir cette ligne de conduite à chaque instant de votre vie. Cette droiture morale est une démarche formidable pour quiconque souhaiterait récolter à terme les fruits de ses bonnes actions.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE LA JUSTICE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                L’arcane de la Justice souligne la nécessité de la droiture et de l’engagement. Elle exige à ce titre peut-être davantage que les autres lames la parfaite maîtrise de soi et des choses. Si l’arcane est capable de nous indiquer le chemin à suivre, notre ligne de conduite nécessitera le strict respect d’une certaine forme de morale, une démarche que certains n’hésiteront à qualifier d’austère. Peu attrayante de prime abord, cette rigidité répond pourtant à un objectif hautement constructif : mettre le consultant en face de ses responsabilités et de ses choix. Comme dirait l’adage, qui sème le vent récolte la tempête. Mieux vaut donc s’engager parfaitement préparé dans le chemin de la vie, en gardant toujours à l’esprit que nos actes ont des conséquences irrémédiables, sur notre propre vie mais également sur celle d’autrui. Sous ses airs inquisiteurs, la Justice constitue également un outil formidable pour celui qui désirerait progresser. Le personnage sait ainsi faire preuve de clémence, fort de son expérience et de son empathie. S’il fait parfois tomber sa sentence, la punition a avant tout pour vocation de nous faire comprendre les valeurs qui nous tiennent vraiment à cœur, dans une démarche évidente de croissance et d’épanouissement personnel. La Justice est à ce titre associée à un fabuleux pouvoir de transformation pour quiconque arriverait à tirer profit de ses enseignements. Comme souvent, l’interprétation d’un tirage dépendra fortement des autres cartes entourant l’arcane.
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DE LA JUSTICE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’elle est tirée à l’envers, la carte de la Justice se révèle souvent annonciatrice d’une période prochaine de doute, d’instabilité ou de sanction. Dans l’interprétation la plus traditionnelle, le consultant récolte alors les fruits de ses mauvaises actions du passé. Ces « mauvaises actions » ne sont pas nécessairement rattachées à des comportements illégaux, mais concernent également les situations dans lesquelles le consultant s’est impliqué sans mesurer les conséquences de ses actes. Dans le domaine sentimental, il n’est par exemple pas rare de s’engager par simple crainte de la solitude, pour oublier les blessures d’une relation passée douloureuse ou par simple habitude. Cette position traduit un décalage certain entre le consultant et ses désirs profonds. La Justice attend des Hommes de grandes choses. Pareil comportement ne saurait ainsi la satisfaire pleinement.
+                            </p>
+
+                            <p class="p-header">
+                                La situation peut également concerner le domaine professionnel. Le quotidien a tendance à nous éloigner de nos aspirations profondes. Il est ainsi fréquent de se contenter d’un chemin de carrière prédéfini, présentant certes l’avantage du confort et de la stabilité, mais ne répondant pas entièrement aux objectifs que nous souhaiterions vraiment atteindre. Voilà bien l’un des grands enseignements de l’arcane de la Justice. Par l’espoir qu’elle véhicule, elle nous pousse à agir dans une direction qui nous correspond vraiment, selon des valeurs et des désirs qui font parfaitement écho à ce que nous sommes.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

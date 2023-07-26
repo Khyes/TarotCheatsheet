@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">As d'Épée</h1>
+                    <h2 class="h2-page">Ace of Swords</h2>
+                    <p class="p-header">
+                        Une carte de courage, d'idées nouvelles, de percées mentales et de clarté. La confusion s'est dissipée et vous avez un esprit équilibré. Eliminez les excès et concentrez-vous sur vos objectifs.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">détermination, action, justice morale, réflexion, intelligence...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">blocage, inertie, agressivité, indécision, bellicisme...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, l’As d’Épée vous fera profiter d’une énergie retrouvée et d’un enthousiasme sans commune mesure. Ce déclic résultera d’une mise au clair avec vous-même et d’une remise en cause de votre situation. Votre capacité de réflexion vous permettra de définir précisément vos objectifs de vie. Votre détermination sera garante de vos réussites futures.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, l’As d’Épée vous rappelle l’importance de l’action et de la mise en mouvement. La pensée constitue un terreau formidable pour quiconque souhaiterait se rapprocher de lui-même et agir en fonction de valeurs qui font sens. Gardez cependant toujours à l’esprit que vos certitudes vous appartiennent et que votre bien-être passe nécessairement par l’acceptation de celles des autres.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE L'AS D'ÉPÉE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Quand il apparaît à l’endroit dans une séance de tarot divinatoire, l’As d’Épée est un arcane particulièrement puissant. Il insufflera un vent nouveau dans la vie du consultant, il lui permettra de remettre en cause ses certitudes et d’infléchir profondément son destin.
+                            </p>
+
+                            <p class="p-header">
+                                Cette lame mineure est souvent associée à un moment de grâce, à une période de lucidité extrême, à l’apogée d’un raisonnement brillant qui favorisera la prise de décision. Avec elle, tout le brouillard qui nous empêchait jadis d’avancer se dissipe progressivement. Notre vision du monde s’éclaircit, nos objectifs personnels nous apparaissent alors plus clairement. Il est désormais temps de s’attaquer au cœur du problème et de dénouer nos nœuds psychologiques les plus complexes. C’est pourquoi l’As d’Épée est volontiers considéré comme le triomphe de la pensée sur l’inertie.
+                            </p>
+
+                            <p class="p-header">
+                                Après avoir traversé ces conflits internes d’une violence parfois remarquable, il s’agira d’utiliser à bon escient cette énergie extraordinaire corrélée à l’arcane. C’est d’autant plus vrai que cette dernière est susceptible de se déployer dans tous tous les domaines de la vie du consultant. Elle favorisera ainsi grandement sa réussite professionnelle, en lui faisant prendre conscience de ses qualités intrinsèques et des vertus de la détermination. Elle lui fera pousser des ailes quand il sera question de réformer son quotidien. Elle lui permettra de s’investir pleinement dans ces activités depuis longtemps délaissées, mais pourtant essentielles à son bien-être.
+                            </p>
+
+
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DE L'AS D'ÉPÉE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Si l’As d’Épée apparaît à l’envers, la prudence est de rigueur. L’énergie débordante associée à l’arcane est un atout précieux pour quiconque souhaiterait évoluer sur le chemin de la vie. Elle pourra cependant s’avérer particulièrement néfaste lorsqu’elle est mal maîtrisée. La volonté de réussite du consultant se transformera alors en quête obsessionnelle et sa mise en mouvement sera fréquemment teintée d’agressivité. Obnubilé par la poursuite de ses objectifs, il éprouvera alors toutes les difficultés du monde à considérer les besoins de ceux qui l’entourent et s’enfermera peu à peu sur lui-même. Sans grande surprise, la qualité de sa vie sociale s’en trouvera largement diminuée.
+                            </p>
+
+                            <p class="p-header">
+                                Dans certains cas de figure, l’As d’Épée inversé traduit l’incapacité du consultant à se mettre au clair avec lui-même. Ses objectifs de vie restent alors parfaitement opaques à son esprit et une certaine forme d’enlisement apparaît. Pour évoluer, il s’agira d’essayer de dénouer ces nœuds et d’accepter de se confronter à ses peurs enfouies.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

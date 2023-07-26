@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">L'Étoile</h1>
+                    <h2 class="h2-page">The Star</h2>
+                    <p class="p-header">
+                        Comme l'Étoile suit la carte de la Maison de Dieu dans le Tarot, elle vient comme un répit bienvenu après une période de destruction et d'agitation. Vous avez relevé de nombreux défis et vous vous êtes dépouillé de toutes les croyances limitatives qui vous retenaient auparavant. Vous réalisez votre essence fondamentale, qui vous êtes sous toutes les couches.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Amour, espoir, élévation, acceptation, sérénité...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Inertie, méfiance, désillusion, malchance, déséquilibre...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, l’arcane de l’Étoile vous encourage à persévérer dans le chemin que vous avez d’ors et déjà tracé. Comme tout vient à point à qui sait attendre, vous récolterez à terme les fruits bien mûrs de votre travail ! Votre bonne humeur communicative et votre sérénité ne vous poussent d’ailleurs pas au changement.Vous avez bien raison !
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, l’Étoile vous apportera douceur, protection et réussite. Avec elle, pas de doute possible : ce sont les projets à long terme qui sont particulièrement en vue. N’hésitez donc pas à vous lancer et à inscrire votre action dans la durée. Si vous apprenez à la saisir, la chance vous accompagnera en amour, en finance et au travail. De belles perspectives s’annoncent donc !
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE L'ÉTOILE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il est tiré à l’endroit, l’arcane de l’Étoile revêt une signification particulièrement positive pour le futur proche et lointain du consultant. Il faut avant tout considérer la carte comme l’archétype de la générosité et de l’amour désintéressé. Grâce à elle, une lumière douce et diffuse se déploiera dans sa vie. En être éthéré, le consultant pourra désormais accepter de recevoir toute l’affection qu’il mérite, sans jamais profiter des éventuelles faiblesses d’autrui. Il apprendra également à donner à ses proches de façon totalement désintéressée, dans une démarche pleine de tendresse et d’humanité.
+                            </p>
+
+                            <p class="p-header">
+                                Ce comportement profondément empathique naît souvent d’une prise de conscience de la part du consultant. Les épreuves de la vie lui ont enseigné la vacuité de certaines situations et il sait désormais ce – et ceux ! - qui compte vraiment pour lui. Après avoir traversé moultes tempêtes et remonté les courants les plus puissants, il n’est plus aujourd’hui temps de s’attarder sur des futilités. La construction de fondations plus solides occupe maintenant le devant de la scène.
+                            </p>
+
+                            <p class="p-header">
+                                Cette prise de conscience fondamentale s’explique également par l’acceptation profonde des règles de la vie, de ses côtés injustes et de ses belles surprises. Une même logique se déploie d’ailleurs dans le domaine psychologique. La sérénité retrouvée du consultant repose sur une connaissance plus fine des ressorts de son esprit, qui lui permet d’apprécier à leur juste valeur toutes ces qualités dont il peut faire profiter son entourage.
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DE L'ÉTOILE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Tiré à l’envers, l’arcane de l’Étoile traduit une certaine forme de lassitude chez le consultant. Les obstacles qui se présentent devant lui paraissent alors plus hauts qu’ils ne le sont réellement, les pensées négatives surgissent volontiers, l’impulsivité domine également le tableau. Certaines difficultés relationnelles sont également à prévoir, résultant principalement d’un mode de communication inapproprié et d’un comportement quelque peu rigide, que certains n’hésiteront pas à qualifier de borné ! Pour reprendre une direction plus positive, il s’agira d’accepter de regarder ses vérités bien en face et de remettre en question ses certitudes les plus ancrées. C’est d’ailleurs ce que nous enseigne la Maison Dieu. Il sera également essentiel de prendre conscience de ses qualités intrinsèques et d’accepter ses défauts pour ce qu’ils sont réellement. L’acceptation de soi est le premier palier à franchir lorsque l’on souhaite profiter pleinement de ce que la vie a à nous offrir.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

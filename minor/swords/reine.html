@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Reine d'Épée</h1>
+                    <h2 class="h2-page">Queen of Swords</h2>
+                    <p class="p-header">
+                        La Reine d'épée est posée, mûre et intelligente ; elle est capable de penser clairement sans émotion. Face à un problème, utilisez votre tête plutôt que votre cœur.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">indépendance, parole, intelligence, méthode, rationalité...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">froideur, manigance, hypocrisie, rancœur, jalousie...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">PEUT-ÊTRE</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, la Reine d’Épée vous enseigne les vertus de la réflexion et de l’analyse. Les enjeux d’une situation sont parfois complexes à appréhender et il est toujours bon de prendre son temps avant de s’engager définitivement dans une cause. Comptez davantage sur votre intellect et apprenez à vous détacher un peu de vos émotions si vous ne voulez pas céder à des faux-semblants !
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le comportement austère de la Reine d’Épée favorise nécessairement l’isolement. Prendre de la distance face aux événements est certes essentiel à votre épanouissement, gardez cependant à l’esprit que la qualité de votre vie sociale est également essentielle à votre bonheur.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE LA REINE D'ÉPÉE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsqu’elle est tirée à l’envers, la Reine d’Épée est volontiers associée au monde de l’intelligence et de la réflexion. Son esprit très incisif lui permet d’appréhender presque immédiatement les enjeux d’une situation. Elle prendra ensuite les mesures nécessaires à la résolution du problème, dans une démarche méthodique dont elle seul a le secret. Cette impressionnante capacité de discernement lui sera d’une aide précieuse dans sa quête de réussite sociale ou professionnelle.
+                            </p>
+
+                            <p class="p-header">
+                                La Reine d’Épée ne brille pas spécialement par ses qualités d’empathie ou par sa sensibilité. Avec elle, c’est avant tout la froideur de l’intelligence qui est mise en avant. Ce trait de caractère ne lui permet malheureusement pas de nouer des relations durables, tant ses interlocuteurs se trouvent décontenancés face à cette armure.
+                            </p>
+
+                            <p class="p-header">
+                                Ne dressons toutefois pas un tableau trop sombre de son caractère. Les gens qui l’entourent trouveront en effet nécessairement en elle une alliée précieuse quand il s’agira de se sortir d’un mauvais pas ou de résoudre une situation particulièrement complexe. Le meilleur moyen de tirer profit de son extraordinaire intelligence analytique ? Présenter les choses de la façon la plus détachée possible, sans lui cacher le moindre détail !
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DE LA REINE D'ÉPÉE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Pour mieux comprendre l’influence que la Reine d’Épée inversée est susceptible d’exercer sur la vie du consultant, dirigeons-nous vers la Reine de Coupe, son antagoniste le plus évident. Tandis que l’une dirige exclusivement son action par l’intermédiaire de la raison et de l’analyse, l’autre est avant tout régie par le pouvoir de l’émotion.
+                            </p>
+
+                            <p class="p-header">
+                                Quand elle apparaît à l’envers, la Reine d’Épée indique ainsi souvent au consultant qu’il n’utilise pas assez son intellect lorsqu’il fait face à une situation périlleuse, préférant faire reposer son action sur l’instinct et la partie émotionnelle de son cerveau. Les émotions s’avèrent cependant souvent trompeuses et il gagnerait beaucoup à faire preuve d’un peu plus d’objectivité !
+                            </p>
+
+                            <p class="p-header">
+                                Dans d’autres situations, la Reine d’Épée inversée peut également symboliser une personne particulièrement hautaine, qui n’hésitera pas à blesser les autres par la parole si elle en ressent le besoin. Il s’agira bien entendu de prendre de la distance par rapport à elle.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

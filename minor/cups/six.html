@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Six de Coupe</h1>
+                    <h2 class="h2-page">Six of Cup</h2>
+                    <p class="p-header">
+                        Vous vous sentez peut-être nostalgique en repensant à vos souvenirs d'enfance ou d'adolescence. S'il est bon de se replonger de temps à autre dans ses souvenirs, n'oubliez pas que le passé est derrière vous et qu'il n'est pas judicieux de s'y attarder en permanence. N'oubliez pas de vous concentrer sur le présent.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">nostalgie, enfance, douceur, tendresse, cocon familial...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">idéalisation du passé, mélancolie, fuite du présent, regret, traumatisme...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Six de Coupe vous encourage à replonger dans la douceur de vos souvenirs d’enfance, dans cette atmosphère pleine d’amour et de tendresse qui a tant contribué à forger votre personnalité. Cette démarche vous apportera ce brin de douceur qui vous aidera à traverser les situations les plus délicates, elle vous rappellera que le calme est toujours possible, même lorsque vous traversez les tempêtes les plus violentes.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Six de Coupe vous permettra de jongler d’harmoniser votre passé et votre futur, de façon à vous sentir parfaitement à l’aise dans votre présent. Si vos expériences d’antan expliquent en partie ce que vous êtes aujourd’hui, rien ne sert de s’y attarder trop fréquemment. La vie se projette toujours dans le futur. Pour être bien avec soi-même, il s’agira donc de l’imaginer dès à présent.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU SIX DE COUPE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Dans son interprétation la plus fréquente, le Six de Coupe est volontiers associé au souvenir et à la nostalgie. Il parle de ce passé qui ne cesse encore aujourd’hui d’influencer notre vie et nos décisions. C’est d’ailleurs pourquoi l’arcane peut aussi bien s’avérer positive que néfaste pour la vie du consultant.
+                            </p>
+
+                            <p class="p-header">
+                                Ce n’est un secret pour personne, nos expériences passées ont largement contribué à ce que nous sommes devenus aujourd’hui. Elles nous ont permis de forger notre caractère et d’apprendre de nos erreurs. Elles ont fait de nous des hommes meilleurs, plus enclins à reconnaître l’importance des petits plaisirs de la vie, plus aptes à prendre du recul lorsqu’une situation nous bouleverse. Embrasser son passé, c’est également revivre les doux moments de notre enfance, profiter une seconde fois de ces expériences mémorables qui nous mettent encore du baume au cœur.
+                            </p>
+
+                            <p class="p-header">
+                                Le danger avec le Six de Coupe est justement de trop se reposer sur ces instants révolus. Lorsque notre quotidien ne nous satisfait plus vraiment, il peut être tentant de fuir dans ses souvenirs. Ce ne sera un secret pour personne : cette démarche n’est bien entendu pas pérenne. Le bonheur ne se contente jamais d’expériences du passé, il souhaite au contraire se projeter à l’avenir. Le bien-être est toujours disponible lorsque l’on sait regarder au bon endroit. Il s’agira donc pour nous de l’entretenir au jour le jour, comme on arrose patiemment une plante ou l’on polit un diamant.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU SIX DE COUPE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsque le Six de Coupe est tiré à l’envers, il témoigne le plus souvent des difficultés éprouvées par le consultant à faire table rase de son passé. S’il est important d’accepter d’explorer ses souvenirs, il est tout aussi essentiel de ne jamais s’y accrocher trop fermement.
+                            </p>
+
+                            <p class="p-header">
+                                Le Six de Coupe inversé apparaît fréquemment lorsque certains traumatismes n’ont pas été résorbés. Nos croyances se forgent principalement dans notre enfance, et il peut parfois être difficile de s’en défaire l’âge adulte, même lorsqu’elle entravent notre progression. Il s’agira bien entendu pour le consultant d’accepter de s’abreuver autre part, d’ouvrir les yeux et de modifier profondément sa vision du monde.
+                            </p>
+
+                            <p class="p-header">
+                                Le passé doit nous servir de guide, de garde-fou pour que nous ne répétions pas toujours les mêmes erreurs. Il n’est pas notre point de référence unique. L’avenir est tout ce qui compte aujourd’hui.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

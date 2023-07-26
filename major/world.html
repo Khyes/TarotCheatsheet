@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Le Monde</h1>
+                    <h2 class="h2-page">The World</h2>
+                    <p class="p-header">
+                        Lorsque la carte du Monde apparaît dans une lecture du Tarot, vous rayonnez d'un sentiment de plénitude, d'accomplissement, d'épanouissement et d'achèvement. Un projet à long terme, une période d'études, une relation ou une carrière ont été menés à terme et vous vous délectez maintenant du sentiment d'achèvement et d'accomplissement.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Accomplissement, bonheur, réussite, plénitude, harmonie...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Ralentissement, doute, obstacle, hostilité, imprévu...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, l’arcane du Monde est associé au commencent d’un nouveau cycle. Vous constaterez ainsi rapidement l’émergence de nouvelles opportunités et un doux sentiment de calme intérieur s’emparera de vous. Cette situation exceptionnelle vient en fait récompenser tous les efforts auxquels vous avez consenti depuis maintenant de nombreuses années. Profitez-en comme il se doit et ne boudez pas votre plaisir !
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, la carte vous permettra de vous sentir parfaitement intégré au monde et à la société. Votre rôle au sein de l’univers fait désormais parfaitement sens et vous savez désormais la place que vous souhaitez occuper. Cette joie de vivre et cette sérénité sont ici pour durer. Vos proches profiteront sans aucun doute de ce bonheur communicatif.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU MONDE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Non sans raison, l’arcane du Monde est la carte la plus appréciée par les adeptes du tarot de Marseille. Difficile en effet de trouver la moindre facette obscure dans l’influence qu’elle exercera sur la vie du consultant ! D’un point de vue général, la lame est associée à une période d’accomplissement sans précédent. Elle symbolise ainsi tout ce qu’il y a de beau, de stable et de durable dans la vie d’un Homme.
+                            </p>
+
+                            <p class="p-header">
+                                Après avoir surmonté de nombreux obstacles, après avoir triomphé de périodes de doute et de remise en question, le consultant pourra enfin récolter les fruits de son labeur. Un cycle de vie vient de s’achever et une période particulièrement fructueuse se présente désormais devant lui. Elle ne risque d’ailleurs pas de prendre fin de sitôt, comme le montre la présence du taureau sur le coin gauche de la carte, un animal rattaché à l’idée d’évolution calme et pérenne.
+                            </p>
+
+                            <p class="p-header">
+                                D’un point de vue personnel, le Monde traduit la parfaite compréhension du consultant de la place qu’il occupe dans l’univers et la société. Il sait désormais le rôle qui est le sien, les causes qu’il souhaite défendre et les valeurs morales qui font sens à ses yeux. Cette clairvoyance ôte tout doute de son esprit et lui permet de se concentrer exclusivement sur ses objectifs véritables.
+                            </p>
+
+                            <p class="p-header">
+                                Une aura particulière se dégage d’un consultant placé sous l’influence de l’arcane du Monde. Comme une force magnétique, elle attire et influence les personnes qui croiseront son chemin. Une situation parfaite pour faire le bien autour de soi et aider ceux qui en ont besoin.
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DU MONDE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il est tiré à l’envers, l’arcane du Monde encourage le consultant à ne pas changer de cap et à poursuivre ses efforts. Si les récompenses de son travail ne se font pas encore apparentes, elles ne sauraient cependant tarder. Il est donc essentiel pour lui de ne pas se décourager à la moindre contrariété et d’accepter qu’un certain nombre d’obstacles viennent momentanément ralentir son évolution. En faisant preuve de constance et en respectant à la lettre les valeurs qu’il défend, le consultant atteindra rapidement les objectifs qu’il s’était fixé.
+                            </p>
+
+                            <p class="p-header">
+                                Parfois, la lame inversée du Monde traduit le matérialisme prononcé du consultant, résultant souvent d’un égo mal placé. S’il est normal d’être fier du chemin accompli et de vouloir profiter des fruits de son labeur, il est tout aussi important d’agir en fonction de valeurs plus nobles. L’altruisme, l’empathie et l’amour font partie de ces sentiments susceptibles d’atténuer ce petit péché d’orgueil.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

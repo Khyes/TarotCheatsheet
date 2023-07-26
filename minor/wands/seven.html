@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Sept de Bâton</h1>
+                    <h2 class="h2-page">Seven of Wands</h2>
+                    <p class="p-header">
+                        Vous vous êtes battu pour atteindre le sommet, mais vous devez maintenant travailler pour y rester. Tenez bon, préparez-vous à la concurrence qui vous attend.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">lutte, conflit, affirmation de soi, droiture, justice, morale...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">fuite, reniement, peur du conflit, abdication, inconstance...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">PEUT-ÊTRE</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Sept de Bâton témoigne d’une période majeure de lutte, susceptible de faire vaciller vos croyances les plus ancrées. Ces doutes concerneront aussi bien votre vie sentimentale que votre univers professionnel. Si cette expérience vous paraîtra de prime abord inconfortable, elle vous permettra de ressortir grandi et plus sûr des valeurs que vous souhaitez endosser.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Sept de Bâton vous enseigne les vertus de le droiture morale et de l’abnégation. Le conflit étant consubstantiel à l’Homme, rien ne sert de fuir ou de faire le dos rond dès que vos certitudes sont mises à mal. Pour toujours vous sentir en accord avec vous-même, apprenez à rester constant dans vos actes, vos paroles et vos valeurs.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU SEPT DE Bâton TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il apparaît à l’endroit, le Sept de Bâton peut, d’un premier coup d’œil, ressembler fortement au Cinq de l’enseigne. Si les deux cartes traduisent l’existence d’une lutte, leur message diffère pourtant fortement.
+                            </p>
+
+                            <p class="p-header">
+                                Le Cinq de Bâton nous mettait ainsi en garde contre les excès de l’agressivité quand nous trouvions dans une situation de conflit. La carte était mûe par une volonté de puissance et un désir de domination, qui encourageaient le consultant à gagner coûte que coûte la bataille, quitte à faire fi de ses croyances profondes. Le Sept de Bâton, au contraire, souligne l’importance d’être constant dans ses valeurs.
+                            </p>
+
+                            <p class="p-header">
+                                Les conflits font nécessairement partie du destin d’un homme et il n’est guère fructueux de baisser les bras dès que l’adversité survient. Avoir confiance en ses valeurs, c’est oser les affirmer à la face du monde quand l’occasion se présente et ne jamais renier les causes qui nous tiennent à cœur. Faire le dos rond face au conflit, c’est reconnaître la futilité de ses croyances et leur caractère ébranlable.
+                            </p>
+
+                            <p class="p-header">
+                                Grâce à sa vision de la vie et de l’idée qu’il se fait de la justice morale, le consultant a su patiemment construire son empire. Dans cette lutte d’influences, il s’agira pour lui de conserver ce qu’il a acquis et de rester sur ses positions.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU SEPT DE Bâton TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                S’il est toujours difficile d’analyser un tirage de ce type sans prendre en compte les autres arcanes, le Sept de Bâton inversé renvoie le plus souvent à deux situations distinctes.
+                            </p>
+
+                            <p class="p-header">
+                                Dans le premier cas de figure, l’arcane apparue à l’envers témoigne chez le consultant d’une sensation désagréable d’être acculé de toute part. Attaqué à sa gauche comme à sa droite, dans sa vie professionnelle comme dans sa vie sentimentale, il éprouve alors toutes les difficultés du monde à rester sur ses positions et à ne pas remettre en cause les valeurs qui l’animent. Les défis qui lui sont proposés lui paraissent difficiles à surmonter.
+                            </p>
+
+                            <p class="p-header">
+                                Dans d’autres situations, le Sept de Bâton inversé traduit au contraire sa propension à abdiquer à la moindre occasion. Ses croyances sont alors régulièrement bafouées et son chemin bifurque dès qu’une difficulté se présente. Une constance plus développée aidera à palier la situation.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

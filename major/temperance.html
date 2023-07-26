@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">La Tempérance</h1>
+                    <h2 class="h2-page">Temperance</h2>
+                    <p class="p-header">
+                        La tempérance apporte l'équilibre, la patience et la modération dans votre vie. Vous êtes invité à stabiliser votre énergie et à permettre à la force vitale de circuler à travers vous
+                        sans force ni résistance. Il est temps de retrouver votre fluidité et de remettre de l'ordre et de l'équilibre dans votre vie.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Harmonie, transmission, patience, réconfort, douceur...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Excès, manque de vision, impétuosité, instabilité, déséquilibre...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    À court terme, la Tempérance vous encourage à maintenir votre cap. L’harmonie règne aujourd’hui en vous et il est donc parfaitement naturel de garder bien au chaud ce qui vous a permis d’en arriver là ! La qualité de votre communication, votre douceur et votre droiture font de vous une véritable force tranquille. Ces traits de personnalité contribueront à votre bien-être, mais également à celui des gens qui vous entourent.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, la Tempérance vous invite à poursuivre votre quête du juste milieu. Il s’agira dès lors d’éviter autant que possible toute sorte d’excès, pour vous concentrer exclusivement sur les objectifs que vous vous êtes consciemment fixés. C’est en œuvrant patiemment et sans dérive vers vos aspirations profondes que vous vous sentirez le mieux.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE LA TEMPÉRANCE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Si l’Arcane sans Nom était la lame de la transformation, la Tempérance matérialise de son côté les résultats de cette épreuve. Après les difficultés induites par les remises en question et l’abandon de certains pans de sa vie passée, la femme ailée nous encourage à profiter de notre nouvelle situation, dans une démarche calme, harmonieuse et pérenne. Comme le suggère l’écoulement fluide du liquide entre les deux vases, les choses coulent désormais tranquillement dans la vie du consultant. Contrairement au message du Chariot par exemple, l’enseignement de la Tempérance ne met pas spécialement en exergue les bienfaits de l’action. Avec elle, il ne s’agit pas de croquer le monde par le biais d’un dynamisme sans faille, mais plutôt d’inscrire sereinement son action dans le durée. La voie du milieu n’est peut-être pas de prime abord le chemin le plus séduisant, mais c’est elle qui permet d’arriver à ses fins le plus rapidement et avec le moins d’efforts !
+                            </p>
+
+                            <p class="p-header">
+                                L’arcane de la Tempérance est profondément lié à la notion d’équilibre, bienfait qui s’appliquera aussi bien dans la vie personnelle et professionnelle du consultant qu’à l’intérieur de lui-même. Grâce à ses expériences, il sera désormais à même de faire preuve de modération et d’auto-contrôle. Rien ne sert de s’agiter comme un insecte autour d’une ampoule quand l’on peut profiter calmement du soleil allongé sur une plage !
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DE LA TEMPÉRANCE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Tirée à l’envers, la carte de la Tempérance témoigne au contraire des difficultés éprouvées par le consultant à se maintenir en sérénité. Les obstacles deviennent alors particulièrement ardus à franchir et tout événement contrariant, aussi infime soit-il, se transforme irrémédiablement en épreuve. Cette situation est une source majeure d’anxiété, d’agitation et de dispersion. Elle s’explique souvent par un mode de communication mal approprié, qui pourra selon les autres cartes du tirage être trop agressif ou au contraire trop retenu. Dans tous les cas, l’impossibilité d’exprimer ses ressentis et ses besoins a tendance à couper le consultant des personnes qui l’entourent. Il s’agira dès lors de prendre conscience de l’importance des mots et d’essayer progressivement d’améliorer sa communication. Parfois, la Tempérance inversée traduit une certaine forme de labilité émotionnelle, qui peut par exemple résulter d’une sensibilité trop grande, d’un besoin de contrôle mal maîtrisé ou d’une intolérance profonde aux frustrations. La solution consistera alors à travailler sur soi de façon à définir ce qui compte vraiment et à se projeter sur des objectifs de long terme.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

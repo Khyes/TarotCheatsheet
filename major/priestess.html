@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">La Papesse</h1>
+                    <h2 class="h2-page">The High Priestess</h2>
+                    <p class="p-header">
+                        La Grande Prêtresse est la souveraine de l'inconscient et vous invite à traverser le voile et à regarder vers l'intérieur. En ce moment, votre sens intuitif vous fournit des informations utiles et vous aide à entrer en contact avec votre subconscient.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Fécondité, spiritualité, amour, patience, richesse intérieure...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Secret, retard, intuition bloquée...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">PEUT-ÊTRE</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">Si la Papesse est un arcane qui agit davantage sur le long terme, cela ne signifie pas que son influence est nulle à court terme. Si vous avez tiré cette carte, les 3 prochains mois seront propices à une prise de conscience de votre propre potentiel. Vous pouvez désormais ouvrir les bras et laisser libre cours à votre intuition. La période sera à ce titre particulièrement propice au lancement de nouveaux projets professionnels, au bonheur relationnel ou à l’investissement.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">Vos souvenirs douloureux étant derrière vous, vous pouvez aujourd’hui vous consacrer pleinement à ce qui compte vraiment. Toutes les conditions sont réunies pour vous permettre d’exploiter votre potentiel dans sa pleine mesure. Associée au Bateleur ou à l’Empereur, la Papesse annonce la concrétisation de projets ambitieux et une ouverture accrue sur le monde extérieur. Restez tout de même patient, pour ne pas vous brûler les ailes.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE LA PAPESSE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">Lorsque la Papesse est tirée à l’endroit, elle revêt toujours une connotation positive. Faire face à cet arcane, c’est prendre conscience que sa situation personnelle évolue lentement et que les conditions indispensables au changement sont fondamentalement réunies pour profiter à terme de jours meilleurs. Le consultant en quête d’évolution peut d’ors et déjà se réjouir : il dispose en lui d’une intuition tenace et d’une compréhension de soi suffisante pour effectuer des choix justes et objectifs. Il s’agira cependant toujours de prêter attention à sa petite voix intérieure et d’accepter de faire régulièrement le point sur sa vie, le développement personnel passant toujours par la capacité d’appréhender des problématiques plus élevées que celles proposées par le quotidien. Contrairement au Bateleur, l’action de la Papesse ne s’inscrit pas dans l’univers matériel. Elle se déploie plutôt volontiers à travers les mystères de la perception et de l’intuition. C’est l’évolution secrète des choses qui est ici mise en avant. Au niveau relationnel, l’arcane traduit la présence - ou l’émergence prochaine - d’une relation de confiance, que cette dernière se tisse de manière amicale, amoureuse ou professionnelle. La Papesse est en effet souvent considérée comme le symbole de la mère Terre, comme cette Gaïa bienfaisante dont nous sommes en réalité tous issus. Véritable force de protection, elle nous protège des influences néfastes, nous entoure de tout son amour et saura nous guider en dévoilant ses secrets remplis de sagesse.
+
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DE LA PAPESSE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">Lorsqu’elle est tirée à l’envers lors d’une séance de cartomancie, la Papesse traduit le plus souvent qu’un blocage ralentit temporairement l’évolution personnelle du consultant. Elle est donc synonyme de temps d’arrêt, d’une période de repli sur soi ou de doute. Souvent, un tirage à l’envers de l’arcane dénote les difficultés du consultant à écouter ou à faire confiance à son intuition, cette force indispensable à quiconque souhaiterait s’accomplir sereinement. Les petits tracas du quotidien, les traumatismes encore mal résorbés, une rupture récente font partie des événements qui nous empêchent de plonger calmement à l’intérieur de nous. Ces petites complications ne devraient cependant pas être perçues négativement. Le chemin de la vie étant nécessairement parsemé d’embûches, il s’agira simplement de prendre le temps de les surmonter pour profiter pleinement de sa destinée. Ne jamais oublier que l’analyse d’un tirage prend toujours en compte l’ensemble des cartes.
+                                
+                            </p>
+
+
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

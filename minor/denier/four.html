@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Quatre de Denier</h1>
+                    <h2 class="h2-page">Four of Pentacles</h2>
+                    <p class="p-header">
+                        Vous avez travaillé dur et, par conséquent, vous avez acquis une certaine richesse. Cependant, vous êtes peut-être devenu avide et trop concentré sur les richesses matérielles, au point d'avoir peur de prendre des risques, tant sur le plan financier que sur le plan émotionnel.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">Sécurité, matérialité, équilibre, réussite financière, investissement...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">Cupidité, vénalité, égoïsme, immaturité, ingratitude...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">NON</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Quatre de Denier est toujours associé à la prospérité financière et au confort matériel. Votre labeur porte aujourd’hui ses fruits et vous comptez bien en profiter comme il se doit. Vous avez réussi à vous mettre à l’abri et à sécuriser l’avenir des membres de votre foyer. Vous pouvez être fier de votre réussite.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Quatre de Denier vous mettra face à une question fondamentale. Maintenant que votre pérennité financière est assurée, comment utiliser à bon escient votre patrimoine ? Il n’est aujourd’hui plus utile d’accumuler par simple crainte de manquer. Développez donc d’autres facettes de votre vie et consacrez davantage de temps à ceux qui vous ont toujours entouré.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU QUATRE DE DENIER TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Il n’est pas toujours évident d’appréhender correctement les enseignements du Quatre de Denier, l’arcane délivrant un message particulièrement ambigu. De prime abord, ce dernier semble pourtant particulièrement bénéfique, la carte étant associée aux idées de réussite financière, de stabilité professionnelle et d’épanouissement social. L’intelligence cartésienne du consultant lui a permis au fil du temps d’accumuler une grande richesse matérielle, au gré d’une motivation sans faille et d’un travail acharné. Soucieux de se mettre à l’abri du besoin et de protéger sa famille, l’argent a très tôt pris une importance considérable dans sa vie. Le consultant regarde aujourd’hui fièrement en arrière. Il peut être fier du chemin accompli.
+                            </p>
+
+                            <p class="p-header">
+                                Cette réussite financière ne doit cependant jamais lui faire oublier que l’argent ne fait pas tout. Très conservateur quand il est question de finances, le consultant a parfois tendance à accumuler par simple plaisir, dans une démarche que certains n’hésiteront pas à qualifier de cupide. Obnubilé par ces questions, il délaisse volontiers les siens pour se concentrer encore et toujours sur son travail. Il s’agira pour lui d’apprendre à lâcher du lest et de développer d’autres sphères de sa vie. L’amour, le partage et l’empathie contribuent également activement au bonheur d’un homme.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU QUATRE DE DENIER TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                S’il est difficile d’interpréter en détail la signification d’un arcane sans prendre en compte l’intégralité du tirage, le Quatre de Denier inversé renvoie le plus souvent à deux cas de figure distincts.
+                            </p>
+
+                            <p class="p-header">
+                                Dans la première situation, la carte témoigne d’une personnalité profondément avare, totalement absorbée dans une quête d’accumulation, d’investissement et de réussite financière. Une peur de la pauvreté hante alors le consultant, ce qui favorise l’émergence d’un comportement hautement matérialiste.
+                            </p>
+
+                            <p class="p-header">
+                                Dans le second cas de figure, le Quatre de Denier inversé traduit au contraire les difficultés éprouvées par le consultant à consolider les finances de son foyer. Fuyant les responsabilités qui lui incombent, il a alors tendance à dépenser plus qu’il ne possède, dans une vision de court terme qui lui sera tôt ou tard nuisible. Pour le consultant, il est alors essentiel d’apprendre à se projeter davantage dans l’avenir.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

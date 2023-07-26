@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Sept de Coupe</h1>
+                    <h2 class="h2-page">Seven of Cup</h2>
+                    <p class="p-header">
+                        Il se peut que vous soyez confronté à de nombreux choix, mais faites preuve de sagesse en choisissant ceux qui vous seront bénéfiques et ceux qui ne le seront pas. Ne vous laissez pas emporter par vos rêves au point d'ignorer la réalité.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">intériorité, rêve, désir, choix, construction...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">faux-semblant, indécision, tentation, illusion, diversion...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">PEUT-ÊTRE</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Sept de Coupe vous invite à la méfiance. Laissez donc de côté pour un moment ces rêves qui vous obsèdent et déployez votre énergie pour des causes qui en valent vraiment la peine. Apprenez à mieux appréhender vos désirs et veillez à ce que vos objectifs puissent concrètement être atteints.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Par effet de miroir, le Sept de Coupe vous confronte à vos rêves et à la possibilité de leur matérialisation. Pour que votre action soit pérenne, veillez à ce qu’elle résulte de votre volonté profonde et non de règles qui vous sont imposées. Pour évoluer dans le chemin de la vie, il vous faudra cependant comprendre que certains de vos désirs ne pourront jamais être concrétisés. Faites des choix et concentrez-vous sur ceux susceptibles de façonner votre avenir !
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU SEPT DE COUPE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il apparaît à l’endroit, le Sept de Coupe renvoie toujours à nos désirs enfouis et à notre vision du monde, mais également à leur projection sur le monde réel. Il s’agit d’une carte très personnelle, qui nous pousse à appréhender clairement les rêves qui nous animent.
+                            </p>
+
+                            <p class="p-header">
+                                Dans une société ultra normée et mettant en exergue la réussite financière, la capacité de rêver constitue un atout formidable pour celui qui apprendra à la maîtriser. Une vie humaine ne saurait en effet suivre un chemin tout tracé, menant le consultant de la naissance à la mort dans un défilé prévu à l’avance. Pour s’épanouir jusqu’au plus profond de son être, il lui faut accepter d’emprunter des chemins de traverse et réussir à se départir des codes régissant de façon violente notre comportement. Aucune voie n’est tracée à l’avance et l’action ne devrait toujours résulter que du regard aimant et sincère que l’on porte sur ses désirs.
+                            </p>
+
+                            <p class="p-header">
+                                En plongeant dans notre mode intérieur, nos desseins ne pourront qu’apparaître plus clairement. Ils nous guideront sur la voie de l’accomplissement. Sur notre chemin, il s’agira cependant d’être particulièrement attentif aux chimères et aux faux-semblants, susceptibles de nous engager dans des projets irréalistes ou dans une voie qui ne nous convient simplement pas. Pour ne pas se bercer d’illusions, acceptons de voir notre réalité comme elle se présente à nous et œuvrons pour concrétiser nos rêves sur le long terme.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU SEPT DE COUPE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                L’arcane du Sept de Coupe invite le consultant à la prudence. Avec lui, les tentations et les illusions ne sont jamais bien loin. Il s’agira bien entendu de les tenir autant que possible à distance de notre vie.
+                            </p>
+
+                            <p class="p-header">
+                                La psychologie humaine est un domaine fascinant, en cela qu’elle est autant bercée par une volonté de construction que façonnée par des rêves parfaitement inaccessibles. Quand notre quotidien ne nous satisfait pas totalement, il est alors si facile de se laisser séduire par nos vues de l’esprit ! Nous espérons alors bouleverser en profondeur ce que nous sommes, comme pour nous détacher de ces vêtements devenus trop petits.
+                            </p>
+
+                            <p class="p-header">
+                                La solution palliative la plus courante pour oublier notre mal-être ? Les paradis artificiels bien sûr, mais également notre faculté naturelle à croire aux illusions les plus fantasques. Grandes sont alors les chances de se laisser tenter par la diversion et croire vraisemblables nos fantasmes. Pour palier la situation, il sera important de sortir la tête des nuages et de se recentrer davantage sur les impératifs de la vie. Notre destin ne se vit pas à l’intérieur de notre esprit, il se construit pas à pas par des actions concrètes et réfléchies.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

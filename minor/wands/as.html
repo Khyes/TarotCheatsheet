@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">As de Bâton</h1>
+                    <h2 class="h2-page">Ace of Wands</h2>
+                    <p class="p-header">
+                        Vous sentez-vous créatif ? Motivé(e) ? Agité ? C'est le moment idéal pour donner suite à ces sentiments ! Cette carte est le feu vert pour démarrer de nouvelles ambitions et de nouveaux projets, alors commencez à faire les premiers pas pour que vos rêves deviennent réalité.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">
+                                    dynamisme, création, intuition, action, sexualité...
+                                </p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">blocage, inertie, rupture, fuite, découragement...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, l’As de Bâton est associé à l’idée de mouvement et d’action. Vous n’acceptez aujourd’hui plus la routine de façon aussi sereine qu’auparavant et vous comptez bien mettre à profit votre énergie débordante pour croquer les petits plaisirs de la vie. Votre soif de connaissances vous permettra également de vous impliquer davantage dans les causes qui vous sont chères, que ces dernières aient trait à votre carrière, à vos activités de loisir ou à votre vie affective.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, l’As de Bâton nous rappelle le caractère temporaire d’une vie humaine. Pour ne rien regretter, il est donc essentiel de déployer votre énergie à bon escient et d’agir en fonction des valeurs qui font sens à vos yeux. Les impératifs sociétaux nous enferment parfois dans une forme de routine, bien souvent peu enrichissante. Il s’agira ainsi de ne jamais vous laisser piéger par les petites habitudes et de réévaluer régulièrement les objectifs que vous souhaitez atteindre.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE L'AS DE BÂTON TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Quand il apparaît à l’endroit, l’As de Bâton transmet une énergie créative sans commune mesure à celui qui aura la chance de le tirer. Le principe régissant l’arcane étant purement masculin, à l’image d’ailleurs de celui de l’As d’Épée, cette carte est un présage heureux pour quiconque caresserait l’idée de changement et de mise en action.
+                            </p>
+
+                            <p class="p-header">
+                                L’As de Bâton témoigne d’un besoin vital d’évolution chez le consultant. Il est cette force tranquille qui nous permet de croire en nos capacités et de saisir les opportunités qui se présenteront nécessairement un jour devant nous. Le feu passe désormais au vert. Après une longue période de stagnation, l’arcane nous encourage à déployer notre énergie dans ces projets restés trop longtemps au stade de l’hibernation.
+                            </p>
+
+                            <p class="p-header">
+                                S’il est essentiel de ne jamais prendre sur un coup de tête de décisions drastiques, il est tout aussi important de se lancer et de saisir sa chance. La routine possède bien entendu des avantages incontestables, en premier lieu desquels la sécurisation qu’elle nous apporte, mais ne doit en aucun cas être considérée comme une fin en soi. Le changement porte toujours ses fruits lorsqu’il s’accorde à nos désirs profonds. Avant de se lancer, il s’agira donc de prendre un petit peu de temps pour soi et d’apprendre à déchiffrer les messages de notre instinct.
+                            </p>
+
+                            <p class="p-header">
+                                L’influence de l’As de Bâton porte aussi bien sur la vie professionnelle du consultant que sur sa vie sentimentale. Il peut être le signe d’une opportunité de carrière nouvelle ou d’une rencontre pleine de promesses. Il s’agira ainsi d’accepter les vertus du changement et de croire en sa valeur pour profiter pleinement de l’incroyable énergie transmise par l’arcane.
+                            </p>
+
+
+                            <div class="space"></div>
+                            
+
+                            <h2 class="h2-page">INTERPRÉTATION DE L'AS DE BÂTON TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                L’As de Bâton inversé témoigne au contraire des doutes qui traversent pour le moment l’esprit du consultant. Il n’est pas rare qu’un sentiment de désarroi s’empare de lui et que les raisons de ce mal-être n’apparaissent pas encore à ses yeux clairement. Le consultant a alors tendance à se questionner sur le sens de la vie et la direction dans laquelle il aimerait s’engager, sans que ses réflexions ne débouchent jamais sur des actions concrètes.
+                            </p>
+
+                            <p class="p-header">
+                                Il est d’abord important de comprendre que cette situation est tout à fait normale et que des solutions concrètes existent. Si l’herbe paraît plus verte ailleurs, il conviendra simplement d’accepter les vertus du changement et de ne pas être effrayé à l’idée de modifier ses habitudes de vie. Pour qu’elle soit pérenne, l’évolution personnelle du consultant devra cependant nécessairement s’accorder à ses envies et ses valeurs.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

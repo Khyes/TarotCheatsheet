@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Dix de Denier</h1>
+                    <h2 class="h2-page">Ten of Pentacles</h2>
+                    <p class="p-header">
+                        Vous avez travaillé dur pendant longtemps et, malgré toutes les luttes et tous les revers, vous avez finalement atteint vos objectifs. Vous avez atteint un état de satisfaction. Cela signifie également que vous pouvez vous tourner vers votre famille. Vous êtes désormais en mesure de vous occuper d'eux et de contribuer à leur assurer un avenir radieux.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">succès, épanouissement, reconnaissance, stabilité, foyer...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">blocage, souci financier, retard, échec, déception...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Dix de Denier est synonyme de succès et de satisfaction. Votre labeur est enfin récompensé. Vous pouvez désormais profiter d’une situation financière particulièrement intéressante et du soutien indéfectible de votre famille. Vous êtes un homme stable et heureux, prenez le temps de savourer et n’oubliez jamais la chance qui est la vôtre.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Dix de Denier vous incite à réfléchir sur votre relation à l’argent. Une fois la stabilité financière de votre foyer assurée, dans quel domaine souhaiteriez-vous déployer votre énergie ? L’épanouissement matériel ne pourrait-il pas être couplé à une quête spirituelle ? Vous possédez en vous la réponse à cette question.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU DIX DE DENIER TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il apparaît à l’endroit dans un tirage de tarot divinatoire, le Dix de Denier est souvent synonyme d’accomplissement. Il signifie que le consultant est sur le point de récolter les fruits de son dur labeur. Ce n’est donc pas pour lui une période d’action qui se profile, mais plutôt un moment de recueillement et de prise de recul. Il peut désormais regarder fièrement en arrière et se congratuler pour le chemin parcouru.
+                            </p>
+
+                            <p class="p-header">
+                                Comme toutes les cartes de l’enseigne, le Dix de Denier parle toujours d’argent et de matérialité. Pour le consultant, cela peut par exemple se traduire par l’accumulation de richesses ou la construction d’un socle familial pérenne. Avec l’arcane, tout est question d’équilibre, de satisfaction et de stabilité. C’est d’ailleurs pourquoi le Dix de Denier est particulièrement apprécié par les personnes en recherche d’un tirage sentimental favorable. Il signifie volontiers la sécurisation patrimoniale du foyer comme la consolidation de la relation.
+                            </p>
+
+                            <p class="p-header">
+                                Le Dix de Denier n’est pas replié sur lui-même. Grâce à lui, le consultant prendra conscience de la chance qui est la sienne et fera en sorte de la partager avec sa famille et ses proches. L‘arcane fait donc siennes ces belles valeurs que sont l’amour, l’empathie et la générosité.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU DIX DE DENIER TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Si le Dix de Denier apparaît à l’envers dans un tirage de tarot divinatoire, cela témoigne le plus souvent chez le consultant de l’existence d’un certain nombre de blocages. Ils concernent toujours l’univers financier.
+                            </p>
+
+                            <p class="p-header">
+                                Aujourd’hui, la situation matérielle du consultant n’est pas encore ce qu’elle aurait dû à ses yeux être. Il peine ainsi souvent à mettre de côté de l’argent et il n’est pas rare que des difficultés de paiement surviennent en fin de mois. Parfois, le Dix d’Épée peut également évoquer la perte d’un emploi ou une longue période de chômage, qui ne vient pas simplement fragiliser l’équilibre financier du consultant, mais qui affecte activement son épanouissement psychologique.
+                            </p>
+
+                            <p class="p-header">
+                                Dans le cas d’une relation sentimentale, l’arcane évoque davantage une union temporaire qu’un couple se projetant sur le long terme. Il met également en garde contre les intentions réelles du compagnon, souvent plus intéressé par l’aspect matériel des choses que par les sentiments.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

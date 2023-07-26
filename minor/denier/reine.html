@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Reine de Denier</h1>
+                    <h2 class="h2-page">Queen of Pentacles</h2>
+                    <p class="p-header">
+                        Cette carte représente une figure maternelle qui travaille dur pour créer un endroit stable et confortable pour sa famille. Il peut s'agir de vous ou d'une personne que vous admirez dans votre vie. Soyez compatissant, équilibré et terre à terre - pour les autres comme pour vous-même.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">richesse, matérialisme, stabilité, sécurité, accumulation...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">égoïsme, froideur, superficialité, avidité, arrivisme...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Reine de Denier vous encourage à poursuivre dans la voie que vous avez d’ors et déjà tracée. Vous désirez œuvrer pour votre sécurité matérielle et vos qualités vous permettront d’atteindre rapidement vos objectifs. Vous pourrez à ce titre compter sur votre force de caractère et votre abnégation sans faille.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur la long terme, la Reine de Denier est associée à la réussite financière et à la prospérité matérielle. Une fois l’avenir du foyer sécurisé, il s’agira peut-être de se concentrer sur des valeurs moins pratiques que celles auxquelles vous êtes habituée, en développant des liens émotionnels plus tenus avec les personnes qui vous entourent !
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE LA REINE DE DENIER TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsqu’elle apparaît à l’endroit dans un tirage de tarot divinatoire, la Reine de Denier renvoie à la nécessité de sécurisation matérielle. Emblème typique de la mère nourricière, elle se préoccupe avant toute chose du bien-être physique de ses enfants, s’assurant qu’ils disposeront toujours d’un bon repas à disposer et de vêtements bien chauds pour affronter l’hiver. Sa nature maternelle s’exprime donc essentiellement à travers des valeurs pratiques, en parfaite contradiction avec la Reine de Coupe, davantage inquiète pour l’épanouissement émotionnel de sa progéniture.
+                            </p>
+
+                            <p class="p-header">
+                                La Reine de Denier n’assume cependant pas uniquement un rôle de mère. Elle est en réalité une femme profondément active, réussissant à merveille à allier impératifs professionnels et vie personnelle. Pleine d’énergie et de détermination, ce personnage s’épanouit particulièrement dans le travail, où ses qualités sont d’ailleurs unanimement reconnues. Son abnégation légendaire lui permet d’ailleurs de gravir un à un les échelons, et sa formidable force de caractère l’encourage à maintenir son cap en dépit de difficultés ponctuelles.
+                            </p>
+
+                            <p class="p-header">
+                                Cette reine sûre de ses forces séduit par ailleurs par son indépendance. Bien qu’elle soir capable d’être profondément amoureuse, elle est avant tout une femme moderne n’ayant guère besoin de se reposer sur des schémas d’union traditionnels. Son caractère si particulier est d’ailleurs parfaitement compatible avec une vie amoureuse radieuse. Avec elle, nul besoin de s’inquiéter pour l’avenir, tout est déjà planifié.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DE LA REINE DE DENIER TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                La Reine de Denier à l’envers renvoie souvent à une personne prisonnière d’un excès d’activité. Profondément attachée à la sécurisation financière de son foyer, indépendante par nature, elle tâchera tant bien que mal d’agir sur tous les fronts. Parfois, il faut pourtant reconnaître que l’omniscience est une position bien difficile à assumer. Sous l’influence de la Reine de Denier inversée, le consultant pourra ainsi éprouver des difficultés à tenir tous ses engagements. Il est alors fort probable qu’un certain déséquilibre surgisse dans sa vie, qu’une frustration apparaisse devant l’impossibilité de répondre à toutes ces obligations.
+                            </p>
+
+                            <p class="p-header">
+                                Dans certaines situations, ce tirage peut également traduire les difficultés éprouvées par le consultant à se connecter émotionnellement aux personnes qui l’entourent. En se concentrant plus que nécessaire sur l’aspect pratique et financier des choses, il est aisé d’oublier que le bien-être de ses proches passe également par le partage émotionnel, l’écoute et l’empathie.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

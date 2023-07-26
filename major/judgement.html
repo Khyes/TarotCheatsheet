@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Le Jugement</h1>
+                    <h2 class="h2-page">The Judgement</h2>
+                    <p class="p-header">
+                        La carte Jugement indique souvent que vous devez prendre une décision qui changera votre vie, mais contrairement à celles associées à la carte logique Justice, cette décision nécessite un mélange d'intuition et d'intellect. Vous faites l'expérience d'un éveil spirituel et vous vous rendez compte que vous êtes destiné à beaucoup plus. Vous entendez l'appel et êtes prêt à agir.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Prise de conscience, renaissance, nouveau départ, inspiration, lucidité...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">A priori, stagnation, retards, blocage, échec...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, l’arcane du Jugement témoigne de la nécessité de changer de cap. Il s’agira en effet de prendre conscience du caractère imparfait de votre situation actuelle et de définir de nouvelles priorités. L’introspection garantira le fait qu’elles soient en adéquation avec le système de valeurs dans lequel vous souhaitez évoluer.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, la carte du Jugement vous invite à la prise de recul et vous apprend à apprécier les bienfaits de l’inattendu. Les bouleversements font nécessairement partie de votre chemin de vie. Il s’agit donc de ne pas en avoir peur et d’adopter une attitude active face à eux. Au lieu de les subir, pourquoi ne pas plutôt en tirer profit ?
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU JUGEMENT TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Dans l’analyse traditionnelle, l’arcane du Jugement tiré à l’endroit est volontiers associé à l’idée de changement et de bouleversement, mais d’une façon beaucoup plus douce et paisible que les transformations induites par l’Arcane sans Nom par exemple. Il s’agit en fait de considérer la carte comme un outil formidable de remise en question. Avec elle, plus question de laisser aller et de se complaire dans un quotidien certes rassurant, mais également parfaitement prévisible. Le Jugement nous encourage plutôt à prendre le temps de la réflexion et à regarder notre situation telle qu’elle est réellement. Ce regard porté sur nous-même ne peut qu’être bénéfique à court terme comme à long terme. Il permettra au consultant de mieux appréhender les mécanismes de sa pensée, de mettre en exergue les valeurs qu’il souhaite endosser et d’établir de nouveaux objectifs, correspondant peut-être davantage à la vision de vie qui est la sienne actuellement.
+                            </p>
+
+                            <p class="p-header">
+                                De façon plus concrète, l’arcane du Jugement favorise la prise de décision et nous rappelle la nécessité de changer de cap lorsque le besoin s’en fait sentir. Le rythme frénétique imposé par notre société nous contraint souvent à nous enfermer dans un schéma de vie prédéfini. Il conviendra donc de se poser les bonnes questions et de déterminer si ce dernier fait aujourd’hui réellement sens. Si ce n’est pas le cas, il faudra prendre acte et accepter d’évoluer.
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DU JUGEMENT TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsque la lame du Jugement est tirée à l’envers, la carte traduit une certaine forme d’entêtement de la part du consultant, qui pourra à terme s’avérer particulièrement néfaste si aucune prise de conscience ne survient. Il existe bien heureusement des solutions pour que pareille situation ne perdure pas trop longtemps.
+                            </p>
+
+                            <p class="p-header">
+                                D’un point de vue général, le Jugement inversé manifeste une crainte profonde du changement, souvent inhérente aux difficultés d’introspection du consultant. Ce dernier souffre alors volontiers en silence, sans arriver à déterminer les causes de son problème. Il sera alors essentiel de prendre le temps nécessaire à la juste compréhension de ces difficultés. Le blocage provient peut-être de blessures passées encore mal résorbées, d’un système de valeurs caduque ou encore d’une peur quasi panique de l’échec. Dans tous les cas, retenons que l’introspection constitue souvent le premier pas vers le bien-être.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

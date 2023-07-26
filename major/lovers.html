@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">L'Amoureux</h1>
+                    <h2 class="h2-page">The Lovers</h2>
+                    <p class="p-header">
+                        Cette carte signifie une relation harmonieuse, avec une base solide et un lien profond. En dehors des relations, les Amoureux indiquent qu'une décision importante doit être prise. Soyez clair sur vos valeurs et vos croyances, et restez fidèle à vous-même.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Choix, désir, décision, amour, conséquence...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Blocage, manque d’équilibre, inconstance, faiblesse, remise en question...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">À court terme, la lame de l’Amoureux met en évidence l’existence d’un conflit intérieur d’importance. Il s’agira de le résoudre pour pouvoir se projeter plus sereinement dans l’avenir. Votre cœur balance peut-être entre deux protagonistes. Ou peut-être est-ce une situation professionnelle qui vous paralyse momentanément ? Prenez-le temps de l’analyser plus en détail, définissez ce dont vous avez réellement besoin et écoutez votre instinct.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">Sur le long terme, l’Amoureux vous rappelle l’importance du désir et du sentiment dans votre épanouissement personnel. Votre bien-être est avant tout le fruit de décisions patiemment mûries, en soupesant le pour et le contre de chaque situation. Vous êtes seul maître à bord et le libre arbitre continuera à vous faire progresser.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE L'AMOUREUX TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">Lorsqu’il est tiré à l’endroit lors d’une consultation de tarot de Marseille, l’Amoureux témoigne le plus souvent de l’existence d’une situation particulièrement complexe. Confronté à un choix quasi vital, le consultant se trouve à la croisée de deux chemins. De sa décision pourra dépendre son futur. Pour progresser, il s’agira de faire confiance en son instinct, mais également d’analyser minutieusement les conséquences de son action. Si la tache s’avère particulièrement ardue, le consultant pourra compter sur l’influence d’autres arcanes de son tirage, qui infléchiront son choix dans une direction plutôt que dans une autre. La lame nous invite à prendre conscience de notre libre arbitre et nous apprend à développer nos capacités de décision. Même si le choix est pour le moment cornélien, gardons tout de même à l’esprit que prendre la bonne décision nous permettra de jouir d’un bonheur et d’une tranquillité accrus dans un futur proche. L’Amoureux ne saurait en effet se résumer à son penchant pour l’hésitation. Il symbolise aussi clairement cette fécondité physique et émotionnelle, ce désir de partage et ce besoin de stabilité qui sont propres à chaque homme et à chaque femme. Loin d’être abattu par l’indécision, l’Amoureux assume la complexité de la situation, qu’il considère comme un vecteur d’évolution. Une fois la bonne décision prise, il saura profiter pleinement de moments de joie, de passion et d’échange charnel. Il est le mariage parfait entre pulsion de vie et prudence.
+
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DE L'AMOUREUX TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">Lorsque l’Amoureux est tiré inversé, il traduit un enlisement profond susceptible de plonger le consultant dans un état psychologique particulièrement sombre. La décision qui s’offre à lui semble alors hors de portée et ses conséquences trop prégnantes pour effectuer rapidement un choix. Grande est alors la tentation de repousser l’échéance et d’opter pour l’immobilisme total. Si cette position peut de prime abord sembler confortable, elle risque rapidement de montrer ses limites. Pour profiter à l’avenir d’une sérénité accrue, mieux vaut en effet ne jamais se voiler la face et accepter d’affronter ses propres démons. Dans le cadre d’une relation de couple, le moment est peut-être venu de faire le point avec son partenaire, l’unique solution possible pour avancer conjointement. Dans le domaine professionnel, ne plus repousser les échéances est nécessaire lorsque l’on souhaite faire aboutir les projets restés en sommeil ou profiter de nouvelles opportunités de carrière. Après tout, la vie ne saurait s’épanouir sans mouvement.
+                                
+                            </p>
+
+                        </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

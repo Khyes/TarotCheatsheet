@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Roi de Bâton</h1>
+                    <h2 class="h2-page">King of Wands</h2>
+                    <p class="p-header">
+                        Un leader né et un visionnaire qui peut changer le monde. Le roi de bâton se concentre sur ses objectifs et mène sa vie avec ambition et détermination. Faites preuve d'assurance, prenez la vie par les cornes et prenez les choses en main.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">autorité, vision, passion, honnêteté, médiation...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">impulsivité, manipulation, agressivité, despotisme, trahison...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Roi de Bâton vous encourage à prendre conscience de vos qualités intrinsèques et à vous mettre en mouvement. Peut-être que des idées trottent dans votre esprit depuis maintenant plusieurs semaines. Le temps de réflexion est désormais terminé, il est l’heure de prendre votre courage à deux mains et de concrétiser une fois pour toute votre projet !
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le jeune roi sera un outil puissant pour quiconque souhaiterait profiter à bon escient des plaisirs de la vie. Son dynamisme extraordinaire vous permettra de rester constamment en action, de façon à découvrir ce que vous ignoriez jusqu’alors. Avec lui, peu de chance de s’ennuyer.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU ROI DE Bâton TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Avant de nous lancer plus profondément dans l’analyse, gardons à l’esprit que le Roi de Bâton est considéré, à l’image de tous les autres arcanes mineurs, comme un archétype de psychologie humaine. Il peut ainsi aussi bien renvoyer au consultant lui-même qu’à un trait de caractère d’une personne importante de sa vie.
+                            </p>
+
+                            <p class="p-header">
+                                Le personnage est avant tout caractérisé par son dynamisme exceptionnel, qui inspire d’ailleurs volontiers ceux qui croiseront son chemin. Le principe actif du feu prend ici toute sa valeur. Le Roi de Bâton n’apprécie guère de rester inactif et a besoin de se mettre en mouvement pour s’épanouir. Sa vie est ainsi tout naturellement remplie d’objectifs, qu’il parvient toujours à atteindre à force de courage et d’abnégation.
+                            </p>
+
+                            <p class="p-header">
+                                Sûr de ses forces et de sa valeur, le jeune roi ne prend jamais peur lorsqu’un obstacle se dresse sur sa route. Il considère d’ailleurs souvent ces embûches comme des challenges revitalisants et saura déployer toutes ses qualités pour les surmonter.
+                            </p>
+
+                            <p class="p-header">
+                                D’un point de vue sociabilité, le Roi de Bâton est un homme peu bavard, mais qui apprécie néanmoins grandement la présence de ses proches. En véritable leader, il sait d’ailleurs s’entourer des bonnes personnes, celles qui pourront l’accompagner dans ces défis qu’il ne cesse d’imaginer. Ne voyons pas dans ce comportement un excès d’égoïsme. Le Roi de Bâton aime profondément et durablement. Les gens viennent à lui spontanément, attirés par son charisme naturel et ses facultés de communication.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU ROI DE Bâton TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il apparaît à l’envers, le Roi de Bâton fait souvent preuve d’une forte agressivité, résultant le plus souvent de son entêtement légendaire à atteindre ses objectifs. Comme son armure le laisse entendre, le jeune roi possède l’âme d’un guerrier. Il n’apprécie donc pas lorsque quelqu’un ou quelque chose vient détourner son attention du but qu’il poursuit inlassablement. S’il se sent coincé ou ralenti dans sa quête, le Roi de Bâton peut rapidement se montrer colérique et faire subir à son entourage des accès de violence. En raison de cette impulsivité mal maîtrisée, il n’est pas toujours bon de le côtoyer lorsque la situation n’est pas à son goût.
+                            </p>
+
+                            <p class="p-header">
+                                Sa quête obsessive l’encourage également parfois à user de stratagèmes douteux, que certains n’hésiteront pas à qualifier de malhonnêtes. Le Roi de Bâton inversé n’a aucun scrupule à détourner les règles et à faire fi de la moral si son comportement lui permet à terme d’accéder à ses rêves.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

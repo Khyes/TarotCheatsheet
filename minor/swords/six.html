@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Six d'Épée</h1>
+                    <h2 class="h2-page">Six of Sword</h2>
+                    <p class="p-header">
+                        Une carte sombre, qui parle de recoller les morceaux et d'aller de l'avant. Une transition regrettable mais nécessaire, qui vous sera bénéfique à long terme.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">tristesse, solitude, évolution, projection, renouveau...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">blocage, inertie, traumatisme non résolu, fardeau, obsession...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">PEUT-ÊTRE</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Six d’Épée témoigne de cette période de transition que vous traversez actuellement. Vous avez récemment pris conscience que votre vie ne vous convenait plus tout à fait. Vous êtes aujourd’hui bien décidé à tout mettre en œuvre pour aller de l’avant et évoluer dans la direction que vous avez déterminée. Cette prise de recul ne se fait d’ailleurs pas sans heurt. En acceptant de bouleverser vos habitudes, vous faites le choix de vous détacher de vos repères. Si la tristesse s’installe parfois en vous, projetez-vous une fois de plus dans l’avenir radieux que vous avec commencé à bâtir !
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Six d’Épée nous enseigne qu’il est parfois primordial d’accepter de se défaire de son passé. Si vos expériences ont activement contribué à forger ce que vous êtes devenu, vos traumatismes constituent des freins à votre évolution.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU SIX D'ÉPÉE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Profondément lié à la tristesse et à la solitude, le Six d’Épée n’est pas toujours très bien compris par les débutants amateurs de tarot divinatoire. Derrière son apparence morose, l’arcane cache en fait une réalité bien plus heureuse.
+                            </p>
+
+                            <p class="p-header">
+                                Lorsque le Six d’Épée apparaît, cela signifie volontiers que notre lassitude atteint aujourd’hui des niveaux records. L’ennui et l’insatisfaction se sont emparés de notre vie, il devient à ce titre particulièrement difficile de les ignorer plus longtemps. Il est grand temps de sortir de notre tanière pour découvrir le monde sous un angle nouveau !
+                            </p>
+
+                            <p class="p-header">
+                                Sur le court terme, cette prise de conscience de l’imperfection de notre quotidien s’avère toujours douloureuse. Elle témoigne d’un échec, ou tout du moins de la fin d’une aventure, de l’achèvement d’un cycle. Pour évoluer, il s’agit désormais d’accepter d’aller de l’avant, de se détacher pour de bon de ce passé qui nous ralentit si fréquemment.
+                            </p>
+
+                            <p class="p-header">
+                                Si nos repères risquent d’être pour un temps bouleversés, cette démarche est néanmoins essentielle si nous souhaitons réellement bâtir un avenir plus heureux. Avant de nous lancer corps et âme sur ce nouveau chemin de vie, il s’agira de s’accorder le temps de la réflexion, de façon à mieux appréhender les enjeux de la situation et à définir la direction dans laquelle nous souhaitons désormais nous diriger.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU SIX D'ÉPÉE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsque l’arcane du Six d’Épée apparaît à l’envers, le tirage traduit fréquemment les difficultés éprouvées par le consultant à se détacher de ses expériences passées. Conscient de ses traumatismes, il cherche désespérément cette solution qui lui permettrait de se projeter sereinement dans l’avenir. Sa démarche reste malheureusement pour le moment infructueuse.
+                            </p>
+
+                            <p class="p-header">
+                                Cette impossibilité d’aller de l’avant est source de tristesse et de désespoir pour le consultant. Alors qu’il souhaite découvrir de nouveaux horizons, ses souvenirs le ramènent toujours au point de départ. Comme Sisyphe, il tente quotidiennement de remonter la pente, pour retomber chaque matin au pied de la colline.
+                            </p>
+
+                            <p class="p-header">
+                                Il s’agira pour le consultant d’essayer de prendre du recul face aux difficultés qu’il traverse et de continuer ses efforts. Le désarroi ne dure jamais éternellement, le soleil radieux se cachant toujours derrière la brume persistante.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

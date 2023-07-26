@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">La Roue de Fortune</h1>
+                    <h2 class="h2-page">The Wheel of Fortune</h2>
+                    <p class="p-header">
+                        La vie est pleine de hauts et de bas, et ces forces sont parfois hors de votre contrôle. Comme une roue qui tourne, les choses vont et viennent dans un cycle. Ne soyez pas complaisant dans les bons moments, et dans les mauvais, souvenez-vous que les choses finiront par s'améliorer.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Hasard, transformation, destin, cycle, déplacement...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Instabilité, coup du sort, blocage, retard, chute...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    À court terme, la Roue de Fortune est naturellement corrélée à la notion d’évolution. Elle indique souvent qu’un changement notoire s’apprête à perturber le cours de votre destin. Il s’agira de l’accepter les bras ouverts, puisque nul ne peut lutter contre les aléas de la vie. Ne soyez pas craintif et apprenez à en tirer parti pour évoluer sereinement.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    À long terme, la Roue de Fortune nous rappelle le caractère aléatoire d’une vie humaine. Les événements négatifs succèdent volontiers aux bonnes nouvelles, et inversement. Il est primordial d’accepter cette réalité pour avancer sereinement sur le chemin de la vie, de façon active, heureuse mais détachée.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE LA ROUE DE FORTUNE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                La lame de la Roue de Fortune n’est pas la plus facile à appréhender, son interprétation dépendant grandement des autres cartes qui l’entourent. Retenons néanmoins que l’arcane est toujours associé à l’idée de mouvement et d’évolution. Si certaines situations semblent de prime abord parfaitement stables, toute chose porte en fait en elle un pouvoir de changement. Le premier enseignement de la Roue de Fortune sera donc d’accepter que rien est éternel. Cette prise de conscience permettra au consultant de prendre du recul sur les situations qu’il traverse, que celles-ci soient positives ou négatives, et d’adopter un comportement plus serein face aux événements de la vie. Ces merveilleux vers de Rudyard Kipling, extraits du poème If, font à ce titre particulièrement bien écho à la symbolique de la Roue de Fortune :
+                            </p>
+
+                            <p class="p-header" id="italic">
+                                Si tu peux voir détruit l'ouvrage de ta vie<br>
+                                Et sans dire un seul mot te mettre à rebâtir,<br>
+                                Ou perdre en un seul coup le gain de cent parties<br>
+                                Sans un geste et sans un soupir [….]
+                            </p>
+
+                            <p class="p-header" id="italic">
+                                Si tu peux rester digne en étant populaire,<br>
+                                Et si tu peux aimer tous tes amis en frères,<br>
+                                Si tu peux rester peuple en conseillant les rois,<br>
+                                Sans qu'aucun d'eux soit tout pour toi ; [….]
+                            </p>
+
+                            <p class="p-header" id="italic">
+                                Tu seras un homme mon fils !
+                            </p>
+
+                            <p class="p-header">
+                                Puisqu’elle induit une forme de lâcher-prise, la Roue de Fortune offre au consultant une chance unique, celle d’évoluer rapidement en saisissant les opportunités qui se proposent à lui. Il ne s’agit bien entendu pas d’agir par principe, mais d’accepter la nature aléatoire de la vie, pour ne plus être effrayé face au changement. En acceptant plus souvent d’infléchir son chemin, le consultant jouira d’un contrôle plus important sur son destin et deviendra maître de sa vie.
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DE LA ROUE DE FORTUNE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’elle est tirée à l’envers, la Roue de Fortune suggère la possibilité de revirements néfastes de situation. Des mauvaises surprises pourraient ainsi remettre en doute certaines des fondations sur lesquelles la vie du consultant a été bâtie. Le chemin de la vie est semée d’embûches et les aléas extérieurs sont nombreux. Il s’avère toutefois parfaitement inutile de lutter seul contre les forces cosmiques qui font tourner la roue. La meilleure solution pour rester philosophe face à ces contretemps ? Apprécier la vie pour ce qu’elle est, c’est à dire fluctuante, souvent heureuse, parfois sans pitié.
+                            </p>
+
+                            <p class="p-header">
+                                La Roue de Fortune inversée peut également témoigner d’un refus de changement chez le consultant. Grandes sont alors les chances de s’enfermer dans un statu quo peu constructif, aussi bien pour son bien-être que pour celui des gens qui l’entourent. S’il est naturel d’être décontenancé face au changement, il est également essentiel d’apprendre à en reconnaître les vertus.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

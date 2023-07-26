@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Roi de Coupe</h1>
+                    <h2 class="h2-page">King of Cup</h2>
+                    <p class="p-header">
+                        Tout en restant un être très émotif, le Roi de Coupe est un maître de la retenue et du contrôle de ses émotions. Il ne met cependant pas ses sentiments en bouteille, il est plutôt l'équilibre parfait entre les sentiments et l'intellect, qui sait comment réagir à toute situation en conséquence.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">équilibre, bienveillance, tolérance, tendresse, constance...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">manipulation, excès, imprévisibilité, domination, contrôle...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Le Roi de Coupe vous encourage à vous rapprocher de vos émotions et de sortir de ce mode pilotage automatique qui guide parfois votre quotidien. En vous rapprochant de ce qui vous anime, il vous sera plus facile d’accepter qui vous êtes et d’agir dans le respect des valeurs qui vous sont chères.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Roi de Coupe souligne l’importance exercée par le relationnel dans votre épanouissement. Dans un monde mettant en exergue l’individualisme, votre capacité à vous connecter à vos semblables constitue un atout précieux, qu’il s’agira d’entretenir comme l’on polit un joyau.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU ROI DE COUPE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Parmi tous les personnages du tarot de Marseille, le Roi de Coupe présente certainement l’équilibre émotionnel le plus puissant. Il est la symbiose parfaite entre l’instinct, la créativité et l’affect. Profondément affecté par les joies et les bonheurs d’autrui, ce personnage a fait de l’empathie et de la générosité ses valeurs principales. Pour le consultant, tirer le Roi de Coupe signifie donc peut-être qu’il est désormais assez mature pour savoir ce qui compte vraiment dans la vie et assez expérimenté pour vivre en parfaite adéquation avec les principes qu’il défend. Alors que certains tendent à se laisser submerger par les émotions et que d’autres préfèrent les enfouir au plus profond d’eux, le Roi de Coupe permet au consultant de les accepter pour ce qu’elles sont, sans qu’elles ne prennent jamais trop de place. Quand une difficulté se présentera, il sera alors pour lui plus facile de mieux appréhender la situation et de trouver rapidement une solution.
+                            </p>
+
+                            <p class="p-header">
+                                Le Roi de Coupe est par ailleurs largement associé à cette belle qualité qu’est la bienveillance. Si l’on recherche sa compagnie, c’est en partie grâce aux conseils qu’il prodigue et à la sérénité qui émane de lui. Le vieil homme n’a en effet pas seulement appris à maîtriser le flux de ses émotions pour son propre bien-être, il souhaite également faire profiter de ses enseignements à ceux qui l’entourent. Le Roi de Coupe est un personnage profondément humain, tourné vers le partage et le bonheur d’autrui.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU ROI DE COUPE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il est tiré à l’envers, le Roi de Coupe n’a généralement pas bonne presse, de façon parfaitement compréhensible comme nous allons le voir. Ce tirage parle d’une personne totalement absorbée par ses émotions et particulièrement difficile à gérer pour ses proches. Sentant en elle des faiblesses profondes, elle n’hésitera pas à manipuler quiconque croisera son chemin pour arriver à ses fins. Au moindre écart de conduite, le Roi de Coupe inversé explosera dans une colère d’une violence inouïe, effrayant par la même occasion ceux qui l’entourent. Lorsqu’il se sentira trahi, il n’attendra pas pour fomenter sa vengeance. Ayant besoin de contrôler émotionnellement les autres, il s’avère être une personne toxique.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

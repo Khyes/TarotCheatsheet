@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Le Bateleur</h1>
+                    <h2 class="h2-page">The Magician</h2>
+                    <p class="p-header">En tant que maître manifestant, le Bateleur vous apporte les outils, les ressources et l'énergie dont vous avez besoin pour réaliser vos rêves. Sérieusement, tout ce dont vous avez besoin en ce moment est à portée de main. Vous avez le spirituel (le feu),
+                        physique (terre), mentale (air) et émotionnelle (eau) pour manifester vos désirs.</p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Commencement, ressource, enthousiasme, énergie, motivation...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Malhonnêteté, violence, blocage, égoïsme, maladresse...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">PEUT-ÊTRE</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">Sur le court terme, l’arcane du Bateleur est le présage d’un nouveau départ. Motivé à l’idée de construire un avenir qui vous ressemble, vous faites aujourd’hui preuve d’un enthousiasme débordant. Dans votre vie sentimentale comme dans votre vie professionnelle, de nouvelles aventures vous attendent. Il ne vous reste plus qu’à vous mettre en mouvement.</p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">Sur le long terme, le Bateleur vous pousse à vous questionner sur vos motivations premières. S’il est facile, et tout à fait normal, de tomber dans une forme de routine, une vie humaine ne pourrait être pleinement vécue sans objectif concret. À vous de trouver ceux qui vous correspondent le mieux, ou de les remettre en question le cas échéant !</p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU BATELEUR TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">La carte du Bateleur est par essence extrêmement positive lorsqu'elle est tirée pendant une consultation de voyance ou un tirage de tarot divinatoire. Elle annonce le départ d'une aventure nouvelle, la prise de conscience d'une évolution en marche. Elle rassemble tous les éléments nécessaires pour entreprendre une action efficace et pérenne.
+                            </p>
+
+                            <p class="p-header">Dans la vie sentimentale, elle traduit par exemple l'arrivée prochaine d'une rencontre heureuse ou du renforcement de l'union. Dans le domaine professionnel, elle est la promesse d'une évolution de carrière, l’annonce d'un projet d’importance, la solution à un problème. D'une manière plus générale, le Bateleur peut témoigner d'une prise de conscience personnelle, qui permettra au consultant d'aborder sa vie plus sereinement, en parfait accord avec ses désirs et les valeurs qu’il souhaite endosser.
+                            </p>
+
+                            <p class="p-header">L’arcane rime souvent avec un projet de construction stable et pérenne. Avec lui, nulle raison de se laisser aller ou de prendre des décisions impulsives et non réfléchies. Pour celui ou celle qui souhaite donner à sa vie un sens profond, il s'agira au contraire d'accepter sur la durée ces engagements qui font sens.
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DU BATELEUR TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">L’arcane du Bateleur inversé n’a généralement pas bonne presse parmi les adeptes du tarot de Marseille. Le tirage renvoie le plus souvent à deux cas de figure distincts. Dans le premier d’entre eux, la carte évoque une façon malhonnête de se comporter. Conscient du pouvoir qu’il exerce sur les autres, le consultant n’hésitera pas à user des stratagèmes les plus douteux pour arriver à ses fins. Ruse, tromperie, mensonge, vantardise, voire violence : toutes les qualités caractéristiques de l’arcane se transforment alors en défauts.
+                            </p>
+
+                            <p class="p-header">Dans le second cas de figure, le Bateleur inversé témoigne des doutes qui traversent actuellement l’esprit du consultant. Ce dernier éprouve alors toutes les difficultés du monde à déterminer les buts qu’il souhaite atteindre et à se mettre en mouvement. Cet immobilisme forcé est pour lui source d’anxiété et de tristesse.
+                        
+                            </p>
+
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

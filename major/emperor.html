@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">L'Empereur</h1>
+                    <h2 class="h2-page">The Emperor</h2>
+                    <p class="p-header">
+                        En tant que figure paternelle du Tarot, l'Empereur suggère que vous adoptez ce rôle de père, que vous subvenez aux besoins de votre famille et que vous protégez et défendez vos proches. Vous êtes peut-être le soutien de famille ou le "roc" pour ceux qui comptent sur votre stabilité et votre sécurité.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Autorité, action, stabilité, responsabilité, construction...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Intolérance, tyrannie, domination, indécision, instabilité...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">L’action de l’Empereur sur le court terme se manifestera notamment par une prise de conscience de vos objectifs et par une mise en mouvement rapide. Tous les voyants sont désormais au vert pour que vous commenciez à agir avec confiance et fermeté. Cela pourrait notamment se traduire par une discussion de mise au point avec votre partenaire ou l’un de vos collègues, par une opportunité professionnelle que vous saurez habilement saisir ou encore par la sécurité matérielle que vous apporterez à vos proches.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">C’est sur le long terme que l’influence de l’Empereur se manifestera dans toute sa splendeur. Grâce à lui, un vent puissant vous portera jusqu’à l’accomplissement de vos projets. Vous saurez faire preuve d’abnégation et d’un sens aigu de la planification. Les conditions seront réunies pour apporter à votre clan tout le confort, la sécurité et l’affection dont il a tant besoin. Après tout, votre épanouissement personnel passe également par celui de vos proches.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE L'EMPEREUR TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">Peu d’experts le contesteront : l’Empereur est la figure masculine la plus importante du tarot de Marseille. Tiré à l’endroit, l’arcane renvoie toujours aux notions positives de construction, de stabilité et de confort, qui peuvent aussi bien se manifester dans le domaine professionnel que dans la vie sentimentale du consultant. Il faut en effet considérer le personnage comme le gardien de ses proches, comme un patriarche rempli de sagesse dont la mission est de prendre soin des siens et de ceux qu’il aime. Responsable et réfléchi, il est l’archétype du bon père de famille, mais saura se montrer impétueux lorsqu’un obstacle se dressera devant lui. Confiant en ses capacités, l’Empereur a également su parfaitement digérer ses expériences passées et prodigue ses conseils à quiconque les solliciterait. Il est à ce titre une figure charismatique à laquelle il est bon de se confier. Épris de justice et de loyauté, excellent stratège, sûr de ses forces, le personnage dispose de toutes les qualités nécessaires à la réussite matérielle et financière. Il saura ainsi saisir la moindre opportunité pour faire prospérer ses affaires, donner confiance à ceux qui l’entourent et les aider à concrétiser leurs plans sur le long terme. Conservateur par nature, l’Empereur est le garant de la tradition. S’il manque un peu de spontanéité, il est là pour nous inciter à rester concentré sur ce qui compte réellement et à laisser de côté tout ce qui pourrait nous détourner du chemin que nous voulons emprunter.
+
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DE L'EMPEREUR TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">Comme c’est le cas pour toutes les autres arcanes majeurs du tarot de Marseille, la carte Empereur tirée à l’envers met en avant les défauts des qualités fondamentales du personnage. La confiance en soi se transforme alors en arrogance, l’autorité en pouvoir despotique, l’ambition en éparpillement. À vouloir agir trop vite, il n’est pas rare de se brûler les ailes ! Il s’agira alors de prendre le temps d’analyser plus en détails la situation et d’opter pour un approche plus raisonnable, documentée et sereine. Parfois, ce tirage traduit l’apparition dans notre quotidien d’une personne mal intentionnée, qui n’hésitera pas à profiter d’autrui pour arriver à ses fins. L’abus de privilège, la cruauté et l’arrogance sont alors alors placés au centre de l’échiquier. Cela pourrait par exemple présager un conflit avec un supérieur hiérarchique ou des problèmes d’ordre affectif liés à un mode de communication mal approprié. L’analyse d’un tirage de tarot ne saurait cependant se résumer à celle d’une seule carte. Pour profiter d’enseignements instructifs, il s’agira avant tout de contextualiser la situation.
+                                
+                            </p>
+
+
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

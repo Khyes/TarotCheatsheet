@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Quatre de Bâton</h1>
+                    <h2 class="h2-page">Four of Wands</h2>
+                    <p class="p-header">
+                        Le Quatre de Bâtons indique une période de stabilité, d'épanouissement et d'harmonie. Vous avez peut-être franchi une étape importante dans vos projets. Cette carte est également associée au foyer, et c'est donc une bonne occasion de passer du temps avec vos amis et votre famille.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">célébration, partage, harmonie, famille, joie...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">dissension, solitude, rigidité, disharmonie, conflit...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Quatre de Bâton vous encourage à profiter comme il se doit de la vie, en mettant pour un temps de côté ces obligations qui vous étouffent. Les amis et la famille font le charme du quotidien. N’oubliez donc pas de célébrer la vie avec vos proches quand l’occasion se présente, ou par simple plaisir. Nul besoin de se justifier de son bonheur !
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Quatre de Bâton vous apprendra à jongler habilement entre deux temporalités. Votre épanouissement passe nécessairement par votre constance, votre abnégation et votre faculté à vous projeter dans l’avenir. En suivant un chemin trop strict, vous risquez néanmoins de passer à côté de nombreux plaisirs. N’oubliez donc pas de partager avec vos proches des instants mémorables, pour votre bien-être, mais également pour le leur.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU QUATRE DE Bâton TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Dans son interprétation la plus fréquente, l’arcane du Quatre de Bâton renvoie volontiers à une période de joie et d’épanouissement, pendant laquelle le consultant se trouvera en parfaite harmonie avec ses désirs et ses objectifs. Il peut ainsi rimer avec une vie familiale heureuse ou l’arrivée d’une bonne nouvelle. Cette dynamique positive est en cela intéressante qu’elle est susceptible de toucher l’ensemble des domaines de la vie du consultant, c’est à dire aussi bien sa sphère personnelle que son univers sentimental et relationnel. C’est quand même la famille qui est le plus mise en avant par l’arcane.
+                            </p>
+
+                            <p class="p-header">
+                                Le Quatre de Bâton nous encourage à célébrer la vie et ses petits plaisirs avec nos proches et notre famille. Les liens qui nous unissent à eux sont précieux et il s’agit donc de veiller à les entretenir comme il se doit tout au long de notre vie ! Les occasions de se réunir sont nombreuses et jouent un rôle essentiel dans la cohésion du groupe. Mariage, célébration religieuse, nouveau contrat de travail, naissance, anniversaire : profitons au mieux de ces moments de partage qui font tout le charme de la vie de la vie d’un homme !
+                            </p>
+
+                            <p class="p-header">
+                                Si des différents nous ont récemment éloigné des personnes que nous aimons, le moment est idéal pour reprendre contact avec eux. L’harmonie de nos relations contribuent grandement à notre épanouissement et notre faculté à traverser les difficultés.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU QUATRE DE Bâton TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                L’interprétation du Quatre de Bâton inversé dépendra grandement des autres arcanes présents dans le tirage. Il est donc difficile de tirer des enseignements définitifs sur le tirage sans considérer ce dernier dans son ensemble.
+                            </p>
+
+                            <p class="p-header">
+                                D’un point de vue général, il convient néanmoins de notre que le Quatre de Bâton traduit souvent les difficultés relationnelles que traversent actuellement le consultant. La réalité de la vie l’a progressivement poussé à s’éloigner des personnes chères à son cœur. Les rancunes anciennes n’ont pas été résolues, le manque de communication tendant à les renforcer d’autant plus.
+                            </p>
+
+                            <p class="p-header">
+                                Dans certaines configurations de tirage, le Quatre de Bâton révèle l’existence d’une menace externe susceptible de mettre à mal l’équilibre relationnel du consultant.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

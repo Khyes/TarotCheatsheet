@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Roi d'Épée</h1>
+                    <h2 class="h2-page">King of Swords</h2>
+                    <p class="p-header">
+                        Le roi d'épée est une carte de jugement sévère et de leadership. Carte du défaut et de l'ordre, elle suggère l'équité, la logique et la clarté d'esprit lors de la prise de décision.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">puissance, maîtrise, autorité, réflexion, pouvoir...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">tyrannie, égocentrisme, violence, arrogance, sectarisme...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">PEUT-ÊTRE</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Roi d’Épée témoigne d’un caractère marqué, grâce auquel vous serez en mesure d’atteindre rapidement vos objectifs et de développer une vie sociale particulièrement épanouissante. Vos qualités de leader et vos capacités de réflexion constituent à ce titre des atouts rares, sur lesquels il ne faut pas hésiter à vous reposer.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, l’influence du Roi d’Épée se manifestera par de nombreuses réussites, aussi bien dans votre vie amoureuse que dans votre univers professionnel. Confiant en vos capacités, vous savez diriger votre réflexion dans cette direction qui vous permet d’évoluer en accord avec vous-même. Sur votre chemin, pensez simplement quelque fois à ne pas abuser de votre charisme et de votre autorité naturelle.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU ROI D'ÉPÉE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il est tiré à l’endroit, le Roi d’Épée peut renvoyer aux spécificités d’une personne importante de la vie du consultant ou à un trait de caractère de ce dernier. Il est donc important de prendre en compte le tirage dans sa globalité pour se faire une idée plus précise de la signification réelle de l’arcane.
+                            </p>
+
+                            <p class="p-header">
+                                Le trait de caractère le plus représentatif du Roi d’Épée est sans aucun doute sa faculté à diriger. Ce personnage n’apprécie pas particulièrement se fondre dans la masse et cherche toujours à se démarquer. En véritable leader, il prend volontiers les rênes de sa vie pour mener à bien les objectifs qu’il souhaite atteindre. Cette caractéristique permet d’ailleurs au Roi d’Épée de s’épanouir dans la sphère professionnelle, dès lors que ses responsabilités sont à la hauteur de son caractère dominant.
+                            </p>
+
+                            <p class="p-header">
+                                L’une des principales qualités du personnage réside dans son excellente faculté d’analyse. Le Roi d’Épée est un être hautement analytique, capable d’engranger puis de trier un nombre incalculable d’informations. Une fois la situation bien appréhendée, il n’aura aucun difficulté à trancher et à se mettre en mouvement. En raison de son caractère déterminé et de sa nature belliqueuse, il n’aura d’ailleurs aucun mal à maintenir son cap et à surmonter les obstacles qui se dresseront devant lui. Les défis l’excitent tout particulièrement, avec lui, l’échec n’est jamais une option !
+                            </p>
+
+                            <p class="p-header">
+                                On ne peut pas dire que le Roi d’Épée brille par ses qualités émotionnelles. D’apparence froide, il l’est tout autant dans sa vie privée. Cela ne signifie pourtant pas qu’il est incapable d’aimer, mais que son attachement se traduira davantage par la stabilité financière qu’il offrira que par des grandes marques d’affection. Le Roi d’Épée est un conservateur et protégera sa famille coûte que coûte.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU ROI D'ÉPÉE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Mieux vaudra parfois ne pas croiser le chemin d’un Roi d’Épée inversé. Ce tirage est en effet souvent associé à une personne particulièrement sûre de ses forces, mais surtout autocentrée sur ses seuls objectifs, devenus au fil du temps de véritables obsessions. Elle n’hésitera alors pas à utiliser sa force de persuasion pour arriver à ses fins, dans une démarche manipulatrice et proche du despotisme. Franchir certaines barrières morales ne sera alors pas un problème.
+                            </p>
+
+                            <p class="p-header">
+                                Parfois, le Roi d’Épée inversé témoigne d’un caractère vantard et imbu de lui-même. Fier de ses accomplissements, il a alors tendance à dédaigner la situation des autres. L’empathie n’est clairement pas la qualité principale du personnage. Comme l’arcane de la Maison Dieu nous l’apprend, il s’agira de garder à l’esprit que la vanité est par nature absurde, toute situation pouvant être bouleversée sur un simple coup du sort.
+                            </p>
+
+                            <p class="p-header">
+                                Enfin, tirer le Roi d’Épée à l’envers peut parfois traduire la difficulté éprouvée par le consultant à prendre des décisions. Ne sachant que faire des informations mises à sa disposition, effrayé à l’idée de changer son quotidien, incapable d’évoluer, il préférera alors se concentrer sur autre chose. Une certaine forme de frustration s’emparera de lui. Retenons que l’apprentissage passe nécessairement par la prise de décision et l’expérience.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

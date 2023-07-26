@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Les Deniers</h1>
+                    <h2 class="h2-page">Pentacles</h2>
+                    <p class="p-header">
+                        L’enseigne des Deniers correspond aux Trèfles d’un jeu de cartes traditionnel. Elle peut en outre être associée à l’élément terre et à la saison de l’hiver. L’influence de ces arcanes touche tout particulièrement l’aspect matériel de la vie, c’est à dire l’argent, la carrière, les besoins et les nécessités, mais également le corps et la santé. Ils sont ainsi profondément corrélés aux notions de pouvoir, de stabilité et de réussite sociale. D’un point de vue symbolique, la suite des Deniers est également intimement liée à l’intemporalité et à l’héritage. La terre n’est-elle pas à la fois source de vie et le lieu où toute chose retourne irrémédiablement ? Vivre sous l’influence des Deniers, c’est accepter à bras ouverts les liens qui nous unissent à notre ascendance comme à nos héritiers, dans un principe continu empreint de spiritualité. L’or du denier est par ailleurs extrêmement solide. Il peut à ce titre être considéré comme une force protectrice, comme un bouclier qui nous met à l’abri du besoin et des agressions du quotidien. L’enseigne souligne l’importance du respect de la norme, seul rempart possible face au chaos des passions et du désordre.
+                    </p>
+                    <p class="p-header">
+                        Quand elles apparaissent à l’envers dans un tirage de tarot, les cartes de Deniers témoignent souvent d’un manque de sécurité financière et matérielle. Elles peuvent également avoir trait à une certaine forme d’égoïsme et à un conservatisme parfaitement infécond. Dans certaines configurations de tirage, les Deniers inversés traduisent un déséquilibre profond entre vie professionnelle et besoins affectifs.
+                    </p>
+
+                    <!-- SEARCH BAR -->
+
+                    <div class="search-minor">
+                        <i class="fa fa-search" id="search-icon-minor"></i>
+                        <input type="text" id="js-search-minor" onkeyup="search_card_minor()" placeholder="Recherche.." class="search-style-minor">
+                    </div>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card-minor"><a href="/minor/denier/as.html" class="">
+                                <h1 class="h1-card">As</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃑</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="/minor/denier/two.html" class="">
+                                <h1 class="h1-card">Deux</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃒</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="/minor/denier/three.html" class="">
+                                <h1 class="h1-card">Trois</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃓</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="/minor/denier/four.html" class="">
+                                <h1 class="h1-card">Quatre</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃔</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="/minor/denier/five.html" class="">
+                                <h1 class="h1-card">Cinq</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃕</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="/minor/denier/six.html" class="">
+                                <h1 class="h1-card">Six</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃖</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="/minor/denier/seven.html" class="">
+                                <h1 class="h1-card">Sept</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃗</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="/minor/denier/height.html" class="">
+                                <h1 class="h1-card">Huit</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃘</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="/minor/denier/nine.html" class="">
+                                <h1 class="h1-card">Neuf</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃙</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="/minor/denier/ten.html" class="">
+                                <h1 class="h1-card">Dix</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃚</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="/minor/denier/valet.html" class="">
+                                <h1 class="h1-card">Valet</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃛</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="/minor/denier/cavalier.html" class="">
+                                <h1 class="h1-card">Cavalier</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃜</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="/minor/denier/reine.html" class="">
+                                <h1 class="h1-card">Reine</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃝</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="/minor/denier/roi.html" class="">
+                                <h1 class="h1-card">Roi</h1>
+                                <p class="p-card">De Denier</p>
+                                <h3 class="h3-card">🃞</h3>
+                            </a>
+                            </div>
+                            <div class="card-minor"><a href="" class="">
+                                <h1 class="back-card">🂠</h1>
+                            </a>
+                            </div>
+                        </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

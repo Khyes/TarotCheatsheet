@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Neuf de Denier</h1>
+                    <h2 class="h2-page">Nine of Pentacles</h2>
+                    <p class="p-header">
+                        Après avoir travaillé dur pendant longtemps, vous pouvez récolter les fruits de votre labeur. Cette carte signifie que vous avez atteint une période d'indulgence, d'opulence, de confort et d'autosuffisance. Profitez-en, car vous le méritez !
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">épanouissement, équilibre, opulence, joie, sérénité...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">fatigue, revers financier, surinvestissement, déception, impatience...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Neuf de Denier signifie que tous les efforts que vous avez récemment consentis finissent aujourd’hui par payer. Parfaitement en accord avec vous-même et vos objectifs, vous disposez aujourd’hui d’une situation financière particulièrement intéressante. Elle vous permet d’envisager l’avenir sereinement et de mettre vos proches à l’abri du besoin. Il est donc temps pour vous de souffler un peu et de vous consacrer davantage à ceux qui vous aiment.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Neuf de Denier vous apprendra que votre bonheur passe nécessairement par une certaine forme d’équilibre. Votre avenir financier est assuré, il vous faut donc désormais réfléchir aux activités les plus susceptibles de vous procurer joie et bien-être. Cela passera peut-être par une vie sociale bien développés, des voyages autour du monde ou des projets sentimentaux menés en commun. À vous de comprendre ce dont vous avez vraiment envie.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU NEUF DE DENIER TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Comme nous l’avons déjà souvent vu pour les autres cartes de l’enseigne, le Neuf de Denier évoque l’épanouissement matériel, l’abondance et la richesse. Pour le consultant, l’arcane signifie donc que les fruits de ses efforts sont aujourd’hui bien visibles, ou qu’ils s’apprêtent à être cueillis. Dans un monde régi par l’argent, il a très tôt su prendre les chemins menant au succès et à la reconnaissance sociale. Le consultant est aujourd’hui à l’abri du besoin et peut profiter à sa guise d’une situation que beaucoup lui envient.
+                            </p>
+
+                            <p class="p-header">
+                                Ce succès financier pose néanmoins question. Grande sera en effet pour lui la tentation de poursuivre dans la voie qu’il a tracé, par simple habitude ou par cupidité. Mieux ne vaudrait-il pas prendre un peu de temps pour soi, de façon à profiter concrètement de ses richesses ? Le bonheur d’un homme est fragile et ne saurait se contenter de l’aspect matériel des choses. L’empathie, l’amour et les amis constituent également les socles de son bien-être émotionnel.
+                            </p>
+
+                            <p class="p-header">
+                                Grâce au Neuf de Denier, cet équilibre sera atteint. Sous son influence, le consultant sera en harmonie avec lui-même, ses désirs et le monde qui l’entoure. Il s’agira donc d’accepter de lâcher prise et de s’impliquer dans d’autres domaines que le travail, dans des activités ou des causes qui lui tiennent vraiment à cœur.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU NEUF DE DENIER TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Avec le Neuf de Denier inversé, trois cas de figure distincts peuvent se présenter. Dans le premier d’entre eux, le tirage traduit une forme de déception chez le consultant. Malgré tous les efforts consentis, ce denier peine encore à tirer profit de son travail. Les obstacles s’accumulent et ses objectifs s’éloignent.
+                            </p>
+
+                            <p class="p-header">
+                                Parfois, l’arcane traduit au contraire une implication trop grande du consultant dans son travail. Obsédé par ses objectifs, il accumulera au fil des mois une fatigue psychologique importante. Qu’il prenne un peu de recul, le burn-out n’est pas loin.
+                            </p>
+
+                            <p class="p-header">
+                                Dans le troisième cas de figure, le Neuf de Denier à l’envers l’encouragera à rééquilibrer la façon dont il déploie son énergie. L’opulence est nécessaire au bien-être d’un homme, mais ne doit en aucun cas être considéré comme une fin en soi.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

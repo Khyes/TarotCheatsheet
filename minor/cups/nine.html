@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Neuf de Coupe</h1>
+                    <h2 class="h2-page">Nine of Cups</h2>
+                    <p class="p-header">
+                        Vous êtes dans une bonne situation en ce moment sur le plan des finances, du travail, de la santé ou des relations. Vous vous sentez également bien sur le plan émotionnel. Entouré de confort et de luxe, c'est le moment de vous faire plaisir, de vous détendre et d'apprécier les meilleures choses de la vie. Un avenir radieux vous attend.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">désir, contentement, action, épanouissement, bonheur...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">omission, manque de réalisme, déception, manque, imperfection...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Neuf de Coupe témoigne d’une période de joie et d’épanouissement. Fier de ce que vous avez accompli, vous savez aujourd’hui profiter comme il se doit des plaisirs que la vie a à vous offrir, aussi bien sur le plan personnel, relationnel que professionnel. Désormais, le contentement vous accompagne dans toutes vos actions. Il n’y a d’ailleurs aucune raison pour que cela change.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Neuf de Coupe vous encourage à vous interroger sur les causes qui vous sont chères. Le bonheur dépend d’une multitude de facteurs, qu’il s’agit de doser avec minutie. La patience vous permettra de trouver les ingrédients nécessaires à votre épanouissement.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU NEUF DE COUPE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Dans l’interprétation la plus courante qu’en font les cartomanciens, le Neuf de Coupe est considéré comme un appel au bonheur et un éloge du contentement. Il s’agit très certainement de l’un des arcanes les plus optimistes du tarot de Marseille, qui annonce succès et victoires dans tous les domaines de la vie du consultant, aussi bien au niveau relationnel, professionnel qu’amoureux.
+                            </p>
+
+                            <p class="p-header">
+                                Cette énergie résolument positive, le Neuf de Coupe la tient de son extraordinaire faculté à nous faire aller de l’avant. Nous avons tous connu des traumatismes et des blessures émotionnelles. La présence de l’arcane nous indique qu’il est aujourd’hui temps de s’en débarrasser pour de bon et d’accepter de changer de perspective. Cela ne signifie bien entendu pas renier son passé, mais simplement d’en reconnaître le caractère sclérosant. Si les souvenirs nous construisent, la vie se trouve toujours droit devant.
+                            </p>
+
+                            <p class="p-header">
+                                Sous l’influence du Neuf de Coupe, le consultant aura cependant tendance à se laisser aller à ses rêves. Il sera donc important pour lui de s’attacher au caractère matériel de la vie et de faire en sorte que ses désirs puissent à terme être concrétisés. Pour un bonheur pérenne, l’action succède toujours à la flânerie.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU NEUF DE COUPE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il apparaît à l’envers dans un tirage de tarot divinatoire, le Neuf de Coupe témoigne chez le consultant d’une forte insatisfaction. Un besoin fondamental n’est pour le moment pas assouvi, ce qui le rend naturellement triste ou dépité. Deux cas de figure peuvent se présenter. Parfois, le Neuf de Coupe inversé traduit les difficultés éprouvées par le consultant à passer à l’acte. Ses objectifs restent alors à l’état de rêverie sans qu’aucune stratégie ne soit jamais concrètement établie.
+                            </p>
+
+                            <p class="p-header">
+                                Dans d’autres configurations de tirage, le Neuf de Coupe inversé peut au contraire parler d’une obsession pour l’argent et la réussite matérielle. Le ressenti et les besoins émotionnels du consultant ne sont alors jamais pris en compte, une situation qui n’est bien entendu pas idéale s’il souhaite profiter comme il se doit des grands et petits plaisirs de la vie.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

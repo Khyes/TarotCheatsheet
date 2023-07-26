@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Cinq de Coupe</h1>
+                    <h2 class="h2-page">Five of Cups</h2>
+                    <p class="p-header">
+                        Vous avez récemment subi une perte, ou les choses ne se sont pas déroulées comme prévu, et vous éprouvez le chagrin et le sentiment de déception qui en résultent. Vous avez peut-être du mal à oublier le passé. Cependant, il y a encore de l'espoir - deux des coupes sont encore debout. Trouvez en vous la force de pardonner, de tirer les leçons de votre passé et de continuer à aller de l'avant.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">regret, remords, enlisement, blocages, fermeture sur le monde...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">ouverture, courage, acceptation, apprentissage, bien-être...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">NON</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Cinq de Coupe témoigne de traumatismes émotionnels profonds, dont vous avez encore du mal à vous départir. Les blessures de votre passé prennent une place importante dans votre vie, ce qui vous empêche de vous ouvrir au monde comme vous le devriez. Ne vous complaisez pas dans cette situation et reprenez la barre !
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Cinq de Coupe vous enseigne les vertus du courage et de l’abnégation. Face à la douleur, deux choix possibles : se laisser enliser ou accepter de s’y confronter une fois pour toute. Vos erreurs Vous construisent et permettent de façonner à terme votre personnalité. Au lieu de vous laisser aller à une tristesse démesurée, mieux ne vaut-il pas vous en servir comme point d’appui ?
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU CINQ DE COUPE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Il va sans dire que le Cinq de Coupe ne jouit pas d’une très bonne réputation dans le cercle des adeptes de la cartomancie. Associé comme toutes les cartes de l’enseigne à l’univers des émotions, l’arcane symbolise ainsi volontiers les difficultés affectives, la perte et la solitude.
+                            </p>
+
+                            <p class="p-header">
+                                Le Cinq de Coupe est traversé par un principe résolument passif. Il signifie souvent que le consultant reste focalisé sur ses traumatismes émotionnels, sans qu’il n’ait l’élan nécessaire pour se défaire de l’amertume ou du regret. Les liens qui l’unissent à son passé sont encore très forts. Impossible pour lui de relever la tête et de pointer le regard vers l’avenir.
+                            </p>
+
+                            <p class="p-header">
+                                L’arcane traduit qu’une situation qui lui tenait particulièrement à cœur ne s’est pas passée comme prévu. Il représente à ce titre une tentative avortée d’épanouissement, volontiers perçue comme un échec douloureux. Peu importe si la faute revient ou non au consultant, la sensation n’en reste pas moins aussi désagréable.
+                            </p>
+
+                            <p class="p-header">
+                                Cet état d’esprit n’est bien entendu aucunement bénéfique au bien-être du consultant. Il signifie que ce dernier a la fâcheuse tendance à se présenter comme une victime de la vie ou de lui-même. S’il est normal – et même parfaitement sain – de vouloir se confronter à ses traumatismes, il est tout aussi dangereux d’accepter de s’enliser dans sa mémoire.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU CINQ DE COUPE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Le Cinq de Coupe qui appairait à l’envers revêt une connotation positive pour l’évolution future du consultant. Dans la grande majorité des situations, il signifie l’acceptation totale du passé et la volonté farouche de guérir de ses blessures.
+                            </p>
+
+                            <p class="p-header">
+                                Si les sentiments de regret liés à l’échec sont encore bel et bien présents, le consultant n’accepte pas de se laisser dévorer par eux. Ayant su affronter ses traumatismes, il souhaite désormais pointer son regard vers l’horizon, dans une perspective d’ouverture hautement bénéfique. Ses fautes sont aujourd’hui pardonnées et la douleur bien digérée.
+                            </p>
+
+                            <p class="p-header">
+                                L’amertume et les regrets ont été soigneusement rangés au placard. Le consultant est maintenant prêt à profiter des nouvelles opportunités qui se présentent à lui. Plus expérimenté qu’auparavant et davantage conscient de ses besoins, il sera d’ailleurs capable de faire preuve d’une audace remarquable pour arriver à ses fins.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

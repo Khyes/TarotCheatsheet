@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Huit de Coupe</h1>
+                    <h2 class="h2-page">Height of Cup</h2>
+                    <p class="p-header">
+                        Vous vous êtes peut-être rendu compte que votre situation actuelle ne vous convenait pas et vous avez décidé de la quitter. Vous avez peut-être l'impression de perdre quelque chose, mais considérez ce processus de transition comme une occasion de vous découvrir.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">tristesse, solitude, changement, évolution, bouleversement...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">fuite en avant, confusion, manque de vision, abandon, indécision...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">NON</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Huit de Coupe est un signe de changement. Votre quotidien et vos relations ne sont aujourd’hui plus aussi satisfaisants qu’auparavant. Vous ressentez fréquemment une forme de tristesse face à cette situation. Gardez à l’esprit qu’elle n’est que passagère. Il ne dépend en fait que de vous de changer ce qui ne vous plaît pas et de bâtir dès maintenant un avenir plus joyeux !
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Huit de Coupe vous encourage à confronter aussi souvent que nécessaire la réalité de votre vie et l’idée que vous vous en étiez faite. Si les obligations du quotidien nous contraignent souvent à la concession, ce n’est pas une raison valable pour mettre de côté vos rêves et vos idéaux.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU HUIT DE COUPE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Le Huit de Coupe n’a généralement pas bonne presse au sein de la communauté du tarot de Marseille. En analysant plus finement la carte, l’on se rendra néanmoins rapidement compte du message résolument positif qu’elle envoie.
+                            </p>
+
+                            <p class="p-header">
+                                Dans son interprétation la plus traditionnelle, le Huit de Coupe véhicule une idée de tristesse, il traduit cette déception presque brutale ressentie par le consultant lorsqu’il accepte de regarder objectivement sa vie. Il existe aujourd’hui un fossé important entre ce qu’il désirait construire et ce qui est réellement. Cette opposition est susceptible de le plonger dans un grand désarroi.
+                            </p>
+
+                            <p class="p-header">
+                                Le Huit de Coupe doit cependant toujours être considéré comme une carte remplie d’espoir. Si notre quotidien ne ressemble pas encore à ce que l’on avait imaginé, l’espoir est bel et bien toujours de la partie. L’arcane dégage à ce titre une forme de sérénité, en cela qu’il nous fait prendre conscience de l’imperfection de notre vie actuelle et nous encourage à nous réformer.
+                            </p>
+
+                            <p class="p-header">
+                                Pour le consultant, il s’agira de tout mettre en œuvre pour traverser sereinement cette transformation. Ouvrir les bras aux changements, c’est nécessairement accepter de remettre en cause les fondements de son quotidien. Il est donc naturel que cette période soit perçue comme étant particulièrement stressante. La communication et le soutien de ses proches seront à ce titre primordiaux.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU HUIT DE COUPE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsque le Huit de Coupe est tiré à l’envers, cela traduit le plus souvent la confusion dans laquelle le consultant est pour le moment plongé. Insatisfait de son quotidien, conscient des difficultés qu’il traverse, il éprouve néanmoins toutes les difficultés du monde à trouver cette solution dont il a pourtant tant besoin.
+                            </p>
+
+                            <p class="p-header">
+                                Qu’elle se propage dans l’univers professionnel ou la vie sentimentale du consultant, l’insatisfaction ne s’installe jamais sans coup férir. C’est d’ailleurs pourquoi elle s’empare si lentement de nous, sans que l’on puisse prévoir son arrivée. Il est donc tout à fait naturel dans ce contexte d’avoir du mal à se défaire rapidement de ces habitudes qui nous nuisent.
+                            </p>
+
+                            <p class="p-header">
+                                Pour le consultant, il s’agira avant tout de prendre conscience de cette part de tristesse qu’il essaye tant bien que mal de cacher, mais aussi d’accepter que le changement ne pourra que lui être bénéfique.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

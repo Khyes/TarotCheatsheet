@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Trois de Coupe</h1>
+                    <h2 class="h2-page">Three of Cup</h2>
+                    <p class="p-header">
+                        Il s'agit d'une période très sociale de votre vie, où vous pouvez concilier vos engagements avec des moments de qualité avec vos amis et votre famille.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">résolution d’un conflit, ouverture, qualité relationnelle, tendresse, créativité...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">blocages, ménage à trois, conflits internes, solitude, insatisfaction...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Trois de Coupe témoigne de la fin d’un conflit interne ou de la résolution d’une situation complexe. Vos tensions se dénouent progressivement et vous êtes désormais prêt à profiter au maximum de votre moitié et de vos relations amicales. Elles vous apporteront ces petits moments de joie et de partage essentiels à votre bien-être.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Trois de Coupe vous encourage à vous laisser guider par ces belles émotions que sont l’amour, la tendresse et l’empathie. Ces qualités font de vous ce que vous êtes et participent grandement à votre épanouissement. Passez donc un peu moins de temps à vous préoccuper de votre carrière et consacrez votre énergie à vivre des moments inoubliables avec vos proches.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU TROIS DE COUPE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Le Trois de Coupe est un arcane actif lié à l’échange relationnel et aux qualités sensibles propres à chaque être humain. Il favorise ainsi grandement l’harmonie au sein d’un groupe d’amis. Les obligations du quotidien nous font parfois oublier l’importance de nos proches et le rôle qu’ils jouent dans notre bien-être. Le Trois de Coupe encourage au contraire les rapprochements. Il est le signe que le consultant se trouve dans l’état d’esprit propice pour profiter à nouveau de relations harmonieuses, mais également pour se montrer suffisamment disponible lorsque l’une de ses connaissances aura besoin de lui. Apprendre à développer ses relations amicales, c’est accepter de faire partie d’un tout, c’est comprendre les valeurs communes nous reliant aux autres. Il ne s’agit donc pas ici de simples petits plaisirs partagés, mais davantage d’une quête d’unité fondamentale à l’homme.
+                            </p>
+
+                            <p class="p-header">
+                                L’univers sentimental du consultant est bien entendu également fortement influencé par le Trois de Coupe. Comme c’était le cas dans l’amitié, l’arcane favorise ainsi l’harmonie au sein du couple. Il peut par exemple annoncer la fin d’un conflit, que celui soit interne ou projeté sur le monde, et son aboutissement favorable. Tous les ingrédients d’une relation pérenne sont donc aujourd’hui réunis. Ils feront profiter au consultant d’une tendresse, d’une qualité d’écoute et d’un support sans commune mesure.
+                            </p>
+
+                            <p class="p-header">
+                                Parfois, le Trois de Coupe véhicule également l’idée d’évolution. Il est probable qu’après avoir su surmonter ses traumatismes émotionnels, le consultant se sente aujourd’hui capable d’ouvrir à nouveau son cœur pour s’engager pour de bon dans une relation sérieuse. Parce qu’après tout, qu’y a-t-il de plus doux dans la vie que d’aimer et d’être aimé ?
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU TROIS DE COUPE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                S’il est difficile d’analyser précisément l’influence du Trois de Coupe sans prendre en compte les autres arcanes présents dans le tirage, il est néanmoins possible de mettre en exergue deux cas de figures extrêmement fréquents.
+                            </p>
+
+                            <p class="p-header">
+                                Parfois, le Trois de Coupe inversé témoignera des difficultés éprouvées par le consultant à nouer des relations durables avec son cercle d’amis. S’il est sous l’influence de l’enseigne de Denier par exemple, cette situation difficile résulte le plus souvent d’une implication trop grande dans sa carrière et d’une rigidité comportementale peu compatible avec l’univers relationnel.
+                            </p>
+
+                            <p class="p-header">
+                                Dans d’autres situations, le Trois de Coupe peut également signifier qu’une troisième personne est impliquée dans la vie sentimentale du consultant. La volonté de fusion inhérente au couple est alors mise à mal par les sentiments naissants de l’un des deux partenaires pour une personne extérieure à la relation. Pour éviter que la situation dégénère, il s’agira de faire preuve de diplomatie et d’appréhender ensemble les raisons pouvant expliquer cette mauvaise passe. La communication jouera à ce titre un rôle crucial.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

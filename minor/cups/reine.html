@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Reine de Coupe</h1>
+                    <h2 class="h2-page">Queen of Cup</h2>
+                    <p class="p-header">
+                        La Reine de Coupe est une personne chaleureuse et sûre sur le plan émotionnel, qui est intuitivement en phase avec les émotions des autres. Elle accueille tout le monde à bras ouverts et fournit des conseils et un soutien émotionnel. Faites preuve d'empathie et soutenez ceux qui vous entourent.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">compassion, amour, compréhension, calme, sécurité...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">jalousie, émotivité, conflit, incompréhension, malhonnêteté...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, la Reine de Coupe vous encourage à vous rapprocher de vos émotions et à développer ces belles qualités d’empathie, de respect et d’amour qui font toute la richesse d’une vie humaine. Tendez la main à ceux qui en ont besoin et n’hésitez pas à faire confiance aux personnes qui vous ouvrent les bras.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, l’influence de la Reine de Coupe se manifeste par un élan de créativité et une forte intuition. Grâce à elle, vous serez capable de ressentir les choses avant même qu’elles ne soient exposées, mais également de vous connecter sur un plan plus profond avec ceux qui vous entourent. Dans votre carrière, vos qualités de communicant assureront une coexistence enjouée avec vos collègues.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE LA REINE DE COUPE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Qu’elle concerne directement le consultant ou fasse référence à une personne de son entourage, la Reine de Coupe est un personnage profondément sensible, pour qui le rapport aux autres passe toujours par le partage et l’empathie. Peu appréciées dans un monde toujours plus centré sur la productivité et l’individualité, ces qualités rares font de cette femme un être unique. Avec elle, il s’agira de laisser parler son cœur et d’accepter de se laisser toucher par cette douceur toute maternelle.
+                            </p>
+
+                            <p class="p-header">
+                                La Reine de Coupe dispose d’une capacité formidable à comprendre les mystères de l’âme humaine, qu’elle appréhendera à travers sa réceptivité et sa sensibilité très développées. Il s’agira de prendre exemple sur elle. Lorsqu’il est tiré à l’endroit, l’arcane peut être un signe pour le consultant qu’il est aujourd’hui nécessaire de prendre le temps de regarder au fond de lui. Ce temps de pause pourra être extrêmement bénéfique : il lui fera prendre conscience des blocages qui l’empêchent d’avancer et de se reconnecter à ses émotions véritables. Le flux du quotidien nous contraint parfois à agir en mode automatique. En faisant confiance en notre intuition, il est plus facile de comprendre les rouages de notre psychologie, mais également de nous rapprocher des autres, aussi bien dans leurs difficultés que dans leurs joies.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DE LA REINE DE COUPE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’elle est tirée à l’envers, la Reine de Coupe peut être associée à deux cas de figure diamétralement opposés. Il conviendra donc de prendre en compte les différentes cartes présentes dans le tirage, et notamment les arcanes majeurs, pour l’analyser de façon plus précise.
+                            </p>
+
+                            <p class="p-header">
+                                Parfois, la Reine de Coupe inversée traduit une certaine forme de manque de contrôle de la part du consultant. Ce dernier est alors en proie à des émotions particulièrement vivaces et difficilement exploitables. Cet excès de sensibilité nuit à la fois à ses relations sociales, mais l’empêche également de voir les choses clairement.
+                            </p>
+
+                            <p class="p-header">
+                                Dans l’autre cas de figure, le tirage laisse supposer les difficultés éprouvées par le consultant à se connecter à son monde intérieur. Ses actions résultent alors de la simple habitude, ce qui tend à l’éloigner de ce qu’il est vraiment et de ce dont il pourrait profiter s’il se rapprochait de ses émotions véritables.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

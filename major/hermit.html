@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">L'Hermite</h1>
+                    <h2 class="h2-page">The Hermit</h2>
+                    <p class="p-header">
+                        L'Hermite montre que vous faites une pause dans la vie quotidienne pour attirer votre énergie et votre attention vers l'intérieur et trouver les réponses que vous cherchez, au plus profond de votre âme. Vous réalisez que votre sens le plus profond de la vérité et de la connaissance se trouve à l'intérieur de vous-même et non dans les distractions du monde extérie
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Introspection, sagesse, patience, intériorisation, recherche...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Solitude, lenteur, procrastination, repli, dépression...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">PEUT-ÊTRE</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Les influences de l’Hermite à court terme prennent la forme d’une prise de conscience. Un obstacle vous empêche aujourd’hui d’avancer et il est grand temps de penser à vous et aux solutions à mettre en œuvre. Pour cela, n’ayez pas peur de plonger à l’intérieur de votre âme et de démêler les nœuds que vous n’avez pas encore réussi à résoudre.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, l’Hermite vous enseigne à être en accord avec vos désirs profonds. Ne vous laissez donc jamais entraîner sur un chemin qui vous ne correspond pas. Apprenez au contraire à vous recentrer sur vous dès que vous faites face à une situation difficile et définissez vos priorités. Gardez également à l’esprit que la patience possède bien des vertus. Elle vous empêchera de vous précipiter et de regretter des choix pris trop impulsivement.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE L'HERMITE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Un certain nombre de consultants se trouvent décontenancés lorsqu’ils font face à l’arcane de l’Hermite. Renvoyant à la solitude et au repli sur soi, voire à une certaine forme d’ascétisme, le personnage à tout naturellement de quoi susciter les interrogations. Il s’agit en fait de ne pas considérer cette lame comme un être coupé du monde et de ses réalités, mais d’apprendre à en apprécier les capacités de compréhension et de recherche. L’Hermite ne se retire pas momentanément en lui par peur des autres ou par misanthropie, il connaît simplement parfaitement les bienfaits de l’analyse de soi.
+                            </p>
+
+                            <p class="p-header">
+                                Son objectif est simple : dénouer les nœuds de sa psychologie en décryptant les comportements répétés qui suggèrent un blocage. Il n’est pas rare que le quotidien nous fasse oublier nos priorités profondes et nous éloigne de nos véritables besoins. Prendre le temps du recul pourra alors s’avérer particulièrement fructueux pour quiconque souhaiterait évoluer. Très souvent, les blocages prennent racine dans notre enfance. Ils peuvent également être le résultat de traumatismes plus récents, notamment en cas de rupture amoureuse mal digérée, d’un licenciement professionnel récent ou encore de la perte d’un proche. S’il est parfaitement normal que ces éléments du passé aient marqué la vie du consultant, il est tout aussi naturel de vouloir effacer leurs stigmates. Et pour réduire leur impact, rien de plus efficace que de les affronter yeux dans les yeux une fois pour toute.
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DE L'HERMITE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’elle est tirée à l’envers, la carte de l’Hermite peut renvoyer à deux situations distinctes. Il s’agira bien entendu d’analyser l’ensemble des cartes du tirage pour l’interpréter de la façon la plus fine qui soit. Dans le premier cas de figure, l’Hermite inversé témoigne de l’extrême repli sur soi du consultant. Le temps de réflexion se transforme alors en une véritable période de doute. L’inaction et le ressassement prennent alors une place trop importante dans son quotidien. Cette situation peut s’avérer dangereuse, en cela qu’elle rappelle certains symptômes de la dépression. Quand la lenteur s’apparente à de l’inertie, le chemin de vie du consultant s’arrête momentanément au feu rouge. Si la situation est pour le moment difficile, sa force vitale reviendra tôt ou tard. Chaque obstacle peut être franchi.
+                            </p>
+
+                            <p class="p-header">
+                                Dans le deuxième cas de figure, l’Hermite tiré à l’envers traduit au contraire que le consultant n’a pas pris la peine de plonger à l’intérieur de lui depuis longtemps. Ses actions résultent alors d’une simple habitude, le risque étant qu’elle ne soit plus en accord avec ses désirs réels. Le plus important sera alors d’arriver à stopper cette fuite en avant, de façon à découvrir le vrai sens de la vie.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

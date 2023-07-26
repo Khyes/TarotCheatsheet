@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Deux de Denier</h1>
+                    <h2 class="h2-page">Two of Pentacles</h2>
+                    <p class="p-header">
+                        Le Deux de Denier est une carte d'équilibre et d'intérêts conflictuels. Il se peut que vous soyez tiré dans de multiples directions, essayant de gérer votre carrière, vos relations, votre famille, votre santé, etc. en même temps. Apprenez à établir des priorités pour obtenir un résultat plus sain.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Équilibre, matérialité, richesse, réflexion, maturation...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Difficulté financière, blocage, empressement, regret, instabilité...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Deux de Denier vous met face à un choix. Ce dernier pourra par exemple concerner plusieurs opportunités professionnelles particulièrement alléchantes, face auxquelles vous devrez nécessairement trancher. Rappelez-vous qu’un choix pérenne résulte toujours d’une réflexion rondement menée. Pour pouvoir à l’avenir mieux assumer vos responsabilités, pesez minutieusement le pour et le contre de chaque situation et ne tombez pas dans le piège de la précipitation.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Quand on étudie les influences du Deux de Denier sur le long terme, c’est la nécessité de l’équilibre qui vient immédiatement à l’esprit. Amour, amitié, travail, loisirs, voyage : les possibilités offertes par la vie sont presque infinies. Souvenez-vous cependant qu’il est tout à fait impossible de se consacrer pleinement dans tous ces domaines. Il vous faudra donc apprendre à jongler habilement entre vos besoins et vos plaisirs.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU DEUX DE DENIER TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Le Deux de Denier n’est certainement pas l’arcane la plus facile à appréhender dans l’univers du tarot de Marseille. Précisons néanmoins l’interprétation la plus fréquente faite par les spécialistes de la cartomancie.
+                            </p>
+
+                            <p class="p-header">
+                                La complexité de l’analyse résulte avant tout de la dualité véhiculée par la carte. Elle est le plus souvent comprise comme un besoin d’équilibre, comme une nécessité pour le consultant de jongler habilement entre les différente facettes de sa vie. La réussite matérielle et financière participe bien entendu grandement à notre épanouissement personnel. Fruit de notre abnégation, elle nous fait prendre conscience des efforts consentis et garantit notre sécurité sur le long terme. Une vie humaine ne saurait cependant se résumer à la sphère professionnelle. Le bien-être du consultant passera ainsi nécessairement par l’harmonie parfaite entre les différents volets de sa vie. Le Deux de Denier nous met en fait face à un choix : quel domaine devra-t-on privilégier pour obtenir cet équilibre tant recherché ?
+                            </p>
+
+                            <p class="p-header">
+                                D’un point de vue plus prosaïque, l’arcane pourra également témoigner de l’existence de deux opportunités professionnelles face auxquelles le consultant devra trancher. C’est ici encore sa capacité de décision qui sera mise en jeu.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU DEUX DE DENIER TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il apparaît à l’envers dans un tirage de tarot divinatoire, le Deux de Denier renvoie le plus souvent à deux grands cas de figure.
+                            </p>
+
+                            <p class="p-header">
+                                Le premier d’entre eux témoigne des difficultés éprouvées par le consultant à prendre soin de ses finances. Comme nous l’avons vu, l’enseigne des deniers parle toujours de réussite matérielle et d’accumulation de richesses. Le consultant n’arrive en ce moment pas aussi bien que d’habitude à assumer ses responsabilités, en raison, peut-être, d’un stress psychologique trop grand, d’un problème familial ou d’un choix de carrière ne lui convenant pas totalement. Le retour sur soi permettra de franchir cette étape.
+                            </p>
+
+                            <p class="p-header">
+                                Dans d’autre situations, l’arcane traduit une certaine forme de déséquilibre. Le consultant a alors du mal à jongler entre les différentes facettes de sa vie. En s’éparpillant de tous les côtés, les objectifs qu’il s’était fixé s’apparentent aujourd’hui davantage à des chimères lointaines qu’à des desseins concrets. La seule solution sera de s’accorder un temps de réflexion et de déterminer précisément les moyens à mettre en œuvre pour palier au problème. C’est une démarche impérative pour quiconque souhaiterait se recentrer sur ce qui compte vraiment.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Trois de Denier</h1>
+                    <h2 class="h2-page">Three of Pentacles</h2>
+                    <p class="p-header">
+                        Cette carte indique le début d'un projet, mais un projet qui nécessite un travail d'équipe. Cependant, vous jouez également un rôle dans ce projet et il semble que vos efforts soient enfin reconnus. Laissez briller vos compétences et vos capacités, mais n'oubliez pas que votre destin est actuellement lié à celui des autres.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Concrétisation, planification, matérialisation, projets de long terme, abnégation...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Insouciance, laisser-aller, irréflexion, obstacles, rivalités professionnelles...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Trois de Denier vous encourage à persévérer dans la voie dans laquelle vous vous êtes engagé. Récemment, une prise de recul vous a permis de définir concrètement vos objectifs professionnels. Vous savez donc aujourd’hui les actions que vous devrez mener pour y répondre. Vous ne vous laissez désormais plus bercer par des faux-semblants ou vos envies du moment. Votre plan de carrière est bien ficelé et votre regard pointe irrémédiablement vers l’avenir.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Le message fondamental du Trois de Denier sur le long terme ? L’importance de la planification et de l’abnégation. Définir vos objectifs de vie ne constitue en réalité que la première étape de votre quête. Il s’agira également de persévérer dans vos efforts et de garder votre ligne de conduite, même lorsque des difficultés viendront entraver votre marche en avant. Cette stabilité comportementale est la condition sine qua non à vos succès futurs !
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU TROIS DE DENIER TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsque le Trois de Denier apparaît à l’endroit dans un tirage de tarot divinatoire, l’arcane doit avant tout être perçu comme un encouragement, comme un message nous incitant à persévérer dans la voie que nous avons choisie. Sous son influence, nous savons désormais pertinemment ce que nous cherchons à atteindre et les moyens à déployer pour concrétiser notre vision du monde.
+                            </p>
+
+                            <p class="p-header">
+                                Avec lui, pas question de se laisser aller ou de vivre au jour le jour, le Trois de Denier nous exhorte à planifier le plus tôt possible notre avenir. Les idées que nous avions patiemment entretenues portent aujourd’hui leurs fruits et s’extériorisent progressivement sur le monde. Nous avons su mettre au clair notre esprit pour définir nos objectifs.
+                            </p>
+
+                            <p class="p-header">
+                                Lorsque l’on est confronté à un choix, les décisions nous semblent alors plus faciles à prendre. La voie est désormais toute tracée. Elle nous fera rapidement profiter d’un avenir radieux, particulièrement quand il sera question de plan de carrière, d’investissement financier et de réussite sociale. À force d’abnégation, de volonté et d’implication, les rêves dans lesquels nous nous étions projetés révéleront prochainement leur caractère palpable.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU TROIS DE DENIER TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                À contrario, le Trois de Denier inversé traduit souvent les difficultés éprouvées par le consultant à se projeter sereinement dans son avenir. Les informations s’entrechoquent pour le moment dans sa tête en créant un chaos inaudible. Difficile pour lui d’y voir clairement. La patience sera alors son meilleur allié. Elle lui permettra à terme de remettre de l’ordre dans ses idées, en hiérarchisant petit à petit les informations. Ce n’est qu’à ce moment précis que le consultant pourra établir son plan d’action et mettre le cap à l’horizon.
+                            </p>
+
+                            <p class="p-header">
+                                Dans d’autres configurations de tirage, le Trois de Denier apparu à l’envers souligne l’ambiance de travail néfaste dans laquelle évolue le consultant. Si ses objectifs sont d’ors et déjà parfaitement définis, le contexte ne se prête pas nécessairement à leur concrétisation. Les rivalités entre collègues se font de plus en plus apparentes et contribuent à ralentir le travail d’équipe. Elles ont également tendance à impacter les performances du consultant et à l’éloigner pour un moment de ses desseins de long terme.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

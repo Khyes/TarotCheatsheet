@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Le Soleil</h1>
+                    <h2 class="h2-page">The Sun</h2>
+                    <p class="p-header">
+                        Le Soleil représente le succès, le rayonnement et l'abondance. Le Soleil te donne de la force et te dit que peu importe où tu vas ou ce que tu fais, ton énergie positive et rayonnante te suivra et t'apportera bonheur et joie. C'est cette belle et chaude énergie qui te permettra de traverser les moments difficiles et de réussir.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Clarté, succès, épanouissement, estime, paix...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Doute, excès, blocage, discorde, tristesse...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Soleil vous annonce succès, réussite et dynamisme. L’arcane favorise ainsi les rencontres amoureuses, la concrétisation de projets d’envergure et les évolutions de carrière. Il vous incite ainsi à agir et à faire confiance en vos qualités indéniables. Vous savez ce qu’il vous reste à faire !
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Soleil vous servira de guide tout au long de votre progression en temps qu’être humain. Grâce à lui, vous ferez preuve d’une abnégation sans faille et poursuivrez vos objectifs jusqu’à leur réalisation. Dans le domaine relationnel, votre bonne humeur communicative rejaillira sur ceux qui vous entourent.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU SOLEIL TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Il n’est guère difficile de comprendre toutes les implications positives inhérentes à l’arcane du Soleil. Notre étoile a de tout temps - et partout dans le monde - fasciné les civilisations les plus éloignées culturellement et géographiquement. Ce n’est donc pas un hasard si son influence est également particulièrement bénéfique dans l’univers du tarot de Marseille. D’un point de vue général, il s’agit de considérer le Soleil comme la source principale de la vie, comme cette force fascinante qui alimente la nature et les hommes et leur permet de s’épanouir. L’arcane représente ainsi merveilleusement bien l’image du père nourricier, qui guide son clan vers le chemin de l’épanouissement et de la sérénité. Il est ce rouage mystérieux et fondamental qui permet à la vie de se déployer dans l’espace et dans le temps, cet élan puissant qui nous permet de franchir les obstacles les plus hauts, ce bienfaiteur dont l’action est exclusivement dirigé vers notre bonheur et notre joie.
+                            </p>
+
+                            <p class="p-header">
+                                Son influence positive est susceptible de toucher tous les domaines de notre vie. Dans le domaine amoureux, le Soleil est ainsi associé à l’amour véritable et aux relations sentimentales perenne. Au niveau professionnel, il accompagne le consultant dans son évolution de carrière et son épanouissement financier. Dans la sphère personnelle, il lui permet de faire sienne ces belles valeurs humanistes qui irradieront sur les personnes qui lui sont chères. La plénitude et le calme émanant du consultant seront une source majeure d’inspiration pour ses proches.
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DU SOLEIL TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il est tiré à l’envers, le Soleil témoigne au contraire des difficultés que rencontre actuellement le consultant et indique qu’il n’arrive pour le moment pas à les surmonter. La dimension nourricière de l’astre s’en trouve alors largement atténuée et son éclat n’est plus aussi brillant que d’habitude. Grands sont alors les risques d’analyser certaines situations sous un spectre trop sombre, un état d’esprit nuisible qui ralentit momentanément l’évolution du consultant. Il sera alors important de prendre le temps de faire le point et d’élaborer une stratégie pour sortir de cette mauvaise passe. Le soutien des proches sera à ce titre particulièrement important.
+                            </p>
+
+                            <p class="p-header">
+                                Dans d’autres situations, tirer le Soleil inversé conduit au contraire le consultant à exploiter malhabilement la confiance placée en lui par l’étoile solaire. C’est alors l’arrogance qui prend alors le dessus, ce qui pourra à terme provoquer des incompréhensions nuisibles. Cette conduite non appropriée pourra également avoir des répercussions notables dans la sphère professionnelle du consultant. Il est donc essentiel de toujours agir en respectant les règles de base d’empathie, de respect et de tempérance.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

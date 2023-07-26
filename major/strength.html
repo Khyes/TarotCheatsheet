@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="/script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">La Force</h1>
+                    <h2 class="h2-page">The Strength</h2>
+                    <p class="p-header">
+                        Contrairement à la volonté physique du Chariot. La force consiste à surmonter les difficultés par la force intérieure. La force consiste à dompter vos bêtes intérieures pour laisser briller votre voix intérieure. Votre force vous donne la confiance nécessaire pour surmonter les peurs, les défis et les doutes qui vous assaillent.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Maîtrise, volonté, courage, détermination, force tranquille...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Faiblesse, impulsivité, intolérance, agressivité, cruauté...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    À court terme, l’arcane de la Force vous invite à prendre conscience de vos qualités intrinsèques et à éviter autant que possible les décisions hâtives. Vous avez déjà probablement en tête certains objectifs que vous souhaitez atteindre. Il n’est pas l’heure de changer de cap et de tout remettre en question. Tout vient à point à qui sait attendre.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, la Force est une carte bénéfique pour quiconque souhaiterait profiter d’une vie sereine et active. À l’image de la Tempérance, cette lame vous encourage à poursuivre vos aspirations et à développer votre force tranquille. Votre confiance en vous et la qualité de votre communication vous épauleront dans votre quête.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE LA FORCE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsqu’elle est tirée à l’endroit, la Force témoigne de la maîtrise acquise par le consultant sur ses pulsions et ses désirs. Farouchement déterminé à atteindre les objectifs qu’il s’est fixé, il dispose aujourd’hui d’une volonté suffisamment maîtrisée pour franchir les obstacles et évoluer rapidement sur le chemin de la vie. L’arcane traduit que la force brute du consultant s’est aujourd’hui transformée en énergie pérenne. Si les coups d’éclats peuvent de prime abord séduire, c’est avant dans la durée qu’il convient de s’inscrire pour atteindre le bonheur. La persévérance et l’égalité de l’humeur joueront à ce titre un rôle essentiel.
+                            </p>
+
+                            <p class="p-header">
+                                La lame de la Force profite également de qualités féminines notoires. Avec elle, il est avant tout question de discernement, de contrôle et de tolérance. Ces attributs seront particulièrement utiles dans l’univers social du consultant. Elles permettront non pas d’imposer par la force ses desseins et ses points de vue à autrui, mais de les communiquer de façon raisonnée. Une atmosphère de tolérance et d’acceptation est associée à la carte. C’est pourquoi cette dernière est largement considérée par les spécialistes du tarot de Marseille comme le symbole-même de la domination par la douceur. En tant que plus haut niveau de conscience accessible à l’Homme, la Force nous apprend à dompter nos émotions trop violentes, nos pulsions et nos pensées destructrices. Elle constitue à ce titre un outil merveilleux pour celui qui souhaiterait s’accomplir pleinement.
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DE LA FORCE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Dans le cas d’un tirage inversé de la Force, toutes les qualités propres au personnage se trouvent atténuées ou renversées. La confiance tranquille caractéristique de l’arcane se transforme alors en une arrogance néfaste à la vie personnelle ou professionnelle du consultant. C’est l’agressivité et l’intolérance aux autres qui dominent le tableau, ralentissant momentanément l’évolution du consultant. Dans certains cas, ce dernier pourra également être victime d’un déficit d’énergie vitale, son action étant alors totalement entravée par un manque cruel de confiance en soi.
+                            </p>
+
+                            <p class="p-header">
+                                Dans tous les cas, ce tirage encourage le consultant à faire le point sur lui-même et à apprendre à se reconnecter à sa puissance intérieure. Lorsque l’on fait preuve d’un excès d’agressivité, il est souvent judicieux de prendre du temps pour soi, afin de déterminer la meilleure façon de communiquer avec les autres ou avec soi-même. Cette prise de conscience de ses petits défauts est bien souvent le premier pas vers la quête de l’auto-maîtrise.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

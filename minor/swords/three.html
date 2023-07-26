@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Trois d'Épée</h1>
+                    <h2 class="h2-page">Three of Sword</h2>
+                    <p class="p-header">
+                        Le Trois d'Épée indique une période de douleur et de déchirement. Cependant, il vous encourage à utiliser cette douleur comme une leçon apprise. Acceptez votre perte, libérez la douleur et allez de l'avant en laissant le passé derrière vous.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">douleur, solitude, traumatisme, tristesse, blessure...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">laisser-aller, réconciliation, pardon, projection, avenir...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">NON</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Trois d’Épée est toujours associé à une période de doute, de tristesse et de remise en question. Elle pourra par exemple avoir trait à une déception amoureuse, à un deuil ou à la perte d’un emploi. Pour ne pas trop être affecté par cette situation difficile, il s’agira de vaincre ce sentiment de culpabilité qui vous ronge parfois et de faire confiance en vos proches. Ils sauront vous remonter le moral, vous changer les idées et vous prodiguer de précieux conseils.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Trois d’Épée nous apprend l’importance de la confrontation. Lorsqu’une douleur s’empare de nous, il est souvent plus facile de fuir le problème - ou de se complaire dans la tristesse - que d’analyser le plus objectivement possible la situation. Apprendre des expériences traumatiques, c’est se donner une chance d’évoluer et d’apprendre de ses erreurs.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU TROIS D'ÉPÉE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                À l’image des autres cartes de la suite des épées, le Trois d’Épée évoque avant tout l’esprit, l’intellect et le raisonnement. Il est volontiers associé aux idées de tristesse et de désarroi. C’est d’ailleurs pourquoi certains adeptes de la cartomancie redoutent sa présence. Nous préférons de notre côté nous éloigner autant que possible des jugements hâtifs et nous concentrer sur les précieux enseignements délivrés par la carte.
+                            </p>
+
+                            <p class="p-header">
+                                Dans l’interprétation traditionnelle du Trois d’Épée, l’arcane traduit la période de solitude et d’abattement que traverse actuellement le consultant. Cette dernière peut par exemple résulter d’une peine de cœur, de la perte d’un emploi ou encore de la disparition d’un proche. Pour le consultant, cette tristesse est d’autant plus douloureuse qu’elle est apparue subitement, sans lui laisser le temps de s’y préparer à l’avance.
+                            </p>
+
+                            <p class="p-header">
+                                Pour ne pas sombrer dans la mélancolie, il lui sera essentiel d’accepter le caractère inévitable de la tristesse. La douleur est un sentiment naturel, qui fait partie de l’expérience humaine. Il s’avère donc parfaitement inutile d’essayer de s’y soustraire. Pourquoi ne pas essayer de renverser la situation ? Après tout, les plus grands succès se forgent toujours dans la défaite !
+                            </p>
+
+                            <p class="p-header">
+                                Nos blessures nous permettent de nous construire et de façonner notre caractère. Elles nous offrent un point de vue différent sur la vie. Elles nous évitent de répéter les mêmes erreurs. Tomber 9 fois, se relever 10 : voici la philosophie morale qu’il conviendra d’adopter.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU TROIS D'ÉPÉE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il apparaît à l’envers, le Trois d’Épée symbolise le plus souvent pour le consultant la fin d’une période de souffrance. Profondément marqué par un événement traumatique, il lui aura fallu rassembler toutes ses forces pour sortir de cette situation délicate, fréquemment liée à une rupture sentimentale ou à la perte d’un emploi.
+                            </p>
+
+                            <p class="p-header">
+                                Grâce à l’appui de ses proches et le recul qu’il a su prendre, le consultant peut désormais mettre le cap droit devant lui. Son avenir lui semble désormais plus dégagé, sa ligne de conduite est parfaitement maîtrisée. Ayant accepté de se confronter à ses blessures, il sait aujourd’hui les valeurs qui lui sont chères et se sent plus fort que jamais. Le bonheur l’appelle au loin de sa voix claire et radieuse.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Deux de Bâton</h1>
+                    <h2 class="h2-page">Two of Wands</h2>
+                    <p class="p-header">
+                        You are ready to start putting your ambitions to use. You are taking your ideas, and turning them into tangible plans. This is a card of exiting your comfort zone and broadening your horizons - perhaps with travel, a new career, further education, etc.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">opposition, introspection, maturation, réflexion, décision...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">éparpillement, absence de projection, immaturité, indécision, fuite en avant...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Deux de Bâton témoigne d’une période d’introspection, pendant laquelle vos désirs trouveront le temps nécessaire à la maturation. Si la vie vous prend parfois comme dans un tourbillon, accepter de prendre du recul vous permettra d’inscrire votre action sur le long terme. Cette démarche est essentielle à votre épanouissement et à votre accomplissement.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Deux de Bâton vous enseignera à jongler habillement entre vos obligations de long terme et les élans de votre désir, par nature fluctuants et imprévisibles. L’alliance de la rigueur et du laisser-aller est une voie particulièrement efficace pour celui qui souhaiterait profiter des petits plaisirs de la vie sans négliger les bienfaits des projets de construction.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU DEUX DE Bâton TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Comme nous l’avons déjà vu, l’enseigne des bâtons est toujours associé à un principe d’action et à la mise en mouvement. Avec le Deux de Bâton, il convient de le comprendre d’un point de vue symbolique, l’influence de l’arcane ne se manifestant pas encore de façon concrète dans le comportement du consultant.
+                            </p>
+
+                            <p class="p-header">
+                                Le Deux de Bâton véhicule en effet l’idée d’accumulation des désirs et favorise la prise de recul. Comme chacun sait, la vie est faite de choix et il s’avère souvent dangereux de se précipiter dans une aventure sans avoir pris le temps de la réflexion. Loin de lui, cependant, l’envie d’entraver l’évolution du consultant ou de le contraindre à une certaine forme d’immobilisme. Avec le Deux de Bâton, les désirs du consultant sont reconnus dans leur pleine mesure. L’arcane nous enseigne simplement les vertus de l’attente et de la planification !
+                            </p>
+
+                            <p class="p-header">
+                                Aussi géniale soit-elle, toute idée doit nécessairement être savamment mûrie pour pouvoir un jour porter ses fruits. En acceptant de prendre du recul, l’impulsion initiale pourra alors progressivement se transformer en chemin et guider le consultant dans sa quête d’accomplissement. Ce temps de réflexion préparera l’avenir de façon efficace et assurera que l’action du consultant soit bel et bien en accord avec ses désirs profonds. La mise en route approche donc à grands pas !
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU DEUX DE Bâton TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Les interprétations les plus fréquentes du Deux de Bâton inversé renvoient volontiers à deux situations distinctes. Tout dépendra bien entendu des autres arcanes présents dans le tirage, et notamment de ceux se trouvant à proximité directe de la carte qui nous intéresse aujourd’hui.
+                            </p>
+
+                            <p class="p-header">
+                                Parfois, lorsqu’il apparaît à l’envers, le Deux de Bâton suggère l’existence d’une certaine forme d’éparpillement chez le consultant. Maîtrisant peu ses désirs, ce dernier aura alors la fâcheuse tendance à s’engager partout et nulle part à la fois. Épris de découverte, il cherchera irrémédiablement à croquer tous les petits plaisirs de la vie sans jamais penser à une ligne directrice. L’objectif est donc d’apprendre à mieux canaliser son énergie, de définir précisément les objectifs à atteindre et de mettre en place un plan d’action efficace.
+                            </p>
+
+                            <p class="p-header">
+                                Dans d’autres situations, le Deux de Bâton inversé témoigne des difficultés du consultant à réaliser ses plans de long terme. S’il pensait avoir tout prévu, un obstacle se dresse aujourd’hui sur sa route et ralentit momentanément sa progression. Quelle solution devra-t-il mettre en œuvre pour le surmonter ?
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

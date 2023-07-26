@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">As de Coupe</h1>
+                    <h2 class="h2-page">Ace of Cups</h2>
+                    <p class="p-header">
+                        Le début de l'épanouissement émotionnel - de l'amour, de la compassion et du bonheur. Vous commencez peut-être une nouvelle relation, où vous donnez et recevez de l'amour avec une autre personne. Ouvrez votre cœur à ceux qui vous entourent, apprenez à pardonner, tendez la main et créez des liens.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">amour, tendresse, empathie, ouverture d’esprit, sensibilité...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">renfermement, blocage, traumatisme, foisonnement, instabilité...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, l’As de Coupe de va souvent de pair avec l’émergence d’une relation constructive, que celle-ci soit de nature amicale ou amoureuse. Votre cœur en recherche de tendresse saura mieux capter que d’habitude les messages transmis par autrui. N’ayez pas peur de vous engager pleinement si votre instinct vous somme d’agir.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, l’As de Coupe vous enseignera les vertus de l’amour, de la tendresse et de l’empathie, trois qualités intimement liées à votre nature humaine. Pour en profiter pleinement, il vous faudra apprendre à ouvrir les vannes de votre sensibilité à vous rapprocher de vos émotions.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE L'AS DE COUPE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                L’influence de l’As de Coupe se manifeste généralement le plus ostensiblement dans la vie sentimentale du consultant. Induisant un relent d’enthousiasme, il traduit volontiers l’émergence d’une relation amoureuse ou amicale épanouissante, dans laquelle tendresse, empathie et communication seront les maîtres-mots. L’arcane va parfois de pair avec l’idée d’accomplissement. Il favorise alors au sein du couple la concrétisation de projets communs, qui pourront par exemple avoir trait à un aménagement, à l’officialisation d’une union ou, pourquoi pas, à une grossesse désirée.
+                            </p>
+
+                            <p class="p-header">
+                                L’As de Coupe nous apprend à nous rapprocher de nos émotions et à en percevoir toutes les vertus. Parfois trop certains de notre destin, nous avons en effet tendance à nous enfermer dans des schémas de vie prédéfinis, qui ne nous permettent pas d’évaluer objectivement notre situation actuelle. Il s’agira alors d’accepter d’ouvrir son cœur et de laisser émerger nos sentiments enfouis. Mieux appréhender les mécanismes de notre sensibilité, c’est se donner l’opportunité de vivre davantage en accord avec nous-même, mais également mieux comprendre les émotions de nos proches. Les émotions sont l’un des éléments constitutifs de notre humanité. Rien ne sert donc de les mettre à la trappe.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DE L'AS DE COUPE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsque l’As de Coupe apparaît à l’envers lors d’un tirage de tarot divinatoire, cela peut renvoyer à deux situations distinctes. Il conviendra bien entendu d’analyser l’ensemble du tirage pour mieux appréhender ses enseignements.
+                            </p>
+
+                            <p class="p-header">
+                                Dans le premier cas de figure, l’As de Coupe inversé traduit un certain nombre de blocages psychologiques chez le consultant, qui l’empêchent de se rapprocher de ses désirs enfouis et d’agir en accord avec ses émotions profondes. La société occidentale met volontiers en avant les vertus de la décision et de la constance. Il faut néanmoins garder à l’esprit que le destin d’un homme n’est jamais linéaire et que notre capacité d’évolution est consubstantielle à notre espèce. Apprendre à se rapprocher de notre ressenti permet souvent d’infléchir notre chemin de vie dans une direction plus en accord avec notre volonté actuelle.
+                            </p>
+
+                            <p class="p-header">
+                                Dans le second cas de figure, l’As de Coupe inversé renvoie au contraire à l’émotion mal maîtrisée. L’émotivité est un guide précieux pour celui qui souhaiterait évoluer. Il est cependant essentiel de savoir qu’elle s’avère parfois trompeuse et qu’elle doit impérativement être domestiquée pour porter ses fruits. Agir uniquement en fonction de ses pulsions émotives est synonyme d’instabilité chronique !
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Sept d'Épée</h1>
+                    <h2 class="h2-page">Seven of Sword</h2>
+                    <p class="p-header">
+                        Le Sept d'Épée parle de tromperie et de sournoiserie au lieu de faire face à une situation. Il peut s'agir de vous ou d'une personne de votre entourage qui agit dans le dos des autres. Lorsque vous tirez cette carte, réfléchissez à vos intentions et assurez-vous qu'elles sont pures.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">trahison, duperie, malhonnêteté, mensonge, déception...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">réflexion, évolution, décision, intelligence, planification...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">NON</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Sept d’Épée vous met face aux responsabilités qui vous incombent. N’oubliez jamais que les choix font partie intégrante de la vie humaine. Ils vous permettent d’évoluer en accord avec vous-même, de découvrir de nouvelles choses, de vous épanouir dans des environnements qui vous correspondent davantage. Ne fuyez donc pas et acceptez les conséquences de vos décisions.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Sept d’Épée nous rappelle le caractère hautement imprévisible de notre destin d’humain. S’il est rassurant de tout prévoir à l’avance, difficile d’anticiper les changements imperceptibles de nos aspirations et les opportunités d’évolution qui s’offriront tôt ou tard à nous. Lorsqu’une situation ne vous comble plus, n’hésitez donc pas à changer de cap et à explorer de nouveaux horizons. Vous vous dirigiez jusqu’à aujourd’hui plein nord, votre avenir se situe peut-être à l’ouest ou à l’est !
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU SEPT D'ÉPÉE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il est tiré à l’endroit, le Sept d’Épée renvoie le plus souvent à la notion de trahison, qui pourra selon les situations prendre une forme symbolique ou concrète. Généralement, l’arcane témoigne d’une situation délicate, dans laquelle le consultant se sent comme enfermé. Grande est alors pour lui la tentation de s’y soustraire, quitte à utiliser la ruse et la tromperie.
+                            </p>
+
+                            <p class="p-header">
+                                L’arcane du Sept d’Épée traduit à ce titre les difficultés éprouvées par le consultant à assumer pleinement les responsabilités qui lui incombent. Ce comportement est une réaction tout à fait naturelle, en cela qu’il est souvent plus facile de fuir un problème que de s’y confronter. N’oublions cependant pas que nos actions ne sont jamais sans conséquence et qu’elles sont susceptibles d’impacter durablement la vie de ceux qui croisent notre chemin. Si nos duperies étaient dévoilées au grand jour, elles risqueraient en outre de nous plonger dans un grand embarras. Avant d’utiliser la ruse ou la tromperie, mieux vaut donc soupeser au préalable les conséquences potentielles de nos actes.
+                            </p>
+
+                            <p class="p-header">
+                                Les questions qu’il s’agira impérativement de se poser sont les suivantes : cette fuite m’aidera-t-elle réellement à concrétiser mes projets d’avenir ? Ou n’est-elle simplement que le reflet de l’une de mes faiblesses ?
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU SEPT D'ÉPÉE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Le Sept d’Épée revêt une tout autre signification lorsqu’il apparaît à l’envers, bien qu’il ait encore trait à l’univers de la pensée et à l’intelligence. Comme un rite de passage, l’arcane mettra alors le consultant face aux challenges intellectuels qu’il a encore du mal à accepter. La vie d’un Homme est nécessairement faite de décisions. Lorsqu’une situation ne nous convient plus réellement, il peut-être tentant de se réfugier dans son monde intérieur ou d’opter pour le statu quo.
+                            </p>
+
+                            <p class="p-header">
+                                Bien que tout à fait compréhensible, ce comportement ne favorise pas à terme l’épanouissement personnel. Il est au contraire synonyme d’enfermement. Il s’agira alors d’accepter pleinement les vertus du changement et d’essayer de se défaire de ces habitudes de vie si souvent sclérosantes. Il ne suffit pas d’imaginer une vie meilleure, il convient également de trancher et de se mettre en mouvement. C’est la condition sine qua non pour quiconque souhaiterait aller de l’avant.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

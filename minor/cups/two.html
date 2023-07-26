@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Deux de Coupe</h1>
+                    <h2 class="h2-page">Two of Cups</h2>
+                    <p class="p-header">
+                        Le Deux de Coupes évoque une relation fondée sur le respect, l'harmonie et le soutien. Il s'agit d'un amour inspirant, émotionnellement satisfaisant et fondé sur une attirance mutuelle. Bien que cette carte indique généralement des relations romantiques, elle peut également signifier des partenaires non romantiques, tels qu'un partenaire commercial ou un ami platonique.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">émotion, amour, germination, nouveau départ, tendresse...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">blocage, traumatisme, inertie, crainte, résistance...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Deux de Coupe est associé à votre capacité retrouvée d’aimer. Vos douleurs d’antan sont aujourd’hui suffisamment résorbées pour vous permettre de vous impliquer pleinement dans votre relation, que celle-ci débute à peine ou qu’elle soit déjà bien établie. Votre empathie et la tendresse dont vous faites preuve sont idéales pour assurer la pérennité de votre union. Apprenez à en profiter entièrement !
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Deux de Coupe met en exergue les influences certaines de l’amour et du partage dans votre bien-être. Dans une société tournée vers la réussite matérielle, les rapports humains sont bien souvent mis de côté. Votre capacité à aimer constitue pourtant l’un des plus beaux aspects de votre existence. Ne l’oubliez pas.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU DEUX DE COUPE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il est tiré à l’endroit, le Deux de Coupe est intimement associé à l’idée d’accumulation et de germination des émotions. Il est ce principe passif de réceptivité qui nous permet de prêter une oreille plus attentive à ce qui se passe à l’intérieur de notre âme, il est cette force d’empathie et de partage qui nous connecte à nos semblables et nous rend proprement humain. Avec lui, il n’est guère question d’action flamboyante ou de gestes grandiloquents, son influence s’exerçant paisiblement au cœur même de notre conscience.
+                            </p>
+
+                            <p class="p-header">
+                                D’un point de vue sentimental, le Deux de Coupe peut ainsi signifier que les blessures émotionnelles du consultant sont aujourd’hui guéries pour de bon, les douleurs oubliées, les traumatismes digérés. Patiemment, l’introspection porte ses fruits pour laisser place à un ciel parfaitement dégagé. Après une longue période d’hibernation, le consultant se sent renaître et prêt de nouveau à aimer.
+                            </p>
+
+                            <p class="p-header">
+                                L’arcane témoigne naturellement de la volonté d’union qui traverse le consultant. Comme nous venons de le voir, elle pouvoir avoir trait à l’émergence d’une relation sentimentale nouvelle. Son influence pourra cependant également toucher les couples déjà formés, en insufflant un vent nouveau dans la relation. Au bout d’un certain temps, il n’est pas rare qu’une sorte de routine s’installe dans le couple et que les partenaires oublient ce qui les a unis à l’origine. En permettant au consultant de se recentrer sur ses émotions et son ressenti, le Deux de Coupe lui offrira l’opportunité de redécouvrir la beauté de son amour.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU DEUX DE COUPE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Nous tenons d’abord à préciser qu’une analyse complète d’un tirage de tarot prend nécessairement en compte l’ensemble des arcanes présents. Les informations suivantes présentent ainsi uniquement les grands cas de figure relatifs au Deux de Coupe inversé et ne se substituent pas à un examen plus précis du tirage.
+                            </p>
+
+                            <p class="p-header">
+                                Dans certaines situations, le Deux de Coupe apparu à l’envers témoigne des difficultés du consultant à ouvrir son cœur et à s’engager pleinement dans de nouvelles relations. Son comportement est alors volontiers teinté de prudence et de méfiance, comme s’il redoutait de se confronter aux peines potentielles d’un futur amour déchu. Cette attitude a tendance à l’enfermer dans un quotidien parfois peu enrichissant et dans des habitudes sclérosantes. Pour sortir de cet état d’esprit, le consultant devra tôt ou tard accepter de se confronter à ses blessures du passé. C’est l’unique solution s’il souhaite évoluer et profiter à nouveau des joies incommensurables de l’amour.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Valet de Denier</h1>
+                    <h2 class="h2-page">Page of Pentacles</h2>
+                    <p class="p-header">
+                        Cette carte indique que vous avez de grands rêves et un désir fort et enthousiaste de les réaliser. Vous commencez peut-être un nouveau projet ou un nouveau travail. Pour atteindre vos objectifs, abordez vos tâches avec pragmatisme et gardez les pieds sur terre.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">planification, élaboration, matérialité, richesse, détermination...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">accumulation, égoïsme, stagnation, gaspillage, insouciance...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    De la même façon que les 3 autres arcanes de la suite des valets, le Valet de Denier annonce l’arrivée de changement dans la vie du consultant. Il se manifestera le plus souvent dans le domaine professionnel. Une énergie retrouvée permettra au consultant de définir précisément son plan de carrière et de poser les bases de sa future réussite sociale. Il pourra à ce titre compter sur sa capacité de planification et son extraordinaire rigueur.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Valet de Denier met en avant les vertus de la constance. Ce qui compte avant tout pour lui ? La sécurité financière de sa famille et sa propre reconnaissance sociale. Il déploiera d’ailleurs toute son énergie pour arriver à ses fins !
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU VALET DE DENIER TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Comme l’ensemble des cartes de la suite des valets, le Valet de Denier représente l’émergence d’un changement. Il est ce premier pas qui nous permet d’évoluer vers une situation nouvelle et, le plus souvent, plus enrichissante.
+                            </p>
+
+                            <p class="p-header">
+                                Ce jeune personnage ne constitue donc pas la concrétisation d’un rêve, mais le début de l’aventure. Cela ne l’empêche cependant pas d’avoir une vision bien à lui de la vie et et un ensemble de valeurs spécifiques. Le Valet de Denier est avant tout lié à l’idée de sécurisation et de matérialité. Les émotions sont pour lui nécessaires et humaines, mais loin d’influencer son comportement. Ce qui compte avant tout pour ce jeune homme ? La réussite sociale et matérielle, qui lui permettraient de profiter d’un rang important dans la société. Le Valet de Denier n’a rien d’un révolutionnaire. Il accepte parfaitement les règles du jeu et ne souhaite jamais les remettre en question.
+                            </p>
+
+                            <p class="p-header">
+                                Ses qualités intrinsèques lui permettent d’ailleurs toujours d’obtenir ce qu’il recherche. Le jeune homme sait parfaitement ce qu’il désire et est capable d’établir des stratégies extrêmement efficaces pour arriver à ses fins. Sa perspicacité, son abnégation et sa lucidité jouent à ce titre un rôle fondamental. La lame du Valet de Denier est donc particulièrement utile lorsque l’on souhaite planifier son avenir et mettre en place des projets.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU VALET DE DENIER TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsque l’on tire le Valet de Denier à l’envers, 3 cas de figure peuvent généralement se présenter. Dans le premier cas, le tirage signifie qu’il existe pour le moment un certain nombre de blocages ralentissant l’évolution du consultant. Ils peuvent avoir trait à un manque de temps, à une déficience d’enthousiasme ou encore à un quotidien trop prenant.
+                            </p>
+
+                            <p class="p-header">
+                                Parfois, cette lame inversée traduit l’absence de vision d’avenir du consultant. Ce dernier se sentira alors volontiers entravé dans ses progrès, comme enfermé dans un quotidien qui ne le satisfait pas mais dont il éprouve les plus grandes difficultés à s’échapper.
+                            </p>
+
+                            <p class="p-header">
+                                Enfin, ce tirage peut encourager le consultant à lâcher prise. Totalement obsédé par sa mission, sa vie sociale est alors réduite au minimum. S’il est possible d’accepter pour un temps cette situation, il est essentiel de se rappeler que le bien-être passe nécessairement par l’échange et la communication. Les vertus des sentiments ne devraient jamais être oubliées.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

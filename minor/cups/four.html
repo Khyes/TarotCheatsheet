@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Quatre de Coupe</h1>
+                    <h2 class="h2-page">Four of Cup</h2>
+                    <p class="p-header">
+                        La vie vous paraît-elle un peu stérile en ce moment ? Vous sentez-vous désengagé et apathique à cause de cela ? Peut-être que quelque chose de décevant s'est produit récemment, ce qui vous a amené à vous renfermer sur vous-même. Envisagez de méditer sur votre situation actuelle pour y voir plus clair, mais n'ignorez pas les choses qui sont devant vous et qui pourraient vous aider.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">stabilité émotionnelle, sécurité, pérennité, lassitude, routine...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">fermeture d’esprit, ennui, absence d’évolution...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">PEUT-ÊTRE</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Quatre de Coupe renvoie à l’idée de stabilité émotionnelle et à la sécurité du couple. Au fil du temps, vous avez su construire avec votre moitié une relation pérenne dont vous pouvez être fier. Alors que la société met de plus en plus en avant les bienfaits de l’individualisme, vous avez choisi une autre voie, non pas pour répondre à un modèle de construction traditionnel, mais par désir d’épanouissement dans l’union.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Quatre de Coupe vous confronte aux aspirations opposées qui traversent chaque Homme. Entre fusion relationnelle et désir d’indépendance, stabilité affective et envie de renouveau, l’équilibre n’est pas toujours facile à trouver. N’oubliez donc pas les raisons qui vous ont poussé à vous établir dans une relation. Avec le temps, il est facile de considérer l’autre comme acquis et de se complaire dans une certaine forme de routine. L’amour doit être nourri pour s’inscrire dans la durée. Libérez-vous de vos habitudes et acceptez de faire évoluer votre couple, pour votre bien-être et celui de votre partenaire d’une vie.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU QUATRE DE COUPE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Comme l’ensemble des cartes de l’enseigne, le Quatre de Coupe met avant tout en exergue le relationnel et l’affectif. Il est une invitation à l’élévation spirituelle à travers l’union du couple, une promesse de bonheur partagé et de communion céleste. Pour profiter pleinement de cette aspiration créative, le consultant devra néanmoins accepter dans un premier temps de se confronter à sa situation actuelle.
+                            </p>
+
+                            <p class="p-header">
+                                Le Quatre de Coupe est un arcane au message crypté. Certains l’apprécieront en raison de l’idée de sécurisation émotionnelle qu’il porte en lui, tandis que d’autres seront alarmés face aux risques de lassitude qu’il induit. Le bonheur dans le couple est certainement l’une des tâches les plus ardues qu’il soit donné à l’Homme. Si le modèle traditionnel nous exhorte de nous mettre en relation et de fonder une famille, combien de couples comprennent réellement les efforts à consentir pour entretenir la flamme sur le long terme ?
+                            </p>
+
+                            <p class="p-header">
+                                Tout couple, aussi établi soit-il, est un arbre fragile qu’il s’agit d’entretenir. Sans nourriture affective, grandes sont les chances que l’union se délite et que la lassitude s’installe. Si le consultant ressent une certaine forme d’ennui ou de mécontentement dans son couple, il faudra essayer d’insuffler un vent nouveau à sa relation, de changer d’angle de vue et de briser les chaînes de sa rigidité comportementale. Son essor spirituel passe nécessairement par là.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU QUATRE DE COUPE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                La signification du Quatre de Coupe inversé dépendra essentiellement de la configuration du tirage. Plusieurs cas de figures peuvent cependant être mis en lumière.
+                            </p>
+
+                            <p class="p-header">
+                                Dans certaines situations, l’arcane nous indique qu’une opportunité sentimentale se présentera bientôt à nous. Pour les couples, cette dernière doit être comprise de façon symbolique, et non comme l’arrivée d’une tierce personne susceptible de saper les efforts consentis pour la pérennité de la relation. En tirant parti de ces circonstances favorables, le consultant sera à même d’améliorer le quotidien de son couple et son bien-être affectif.
+                            </p>
+
+                            <p class="p-header">
+                                Dans d’autres cas de figure, le Quatre de Coupe inversé traduit au contraire la réticence du consultant à ouvrir son cœur et à partager de nouvelles expériences. Il s’isolera alors progressivement dans son propre monde et la qualité de ses relations en pâtira nécessairement.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

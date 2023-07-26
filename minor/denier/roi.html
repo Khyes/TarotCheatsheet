@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Roi de Denier</h1>
+                    <h2 class="h2-page">King of Pentacles</h2>
+                    <p class="p-header">
+                        Cette carte représente un pourvoyeur de sagesse, de soutien et de stabilité financière qui est heureux de partager sa richesse avec les autres. Vous êtes peut-être sur le point d'achever une tâche, un projet ou une entreprise de grande envergure. Abordez vos dernières tâches avec pragmatisme et une planification bien pensée.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">maîtrise, sécurité, routine, succès, matériel...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">autorité, domination, contrôle, amoralité, appât du gain...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Roi de Denier souligne l’importance de l’argent et de la réussite financière dans votre épanouissement personnel. Votre objectif n’a jamais été d’accumuler par simple plaisir de posséder, mais d’affirmer vos qualités par l’intermédiaire du travail. Votre richesse résulte exclusivement des fruits de votre labeur, vous pouvez donc être fier du chemin accompli et des efforts consentis ces dernières années.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, Le Roi de Denier est un présage favorable pour quiconque souhaiterait s’épanouir à travers une structure familiale pérenne. L’argent ne constitue qu’une facette de la vie d’un homme, dont le bien-être dépend également de la qualité des relations qu’il entretient avec ses proches. Votre situation vous permettra à l’avenir d’agir en leur faveur, en leur assurant une certaine forme de stabilité et en partageant avec eux des expériences inoubliables.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU ROI DE DENIER TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Le Roi de Denier doit avant tout être considéré comme un grand archétype de psychologie humaine. Lors d’un tirage de tarot de Marseille, il pourra ainsi directement renvoyer au caractère du consultant ou à celui d’une personne susceptible d’influencer durablement sa destinée.
+                            </p>
+
+                            <p class="p-header">
+                                D’un point de vue général, le Roi de Denier est un personnage volontiers associé à la réussite professionnelle et financière. Appréciant aussi bien le travail bien fait que la sécurité du foyer, il œuvre constamment pour assurer des rentrées d’argent conséquentes. Les fruits de son labeur seront avant tout destinés à ceux qui l’entourent, et en priorité sa famille, une structure essentielle à son bonheur.
+                            </p>
+
+                            <p class="p-header">
+                                La quête effrénée d’opulence dans laquelle s’inscrit l’action du Roi de Denier a de quoi surprendre. Elle pourrait faire penser à un personnage bassement matériel, totalement obsédé par le rang qu’il occupe dans la société et l’image qu’il renvoie aux autres. Ce tableau ne correspond pas à la réalité. Comme tout être humain, le Roi de Denier est un homme sensible et possède ses propres failles. Cette sécurisation matérielle qu’il recherche lui permet simplement de les combler. Fruit de son dur labeur et des efforts consentis, elle le rassure sur ses qualités et son abnégation. Le Roi de Denier n’accumule d’ailleurs pas simplement de l’argent par simple plaisir. En bon patriarche, il souhaite avant tout le partager avec ceux qu’il aime. Sa démarche est donc profondément empathique.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU ROI DE DENIER TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il apparaît à l’envers, le Roi de Denier renvoie souvent à un personnage déchu de son trône. Un besoin effréné d’accumulation l’a peut-être progressivement isolé des personnes qu’il aime, qui n’hésitent d’ailleurs aujourd’hui pas à lui reprocher son manque d’implication dans les relations. De façon presque contre-intuitive, ce tirage peut ainsi avoir trait à une rupture ou à un divorce, tout du moins à des conflits sentimentaux ou familiaux.
+                            </p>
+
+                            <p class="p-header">
+                                Le Roi de Denier inversé symbolise un homme totalement obsédé par sa réussite financière, prêt aux plus basses besognes pour consolider son statut. Mieux vaut donc ne pas croiser son chemin !
+                            </p>
+
+                            <p class="p-header">
+                                Dans d’autres cas de figure, l’arcane véhicule l’idée d’excès. Nourriture, fêtes grandioses, dépenses excessives : le Roi de Denier éprouve alors toutes les difficultés du monde à utiliser son argent de façon pérenne et à en faire profiter ses proches.
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

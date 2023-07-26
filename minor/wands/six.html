@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Six de Bâton</h1>
+                    <h2 class="h2-page">Six of Wands</h2>
+                    <p class="p-header">
+                        Après une rude bataille, vous êtes sorti vainqueur et vous êtes publiquement reconnu pour cela. C'est une grande source de motivation pour continuer à faire ce que vous faites. Cependant, n'oubliez pas de ne pas laisser cette motivation vous monter à la tête et se transformer en arrogance.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">reconnaissance, victoire, respect, ascension sociale, confiance...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">manque de confiance, disgrâce, défaite, doute, inefficacité...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Six de Bâton vous rappelle qu’il est important de célébrer vos petites réussites comme vos grands succès. Les qualités que vous avez su déployer au fil des années sont rares. Il s’agira d’en prendre conscience et de partager vos expériences avec vos amis. Aujourd’hui, vous pouvez regarder fièrement en arrière et contemplez le chemin parcouru.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Quand on analyse son influence sur le long terme, le Six de Bâton délivre un message rempli d’espoir. Il vous encourage à passer à l’action et à vous impliquer activement dans les causes qui vous sont chères. C’est la seule démarche possible si vous souhaitez à terme atteindre vos objectifs et façonner votre caractère au gré des expériences. Bienvenue dans l’école de la vie !
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU SIX DE Bâton TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Le Six de Bâton est une carte très appréciée par les adeptes du tarot divinatoire, en cela qu’elle témoigne volontiers pour le consultant d’une période de succès et de reconnaissance sociale. C’est pour ça qu’elle rappelle l’arcane du Monde, bien que son influence soit plus superficielle.
+                            </p>
+
+                            <p class="p-header">
+                                Le Six de Bâton indique que le consultant a su déployer son énergie dans des causes qui lui étaient chères. Conscient des objectifs qu’il souhaitait atteindre, il a mis à profit ses qualités pour bâtir une vie qui lui convient vraiment. La voie du succès fut cependant semée d’embûches. Si son statut est aujourd’hui publiquement reconnu, c’est que le consultant n’a jamais ménagé ses efforts. Il peut donc désormais profiter comme il se doit de ces réussites et regarder fièrement le chemin parcouru.
+                            </p>
+
+                            <p class="p-header">
+                                A la différence des cartes de l’enseigne des deniers, le Six de Bâton est traversé par une énergie hautement empathique. Sous son influence, le consultant ne cherchera pas uniquement à asseoir son rang social, il désirera avant tout faire profiter de ses expériences à ceux qui l’entourent. Avec lui, le plaisir et le partage ne sont donc jamais oubliés !
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU SIX DE Bâton TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                En revanche, lorsqu’il apparaît à l’envers, le Six de Bâton témoigne des doutes du consultant quant à sa capacité à réussir. Peu confiant en ses qualités, il a alors tendance à fuir les situations qui pourraient pourtant contribuer à son épanouissement. Cette situation délicate s’explique le plus souvent par des traumatismes non résorbés ou une éducation ne révélant pas assez le potentiel de l’enfant.
+                            </p>
+
+                            <p class="p-header">
+                                Dans certains cas de figure, le Six de Bâton inversé suggère chez le consultant une certaine forme d’éparpillement. Si ce dernier a pris conscience de la valeur de l’effort, son énergie n’est pour le moment pas suffisamment canalisée. Il s’agira pour lui de prendre du recul sur sa vie, afin de déterminer plus précisément les objectifs qu’il souhaite atteindre et de mettre en place une stratégie adéquate. Ce n’est qu’en inscrivant son action sur le long terme qu’il pourra reprendre confiance en ses capacités.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

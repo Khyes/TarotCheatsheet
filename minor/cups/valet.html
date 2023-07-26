@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Valet de Coupe</h1>
+                    <h2 class="h2-page">Page of Cup</h2>
+                    <p class="p-header">
+                        Cette carte est sans limites, intuitive et un peu comme un enfant intérieur. N'ayez pas peur de faire de grands rêves et de suivre votre cœur. De plus, écoutez votre intuition - elle essaie de vous dire quelque chose.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">amour, passion, tendresse, sensibilité, message...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">blocage émotionnel, tristesse, hypersensibilité, irréalisme, ambivalence...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Valet de Coupe est le messager de votre sensibilité. Les obligations du quotidien vous empêchent parfois d’être suffisamment proches de vos émotions. Elles vous coupent alors de ce que vous êtes vraiment. Nous vous invitons donc à ouvrir les vannes et à prêter attention au message de votre instinct. Apprenez simplement à laisser parler votre cœur.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Valet de Coupe nous enseigne que l’épanouissement passe nécessairement par un juste mariage de l’émotion et de la pensée. La sensibilité doit servir de guide, et mettre en exergue les projets ou les valeurs qui nous tiennent vraiment à cœur. La raison sert quant à elle de contrepoids. Elle permettra de décider si cette pulsion de changement est bel est bien justifiée.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU VALET DE COUPE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Avant d’analyser plus finement le message du Valet de Coupe, il nous semble important de rappeler la fonction endossée par les valets dans le tarot de Marseille. Le Valet de Coupe doit avant tout être considéré comme un messager, comme une incitation à l’action. Son action se situe précisément entre l’accumulation de connaissances et la mise en mouvement. Il peut à ce titre être considéré comme l’étincelle qui enclenche le mouvement, comme ces petits départs de feu qui nous poussent à expérimenter et à évoluer.
+                            </p>
+
+                            <p class="p-header">
+                                Parmi la suite des valets, le Valet de Coupe est sans l’ombre d’un doute celui qui est le plus intimement lié au monde de l’instinct, de l’amour et de l’émotion. Avec lui, il n’est jamais question de plan de carrière ou d’opportunité d’investissement. Ce qui compte avant tout à ses yeux est l’humain. Ses qualités d’empathie et d’écoute se déploient d’ailleurs merveilleusement bien dans le cadre de relations sentimentales ou amicales. Si sa grande sensibilité peut parfois étonner, elle lui permet de mieux appréhender les difficultés par lesquelles ses proches passent et de comprendre les désirs enfouis au fond de son inconscient.
+                            </p>
+
+                            <p class="p-header">
+                                Pour le Valet de Coupe, le cœur dirige toujours la raison. Nous avons ici à faire à un être profondément instinctif acceptant pleinement les émotions qui le traversent. Si elles s’avèrent parfois trompeuses, elles sont le plus souvent un guide particulièrement efficace, capable de diriger le jeune homme dans une direction qui lui convient vraiment.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU VALET DE COUPE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il apparaît à l’envers, le Valet de Coupe souffre des défauts de ses qualités. Sa sensibilité est alors mal contrôlée et son humeur changeante complexifie son intégration dans la sphère sociale. Pour faire bref, le Valet de Coupe est un personnage d’une grande immaturité émotionnelle. Cette labilité le pousse parfois dans des relations difficiles, mues par le simple besoin de dépendance affective. Cette situation favorise chez le conjoint l’émergence d’une sensation d’oppression. L’insatisfaction se propage alors chez les deux partis.
+                            </p>
+
+                            <p class="p-header">
+                                L’insécurité émotionnelle associée au Valet de Coupe favorise une certaine forme d’isolement, les sautes d’humeur du consultant devenant au fil du temps de moins en moins acceptées par ses proches.
+                            </p>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

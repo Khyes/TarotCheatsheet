@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Valet de Bâton</h1>
+                    <h2 class="h2-page">Page of Wands</h2>
+                    <p class="p-header">
+                        Cette carte, comme le fa-solid fa-masks-theater, a une vision fraîche et passionnée de la vie. Le tirage de cette carte indique que vous avez une étincelle créative en vous, alors allez-y - soyez spontané, suivez votre muse créative !
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">enthousiasme, sociabilité, énergie, exploration, ouverture d’esprit...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">insouciance, renfermement, hyperactivité, tâtonnement, doute...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Valet de Bâton est un messager du changement. Une relation amoureuse ou une opportunité professionnelle nouvelle risque bien de bouleverser votre quotidien de fond en comble. Ne soyez pas effrayé face à cette situation, elle est susceptible de vous aider dans votre évolution personnelle. Veillez simplement à ce que ce nouveau commencement soit en accord avec vos valeurs et vos envies du moment.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, le Valet de Bâton vous rappelle qu’il est souvent dangereux de se complaire dans une quelconque forme de routine. Les désirs humains sont par nature fluctuants, et évoluent nécessairement au cours d’une vie. Il est donc essentiel de faire le point régulièrement pour dresser un bilan franc de sa situation.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU VALET DE Bâton TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Comme l’ensemble des 4 valets du tarot de Marseille, le Valet de Bâton fait parfois preuve d’un brin d’immaturité, un petit défaut bien mineur face à la joie de vivre et l’envie de découverte propres au personnage.
+                            </p>
+
+                            <p class="p-header">
+                                Traditionnellement, l’arcane est associé à l’idée de changement et de renouveau. Le Valet de Bâton est un jeune homme plein d’envie et bien décidé à profiter. Avec lui, pas question de se reposer sur ses acquis ou de se complaire dans une quelconque routine. C’est l’urgence d’agir qui régit avant tout son comportement. Si sa naïveté pourrait de prime abord être regardée de haut, elle constitue en réalité un formidable atout. Le Valet de Bâton n’a cure des considérations matérielles ou des plans de carrière bien ficelés. Ce qu’il cherche avant tout, c’est à jouir pleinement de la vie, sans contrainte ni contingence. S’il ne sait pas encore bien là où il souhaite se diriger, ses découvertes successives lui permettront de façonner rapidement une vision de la vie originale, qui sera en parfaite adéquation avec ses valeurs et ses envies.
+                            </p>
+
+                            <p class="p-header">
+                                Le Valet de Bâton ne se noie jamais dans le flux de sa pensée. Conscient de ses désirs, il n’hésite jamais à se lancer et à partir à la découverte d’horizons nouveaux. Comme une mèche qu’on allume, il nous apprend à nous rapprocher de nous-même et à mieux écouter nos souhaits les plus profonds. C’est pour cela qu’il est volontiers considéré comme une force de vie extraordinaire, comme un outil indispensable à quiconque souhaiterait évoluer et infléchir le cours de son destin.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU VALET DE Bâton TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Tirer le Valet de Bâton inversé signifie souvent qu’un certain nombre de blocages empêchent le consultant d’évoluer comme il le souhaite. Les idées de changement ne font alors qu’effleurer son esprit, sans jamais s’inscrire concrètement dans un projet d’avenir. Cette situation est bien heureusement temporaire !
+                            </p>
+
+                            <p class="p-header">
+                                Régulièrement, cet enlisement est une conséquence directe de la peur éprouvée par le consultant face au bouleversement. La routine est paradoxale : si elle est capable de répondre à notre besoin de sécurisation, elle ne comble jamais vraiment nos aspirations profondes. Gardons à l’esprit qu’il est tout à fait naturel d’être effrayé lorsque l’on est confronté à un changement majeur, mais il tout aussi important d’en apprécier les vertus. Il ne s’agit bien entendu pas de tout abandonner sur un simple coup de tête, mais d’apprendre à mieux appréhender ses désirs pour faire vivre ses rêves !
+                            </p>
+
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

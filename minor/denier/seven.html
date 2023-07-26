@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="/minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="/minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Sept de Denier</h1>
+                    <h2 class="h2-page">Seven of Pentacles</h2>
+                    <p class="p-header">
+                        Vous pensez à l'avenir et vous avez investi beaucoup de temps et d'efforts dans un objectif à long terme. Vous avez également appris à concentrer vos efforts là où ils sont les plus importants. Bien que vous puissiez vous sentir impatient face à la lenteur des progrès, sachez que si vous persévérez, vos objectifs finiront par se concrétiser.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card" id="cap">réussite, fructification, argent, labeur, fierté...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card" id="cap">blocage, immobilité, absence de vision, indécision, insatisfaction...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">NON</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, le Sept de Denier témoigne d’une période positive, à l’issue de laquelle vous pourrez enfin récolter les fruits de votre dur labeur. Les efforts que vous avez récemment consentis commencent à se manifester concrètement dans votre quotidien. Vous pouvez désormais prendre le temps de savourer votre succès. Vous pouvez être fier du chemin parcouru. Félicitations !
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Quand on l’analyse sur le long terme, le Sept de Denier met en exergue l’importance de la constance et du labeur. L’effort est consubstantiel à la réussite, que celle-ci soit de nature professionnelle ou sentimentale. Nous vous invitons donc à persévérer dans votre travail et à maintenir votre cap en toute circonstance, même pendant les périodes difficiles. Si vous savez ce que vous voulez, votre abnégation sera tôt ou tard récompensée. 
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU SEPT DE DENIER TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Alors que certains préfèrent profiter des petits plaisirs quotidiens de la vie, d’autres ont la ferme volonté de se projeter dans l’avenir. Dans un monde régi par l’argent, la réussite sociale constitue bien souvent un fondement essentiel de l’épanouissement personnel. Pour atteindre ses buts, il ne suffit pas de simplement les définir dans la cloison de ses pensées, il s’agit également de mettre en œuvre une stratégie adéquate et de s’y tenir.
+                            </p>
+
+                            <p class="p-header">
+                                Placé sous l’influence du Sept de Denier, le consultant fera preuve d’un désir de fructification de l’effort sans commune mesure, d’une capacité extraordinaire d’action et de travail. Rien ne sert de se contenter de bonheurs éphémères quand la vie a tellement de choses à nous offrir ! Conscient du temps qui lui est alloué, le consultant préférera déployer son énergie dans les domaines les plus susceptibles de lui apporter de la gratification. Avec le Sept de Denier, c’est la vision de long terme qui est privilégiée.
+                            </p>
+
+                            <p class="p-header">
+                                L’enseignement de l’arcane ne pourrait être plus clair. Le succès n’est jamais dû aux fruits du hasard. Des efforts consentis, aussi durs puissent-ils parfois paraître, résulteront un jour des bénéfices immenses. Ne perdons donc pas notre énergie dans des causes perdues d’avance et concentrons-nous toujours dans les domaines les plus rentables.
+                            </p>
+
+
+                            <div class="space"></div>
+
+
+                            <h2 class="h2-page">INTERPRÉTATION DU SEPT DE DENIER TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Lorsqu’il apparaît à l’envers dans un tirage de tarot divinatoire, le Sept de Denier n’a traditionnellement pas bonne presse. Il témoigne des difficultés éprouvées par le consultant à se projeter dans l’avenir. Comme coincé dans un quotidien qui ne le satisfait pas vraiment, ce dernier pointe son regard à l’horizon pour n’y voir qu’un ciel chargé de nuages. Cette situation, aussi désagréable soit-elle, n’est pas définitive.
+                            </p>
+
+                            <p class="p-header">
+                                Peut-être est-il temps pour lui de mieux définir les objectifs qu’il souhaite atteindre et de réfléchir aux moyens à mettre en œuvre pour y parvenir. Les contingences de la vie nous contraignent parfois à traverser nos journées la tête baissée, en oubliant que notre avenir se construit en grande partie aujourd’hui. C’est pour cela qu’il est primordial de se détacher de ces petites habitudes qui nous sclérosent et d’éviter au possible toutes les sources de dispersement. Déployons au contraire notre énergie pour des causes qui nous tiennent vraiment à cœur. Laissons de côté ces petites satisfactions qui s’évanouissent trop vite et mettons le cap droit devant nous. La ligne d’horizon nous attend !
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
