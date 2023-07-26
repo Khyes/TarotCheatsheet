@@ -492,7 +492,7 @@ span {
     /* ------------------------- NAV BAR ------------------------- */
 
 .sidebar_wrapper {
-    max-width: 200px;
+    max-width: 160px;
     line-height: 1.3;
     font-size: 0.8em;
 }
@@ -521,8 +521,8 @@ span {
 .sidebar-search {
     margin-top: 0px;
     margin-bottom: 8px;
-    margin-right: 68px;
-    margin-left: 28px;
+    margin-right: 55px;
+    margin-left: 15px;
     position: relative;
     display: block;
 }
@@ -531,7 +531,7 @@ span {
     margin-top: 50px;
     margin-bottom: 30px;
     margin-right: 28px;
-    margin-left: 28px;
+    margin-left: 0px;
     position: relative;
     display: block;
 }
@@ -713,7 +713,7 @@ span {
 .show {display:block;}
 
 .sidebar-dropdown-link {
-    padding-left: 11px;
+    padding-left: 0px;
     padding-right: 14px;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -742,8 +742,8 @@ a {
 /* ------------------------- HEADER ------------------------- */
 
 .page-wrapper {
-    margin-left: 220px;
-    padding-left: 10px;
+    margin-left: 180px;
+    padding-left: 0;
     padding-right: 0px;
     padding-bottom: 100px;
     padding-top: 1px;
