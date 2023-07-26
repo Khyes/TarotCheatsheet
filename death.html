@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="../major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="../minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">L'Arcane Sans Nom</h1>
+                    <h2 class="h2-page">Death</h2>
+                    <p class="p-header">
+                        La mort est synonyme de fin et de début, de naissance et de renaissance, de changement et de transformation. La mort est belle et fait partie intégrante de la vie. Les choses doivent avoir une fin, mais après cela, de nouvelles choses peuvent commencer. La mort, c'est lâcher l'ancien et embrasser le nouveau.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Transformation, changement, bouleversement, deuil, fin de cycle...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Résistance, blocage, rupture, refoulement, passivité...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">NON</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    Sur le court terme, l’Arcane sans Nom vous enseigne que les changements ne sont pas par nature dangereux. Il est ainsi parfois nécessaire de se détacher de son passé ou de bouleverser son mode de vie pour évoluer en tant que personne. Disposer de nouveaux points de vue, c’est aussi se donner la chance de profiter de nouvelles opportunités, de faire de nouvelles rencontres, de se remettre en question pour mieux progresser.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, l’Arcane sans Nom vous rappelle la nature cyclique de la vie. Il est ainsi nécessaire de prendre du recul sur toute chose, de façon à ne pas être démuni face aux incertitudes du destin. La vie est un jeu de hasard dont il convient d’accepter les règles. En adoptant cette position, vous apprendrez à tirer parti des obstacles qui se dresseront devant vous et vous ne subirez plus jamais leurs conséquences. Félicitations, vous êtes désormais détaché et maître de vous-même!
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DE L'ARCANE SANS NOM TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Malgré les apparences et la symbolique visuelle qu’elle véhicule, il est important de garder à l’esprit la connotation positive de la lame de l’Arcane sans Nom. Il ne s’agit en fait de ne pas prendre la Mort dans son sens premier, mais de la considérer comme la fin symbolique d’une partie de la vie du consultant. Grâce à elle, ce dernier pourra ainsi faire table rase des blessures de son passé et se détacher des valeurs qui ne lui correspondent plus aujourd’hui. Comme nous l’enseigne la Roue de Fortune, l’univers est par nature cyclique. Après la pluie, le beau temps, comme le dit si bien un adage très connu ! Quand la fin d’une période se profile, ce n’est pas le néant qui pointe le bout de son nez, mais le commencement d’un nouveau cycle. Il s’agit donc de considérer l’Arcane sans Nom comme un vecteur puissant d’évolution et de régénération, comme un personnage permettant de repartir sur des bases plus solides, comme un outil de libération face à ses souffrances passées. Bien entendu, il est normal que ce passage d’un état connu à l’inconnu suscite quelques craintes. Abandonner nos liens affectifs et remettre en question certains de nos projets n’est pas une démarche anodine. Il n’existe cependant guère de meilleures solutions pour avancer sur le chemin de la vie et rebâtir sur un sol plus stable. Les bénéfices à long terme pourraient être immenses !
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DE L'ARCANE SANS NOM TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                C’est lorsqu’il apparaît à l’envers que l’Arcane sans Nom peut être considéré comme une carte négative, bien qu’il faille toujours tempérer son message en fonction des autres lames du tirage. Il témoigne alors de la difficulté du consultant à accepter les changements, pourtant nécessaires à son évolution. Chaque situation nouvelle a alors tendance à être vécue dans la douleur, le quotidien du consultant se teinte d’angoisse et de pessimisme. S’il est parfaitement naturel d’être attaché à son passé, il est tout aussi important d’accepter les vertus du changement. Les situations nouvelles sont de merveilleux outils pour celui qui aimerait progresser et évoluer. Il s’agira donc d’accepter de remettre en question certains acquis et d’être plus serein face aux bouleversements. Ces derniers se révéleront extrêmement positifs à terme. Ouvrons-leur donc les bras sans crainte, nous serons bientôt récompensés !
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

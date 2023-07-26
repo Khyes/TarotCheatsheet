@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="../major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="../minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Le Diable</h1>
+                    <h2 class="h2-page">The Devil</h2>
+                    <p class="p-header">
+                        Le Diable représente votre côté obscur et les forces négatives qui vous limitent et vous empêchent d'être la meilleure version de vous-même. Vous pouvez subir les effets d'habitudes négatives, de dépendances, de comportements, de schémas de pensée, de relations et d'addictions.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Vitalité, ardeur, plaisir, instinct, gloire...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Dépendance, manipulation, tentation, excès, infidélité...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">NON</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">
+                                    À court terme, l’arcane du Diable vous invitera nécessairement à répondre à cet élan pulsionnel qui vous traverse momentanément. Libre à vous de céder à la tentation ou de lutter contre l’impulsivité. Si le changement peut parfois s’avérer constructif, il peut également être destructeur lorsqu’il fait suite à un comportement non assumé.
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">
+                                    Sur le long terme, l’influence de la lame du Diable vous permettra de réfléchir au sens que vous souhaitez donner à votre vie et à la personne que vous désirez devenir. Si l’arcane de la Justice prône un idéal de vie droit et rigoureux, le Diable défend davantage une vision dionysiaque de l’existence, dans laquelle il est parfaitement normal de céder aux désirs et aux pulsions. Cette dernière peut alors se montrer extrêmement libératrice, mais également pleine de risques.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU DIABLE TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">
+                                Comme c’est toujours le cas lors d’un tirage de tarot, la signification de l’arcane dépendra beaucoup des autres cartes qui l’entourent. Faites donc preuve de tempérance face aux informations qui suivent. Souvent, l’arcane du Diable symbolise les forces et les faiblesses cachés à l’intérieur des Hommes. Ces secrets bien gardés peuvent par exemple avoir trait à des pulsions que l’on cherche à contenir, mais également à des habitudes bien ancrées dont il est difficile de se défaire. Comme le Yin et le Yang, Dieu et le Diable entretiennent des rapports étroits. Si l’un règne sur la lumière, l’autre gouverne dans la nuit et ses mystères. Dans le fond, l’un ne pourrait exister sans l’autre.
+                            </p>
+
+                            <p class="p-header">
+                                Si le Diable effraye, c’est qu’il renvoie aux éléments que l’Homme a du mal à maîtriser. Gardons cependant à l’esprit que ce personnage n’est pas forcément dangereux, il nous incite simplement à obéir à nos pulsions. L’on pourrait même à ce titre considérer qu’il est susceptible d’exercer en nous une certaine forme de libération, en cela qu’il remet en question les codes et les valeurs qui régissent notre vie. Il peut être compris comme le symbole même du désir, avec ce que cela entraîne de jouissif et d’instable. Quand l’on tire la carte du Diable, le véritable danger est de ne pas réussir à résister à ses pulsions primaires, qui peuvent engendrer des conséquences particulièrement destructrices. Bien que la prise de risque soit parfois synonyme de changement positif, céder à son impulsivité peut également entraîner des flots de pulsions difficilement contrôlables. Il s’agira d’apprendre à les canaliser.
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DU DIABLE TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">
+                                Contrairement aux apparences, le Diable tiré à l’envers est une carte beaucoup plus facile à appréhender que ne l’est l’arcane dans son tirage traditionnel. La lame perd en effet une partie de son potentiel de destruction, son influence ne se déployant plus que dans les domaines psychiques, relationnels et sexuels. Moins prégnante, elle entraîne volontiers une prise de conscience de la part du consultant, vis à vis des liens de dépendance qu’il entretient envers certaines personnes ou certaines situations. Elle constitue à ce titre un atout indéniable pour celui qui souhaiterait mieux comprendre les rouages de la psychologique humaine et se défaire d’habitudes néfastes.
+                            </p>
+
+                            <p class="p-header">
+                                Ces connaissances pourront ainsi faire éclore un besoin de changement chez le consultant, une modification de comportement qui contribuera progressivement à son bien-être. Une fois sur le bon chemin, il conviendra simplement de se méfier des pulsions trop violentes ou soudaines, qui sont de véritables sources d’erreur. Le bonheur passe nécessairement par une démarche constante et sereine !
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

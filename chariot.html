@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cheatsheet</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="../script/script.js"></script>
+    
+
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <div class="sidebar_wrapper">
+
+        <!-- TOP -->
+
+        <div class="sidebar_logo">
+            <h1 class="nav-title">Tarot Cheatsheet</h1>
+            <h1 class="nav-title">⦲</h1>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <div class="sidebar-search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input type="text" id="js-search" onkeyup="search_card()" placeholder="Recherche.." class="search-style">
+        </div>
+
+        <!-- MENU TOGGLE-->
+        <div class="z-index-menu">
+
+        <div class="sidebar-menu">
+
+            <!-- MENU MAJOR -->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h2>Arcane Majeur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <btn class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></btn>
+                </btn>
+
+                <div class="sidebar-dropdown-list" id="sidebar-dropdown-list">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="../major/fool.html">0. THE FOOL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/magician.html">I. THE MAGICIAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/priestess.html">II. THE HIGH PRIESTESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/empress.html">III. THE EMPRESS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/emperor.html">IV. THE EMPEROR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/hierophant.html">V. THE HIEROPHANT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/lovers.html">VI. THE LOVERS</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/chariot.html">VII. THE CHARIOT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/strength.html">VIII. STRENGTH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/hermit.html">IX. THE HERMIT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/wheel.html">X. WHEEL OF FORTUNE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/justice.html">XI. JUSTICE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/hanged.html">XII. THE HANGED MAN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/death.html">XIII. DEATH</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/temperance.html">XIV. TEMPERANCE</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/devil.html">XV. THE DEVIL</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/tower.html">XVI. THE TOWER</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/star.html">XVII. THE STAR</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/moon.html">XVIII. THE MOON</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/sun.html">XIX. THE SUN</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/judgement.html">XX. JUDGEMENT</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../major/world.html">XXI. THE WORLD</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- MENU MINOR-->
+
+           <div class="dropdown-wrapper">
+
+                <btn onclick="myFunction2()" class="dropdown-toggle">
+                    <div class="flex">
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        <h2>Arcane Mineur</h2>
+                        <div class="text-200"></div>
+                    </div>
+                    <div class="line-rounded-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </btn>
+
+                <div class="sidebar-dropdown-list2" id="sidebar-dropdown-list2">
+                    <div class="sidebar-dropdown-inner">
+                        <div class="sidebar-dropdown-link"><a href="../minor/pentacles.html">PENTACLES - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../minor/cups.html">CUPS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../minor/swords.html">SWORDS - ACE TO KING</a></div>
+                        <div class="sidebar-dropdown-link"><a href="../minor/wands.html">WANDS - ACE TO KING</a></div>
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- NAV FOOTER -->
+
+           <div class="sidebar-footer">
+            Designed and Coded By Alexy Piché
+           </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+     <!-- CONTENT -->
+
+    <div class="page-wrapper">
+
+        <div class="dashboard-main-section">
+
+            <div class="dashboard-content">
+                <div class="dashboard-main-content">
+                    <h1 class="h1-page">Le Chariot</h1>
+                    <h2 class="h2-page">The Chariot</h2>
+                    <p class="p-header">
+                        Le Chariot est autonome, énergique et fort. Vous serez confronté à la concurrence et à de nombreux obstacles, mais votre volonté et votre concentration vous mèneront au succès. Ayez confiance en vous, prenez les rênes et contrôlez votre destin.
+                    </p>
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h1 class="h1-card">À L'Endroit</h1>
+                                <p class="p-card">Succès, détermination, stabilité, action, abnégation...</p>
+                            </div>
+                            <div class="card">
+                                <h1 class="h1-card">À L'Envers</h1>
+                                <p class="p-card">Dispersion, arrogance, agressivité, manque de contrôle, impatience...</p>
+                            </div>
+                        </div>
+
+                        <div class="answer">
+                            <h1 class="h1-answer">RÉPONSE RAPIDE</h1>
+                            <p class="p-answer">OUI</p>
+                        </div>
+
+                        <div class="influence">
+                            <div class="court">
+                                <h1 class="h1-influence">À Court Terme</h1>
+                                <p class="p-influence">L’influence du Chariot à court terme se manifeste par votre mise en action, qui pourra par exemple prendre la forme d’une disponibilité accrue au niveau professionnel ou d’une volonté d’évolution dans votre vie sentimentale. Cette aura qui se dégage de vous est extrêmement positive pour votre évolution. Elle vous fait prendre conscience de votre potentiel réel et des stratégies à mettre en place pour atteindre vos objectifs.
+
+                                </p>
+                            </div>
+                            <div class="long">
+                                <h1 class="h1-influence">À Long Terme</h1>
+                                <p class="p-influence">Sur le long terme, le Chariot vous guidera sur le chemin du succès. Il vous apprendra à faire confiance en vos qualités et à mettre en pratique votre abnégation naturelle. Grâce à lui, vous ne vous découragerez plus face au moindre obstacle et votre action s’inscrira dans la durée. Mû par cette grande force de caractère, rien ne pourra vous résister !
+
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- INTERPRETATION -->
+
+                         <div class="inter">
+                            <h1 class="h1-page">Interprétation</h1>
+                            <h2 class="h2-page">INTERPRÉTATION DU CHARIOT TIRÉE À L'ENDROIT</h2>
+
+                            <p class="p-header">Comme sa couronne le laisse clairement entendre, le personnage principal du Chariot est un symbole puissant de triomphe et de succès. C’est donc très naturellement que l’arcane est volontiers considéré comme une lame extrêmement positive du tarot de Marseille, annonçant souvent chance, voyage, opportunités et rencontre amoureuse. Lorsqu’il apparaît à l’endroit, le Chariot invite le consultant à prendre conscience de ses capacités, qu’elles soient innées ou acquises, et à apprendre à s’en servir pleinement. L’affirmation de soi participe en effet grandement au bien-être et facilite la mise en mouvement. Tous les obstacles qui se dressent sur notre route devraient être considérés comme de simples contretemps. S’il est parfois naturel de ressentir une certaine forme de désespoir face à eux, nos qualités d’abnégation et de détermination nous permettront toujours d’en venir à bout. Il s’agit en fait de considérer le Chariot comme un capitaine d’armée rempli de bonne volonté, dont l’objectif ne serait bien entendu pas de partir en guerre contre ses semblables, mais d’affronter les embûches qui apparaissent au quotidien devant lui !
+                                
+                            </p>
+
+                            <p class="p-header">Ne considérons cependant pas ce personnage comme un être imbu de lui-même et totalement imprudent. Toute action pérenne repose en effet nécessairement sur une parfaite compréhension des objectifs à atteindre et sur une démarche calme et raisonnée. Il n’est ainsi pas question de céder à l’impatience, le Chariot nous enseigne simplement à embrasser l’espoir de notre destinée et à tout mettre en œuvre pour la concrétiser. La confiance en soi, l’équilibre et la volonté seront les trois facettes qui nous mèneront sur le chemin du succès.
+
+                            </p>
+
+                            <div class="space"></div>
+
+                            <h2 class="h2-page">INTERPRÉTATION DU CHARIOT TIRÉE À L'ENVERS</h2>
+
+                            <p class="p-header">Comme c’est toujours le cas lors d’un tirage inversé, l’arcane du Chariot tiré à l’envers met en garde contre les défauts potentiels des qualités intrinsèques de la lame. Si la carte invite le consultant à l’action, il ne s’agit cependant pas de céder à la tentation de l’hyperactivité. La mise en mouvement doit toujours faire suite à une réflexion profonde sur le sens que l’on souhaite donner à sa vie, et non pas répondre à un simple trop-plein d’énergie. Grands seraient alors les risques de la perte de contrôle et de l’investissement dans des domaines inféconds. L’important sera de définir précisément les objectifs à atteindre, puis d’exploiter patiemment ses qualités. Cette démarche raisonnée et sereine est l’unique solution à envisager pour celui qui souhaiterait concrétiser ses projets. Comme les personnes contraintes de s’évader dans l’excès de travail ou les paradis artificiels, l’action pour l’action témoigne davantage d’une fuite en avant que d’une volonté de construction durable.
+                                
+                            </p>
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
