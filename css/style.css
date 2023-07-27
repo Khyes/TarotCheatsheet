@@ -28,7 +28,7 @@
     --medium2: rgba(139,97,67,0.44) ;
     --light2: rgba(207,160,88,0.44);
     --dark3: rgb(19, 2, 15);
-    --light3: rgb(77, 27, 67);
+    --light3: rgb(56, 16, 48);
     --hoversmall: rgba(245, 233, 184, 0.88);
     --hoverbig:  rgba(250, 240, 201, 0.955);
   }
@@ -345,6 +345,7 @@ a {
     padding: 40px;
     margin: 10vh 0;
     border-radius: 10px;
+
 }
 
 
@@ -426,6 +427,7 @@ span {
     width: 130px;
     height: 130px;
     border-radius: 10px;
+    border: 1px solid rgba(255, 225, 160, 0.4);
 }
 
 .card-minor:hover {
@@ -446,6 +448,7 @@ span {
     height: 170px;
     border-radius: 10px;
     margin-bottom: 20px;
+    border: 1px solid rgba(255, 225, 160, 0.4);
 
 }
 
@@ -470,6 +473,7 @@ span {
     background: white;
     background: linear-gradient(195deg, var(--light1) 0%, var(--medium1) 50%, var(--dark1) 100%);
     border-radius: 10px;
+    border: 0.1px solid rgba(61, 26, 74, 0.0)
 }
 
 .answer:hover{
@@ -519,6 +523,7 @@ span {
     border-radius: 10px;
     width: 50%;
     height: 250px;
+    border: 1px solid rgba(255, 225, 160, 0.4);
 }
 
 .long {
@@ -530,6 +535,7 @@ span {
     border-radius: 10px;
     width: 50%;
     height: 250px;
+    border: 1px solid rgba(255, 225, 160, 0.4);
 }
 
 .court:hover {
